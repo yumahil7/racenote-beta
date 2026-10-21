@@ -54,6 +54,10 @@ select,input{width:100%;background:#fff;border:1px solid var(--line);border-radi
 .jc{flex:0 0 150px;scroll-snap-align:start;background:linear-gradient(170deg,#fff,#fdf1e6);border:1px solid var(--line);border-radius:20px;padding:12px;text-align:center;cursor:pointer;box-shadow:0 3px 12px rgba(120,90,50,.08);animation:up .5s ease both}
 .jc .av,.jc img{width:84px;height:84px;margin:0 auto;display:block;border-radius:50%;object-fit:cover}.jc b{display:block;margin-top:6px}.stars{color:#f0a63a;letter-spacing:1px}.stars i{color:#e6dccd;font-style:normal}
 .card p+p{margin-top:8px}.acc{font-size:28px;font-weight:800;color:var(--p)}
+.gb{display:inline-block;min-width:34px;text-align:center;font-weight:900;font-size:13px;border-radius:8px;padding:2px 7px;color:#fff;letter-spacing:.5px;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55),0 1px 4px rgba(0,0,0,.15)}
+.g-SS{background:linear-gradient(135deg,#f9e27a,#d4a017 55%,#fff3b0);color:#5a3d00}.g-S{background:linear-gradient(135deg,#ffffff,#cfd8e3 50%,#f4f8ff);color:#3a4a5c}.g-AA{background:linear-gradient(135deg,#e0115f,#9b0d3f)}.g-A{background:linear-gradient(135deg,#2f6fdc,#0f3a8a)}.g-B{background:linear-gradient(135deg,#2ebf7f,#0f7a4c)}.g-C{background:linear-gradient(135deg,#a06cd5,#5e2f9a)}
+.hcard{display:flex;width:150px;aspect-ratio:3/4;border-radius:14px;padding:5px;margin:8px auto;position:relative}.hcard .in{flex:1;align-self:stretch;border-radius:10px;background:#fffdf8;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:12px;color:#8a7a66}.hcard .gb{position:absolute;top:10px;left:10px}
+details.gr summary{cursor:pointer;font-size:13px;color:var(--p)}details.gr li{font-size:12.5px;margin:3px 0 3px 16px}
 </style></head><body>
 <div class="app">
 <header><div class="top"><div class="logo">레이스<b>노트</b><span class="beta">BETA</span></div><span class="muted">정보 제공 전용</span></div>
@@ -256,14 +260,21 @@ const NA='<span class="na">데이터 없음</span>';
 function sheet(h){closeSheet();const b=document.createElement('div');b.id='sh';b.innerHTML=`<div class="sheetbg" onclick="closeSheet()"></div><div class="sheet" role="dialog"><div class="grab"></div>${h}<button class="btn ghost" style="width:100%;margin-top:14px" onclick="closeSheet()">닫기</button></div>`;document.body.appendChild(b);document.body.style.overflow='hidden'}
 function closeSheet(){const x=$('#sh');if(x)x.remove();document.body.style.overflow=''}
 const pct=(k,n)=>n?Math.round(k/n*1000)/10+'%':'-';
+let GR={};
+const gBadge=no=>{const g=GR[no];return g&&g.g?`<span class="gb g-${g.g}">${g.g}</span>`:''};
+function gradeBlock(no){const g=GR[no];if(!g||!g.g)return `<h3>레이스노트 등급</h3><div class="card">${NA}</div>`;
+return `<h3>레이스노트 등급 ${gBadge(no)}</h3><div class="hcard g-${g.g}">${gBadge(no)}<div class="in">${avHorse(no)}<span>카드 일러스트 준비 중</span></div></div>
+<details class="gr"><summary>등급 근거 보기</summary><ul>${g.f.map(x=>`<li>${x}</li>`).join('')}</ul></details>
+<p class="note">KRA 공식 등급(군)과 최근 승군·강등, 레이팅, 최근 성적을 합쳐 만든 참고용 요약이에요. 결과를 보장하지 않아요.</p>`}
 let SC_FIELD=[];
 function openHorse(no,rk){const es=races()[rk]||[];const e=es.find(x=>x.hrNo===no)||D.entries.find(x=>x.hrNo===no);const h=D.horses.find(x=>x.hrNo===no)||{};
 const hist=(SI[no]||[]).filter(r=>!e||r.rcDate<e.rcDate);const s=e&&es.length?rnScore(e,es):null;const w=e&&D.wt[[e.rcDate,e.meet,e.rcNo,e.chulNo].join('|')];
 const gap=e&&hist[0]?Math.round((new Date(e.rcDate.replace(/(\d{4})(\d\d)(\d\d)/,'$1-$2-$3'))-new Date(hist[0].rcDate.replace(/(\d{4})(\d\d)(\d\d)/,'$1-$2-$3')))/864e5):null;
 const grp=(f)=>{const m={};hist.forEach(r=>{const k=f(r);(m[k]=m[k]||{n:0,t:0,w:0}).n++;if(+r.ord<=3)m[k].t++;if(r.ord==='1')m[k].w++});return Object.entries(m).map(([k,v])=>`<tr><td>${k}</td><td>${v.n}전 ${v.w}승</td><td>${pct(v.t,v.n)}</td></tr>`).join('')||`<tr><td colspan=3>${NA}</td></tr>`};
 const gb=r=>+r.chulNo<=3?'1~3번':+r.chulNo<=7?'4~7번':'8번 이상';
-sheet(`<div class="row" style="justify-content:flex-start;gap:12px">${avHorse(no)}<div><h2 style="margin:0">${h.hrName||e?.hrName||no}</h2><div class="muted">${h.prdCtyNm||'-'} · ${h.sex||'-'} · ${h.age||'-'} · 마주 ${h.owName||'-'}</div></div></div>
+sheet(`<div class="row" style="justify-content:flex-start;gap:12px">${avHorse(no)}<div><h2 style="margin:0">${h.hrName||e?.hrName||no} ${gBadge(no)}</h2><div class="muted">${h.prdCtyNm||'-'} · ${h.sex||'-'} · ${h.age||'-'} · 마주 ${h.owName||'-'}</div></div></div>
 <p class="note">그림은 실제 말이 아닌 기본 일러스트예요.</p>
+${gradeBlock(no)}
 <h3>현재 컨디션</h3><div class="kv"><div><label>마체중(증감)</label>${w?`${w.wg}kg (${w.diff>0?'+':''}${w.diff})`:NA}</div><div><label>출전 간격</label>${gap!==null?gap+'일':(w&&w.recent==='신마'?'신마(첫 출전)':NA)}</div>
 <div><label>부담중량</label>${e?e.wgBudam+'kg':NA}</div><div><label>레이팅</label>${e&&e.rating!=='-'?e.rating:NA}</div></div>
 ${s&&s.flags.length?`<div class="flag" style="margin-top:6px">⚑ ${s.flags.join(' · ')}</div>`:'<p class="muted" style="margin-top:6px">특이 경고 없음</p>'}
@@ -310,7 +321,7 @@ const v={'':home,race:()=>race(a),horse:()=>horse(a),fav:favs,search,guide,pass,
 document.querySelectorAll('nav a').forEach(x=>x.classList.toggle('on',x.dataset.r===({races:'home',race:'home'}[p]||p||'home')));if(p==='pass')initPay().catch(e=>{$('#payment-method').innerHTML='<p class="muted">결제 위젯을 불러오지 못했습니다: '+e.message+'</p>'})}
 addEventListener('hashchange',()=>{route();scrollTo(0,0)});
 const unc=k=>{if(k._fmt!=='cols1')return k;const o={};for(const x in k){const v=k[x];o[x]=v&&v.cols?v.rows.map(r=>Object.fromEntries(v.cols.map((c,i)=>[c,r[i]]).filter(p=>p[1]!==null))):v}return o};
-fetch('data/app.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()}).catch(()=>fetch('data/kra.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()})).then(unc).then(k=>{if(!k.entries||!k.entries.length)throw 0;D=normKra(k)})
+fetch('data/app.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()}).catch(()=>fetch('data/kra.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()})).then(unc).then(k=>{if(!k.entries||!k.entries.length)throw 0;GR=k.grades||{};D=normKra(k)})
 .catch(()=>fetch('data/sample.json').then(r=>r.json()).then(j=>{D=normSample(j)})).then(()=>{$('#srcb').innerHTML=srcBanner();calc();route();gate()});
 if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');
 </script></body></html>

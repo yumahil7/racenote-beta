@@ -1,0 +1,33 @@
+name: backfill-history
+on:
+  workflow_dispatch:
+    inputs:
+      start: { description: '시작일 YYYYMMDD (비우면 종료일 2년 전)', required: false, default: '' }
+      end: { description: '종료일 YYYYMMDD (비우면 어제)', required: false, default: '' }
+      delay_ms: { description: '호출 간격(ms)', required: false, default: '250' }
+permissions:
+  contents: write
+concurrency: { group: fetch-kra, cancel-in-progress: false }
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Backfill history
+        env:
+          KRA_API_KEY: '${{ secrets.KRA_API_KEY }}'
+          START: '${{ inputs.start }}'
+          END: '${{ inputs.end }}'
+          DELAY_MS: '${{ inputs.delay_ms }}'
+        run: node scripts/fetch-history.mjs
+      - name: Rebuild app data
+        run: node scripts/build-app.mjs
+      - name: Commit
+        run: |
+          git config user.name "racenote-bot"
+          git config user.email "racenote-bot@users.noreply.github.com"
+          git add data/history data/app.json art/horses/variants.json
+          git diff --cached --quiet || (git commit -m "data: 과거 경주 이력 백필 ${{ inputs.start }}~${{ inputs.end }}" && git pull --rebase && git push)
