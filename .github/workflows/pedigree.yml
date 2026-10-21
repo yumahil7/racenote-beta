@@ -1,0 +1,30 @@
+name: fetch-pedigree
+on:
+  workflow_dispatch:
+    inputs:
+      probe: { description: '테스트할 마번(비우면 전체 증분 수집)', required: false, default: '' }
+      max: { description: '최대 마리 수', required: false, default: '1200' }
+  schedule:
+    - cron: '30 21 * * *'   # 매일 06:30 KST (fetch-kra 이후)
+permissions:
+  contents: write
+concurrency: { group: fetch-kra, cancel-in-progress: false }
+jobs:
+  ped:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Fetch pedigree
+        env: { KRA_API_KEY: '${{ secrets.KRA_API_KEY }}', PROBE: '${{ inputs.probe }}', MAX: '${{ inputs.max || 1200 }}' }
+        run: node scripts/fetch-pedigree.mjs
+      - name: Build & commit
+        if: ${{ !inputs.probe }}
+        run: |
+          node scripts/build-app.mjs
+          git config user.name "racenote-bot"
+          git config user.email "racenote-bot@users.noreply.github.com"
+          git add data/pedigree.json data/app.json art/horses/variants.json
+          git diff --cached --quiet || (git commit -m "data: 혈통 정보 증분 수집 $(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M') KST" && git pull --rebase && git push)
