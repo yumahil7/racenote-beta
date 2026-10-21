@@ -21,6 +21,9 @@ out.analysts = computeAnalysts(k);
     for (const r of o.rows) { const jk = r[ix.jk]; if (!jk) continue; (J[jk] = J[jk] || []).push([String(r[ix.d]), r[ix.m], +r[ix.r], String(r[ix.nm] || '').replace(/^\s*(\([^)]*\)|\[[^\]]*\])\s*/, ''), +r[ix.ord] || 0]); } }
   for (const k in J) J[k] = J[k].sort((a, b) => b[0].localeCompare(a[0]) || b[2] - a[2]).slice(0, 60);
   out.jkRecent = J; }
+// 혈통(부·모·외조부·도사지) — 출전마만, 화면 표시용
+if (existsSync('data/pedigree.json')) { const P = JSON.parse(readFileSync('data/pedigree.json', 'utf8')).horses || {}; const cur = new Set([...(k.entries || []), ...(k.detail || [])].map(e => String(e.hrNo)));
+  out.ped = Object.fromEntries(Object.entries(P).filter(([h]) => cur.has(h)).map(([h, p]) => [h, { sn: p.sn, dn: p.dn, dsn: p.dsn, chef: p.chef, di: p.di, cd: p.cd, dp: p.dp }])); }
 mkdirSync('art/horses', { recursive: true });
 writeFileSync('art/horses/variants.json', JSON.stringify(computeVariants(k, out.grades), null, 1));
 const s = JSON.stringify(out);

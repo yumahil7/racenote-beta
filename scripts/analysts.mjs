@@ -10,7 +10,7 @@ const WET = w => w == null ? null : w >= 15;
 export const PERSONAS = [
   { id: 'record', name: '한기록', emoji: '📊', type: '기록파', line: '숫자는 거짓말을 안 해요. 최근 5전 착순과 기록 차이만 봅니다.', look: '30대 남성, 안경·셔츠 소매 걷음, 태블릿을 든 차분한 데이터 분석가' },
   { id: 'distance', name: '서거리', emoji: '📏', type: '거리파', line: '말마다 맞는 거리가 있어요. 이 거리에서 어땠는지가 전부죠.', look: '20대 여성, 미스코리아처럼 우아하고 균형 잡힌 자태·단정한 화이트 정장과 진주 귀걸이·줄자 모양 브로치, 자신감 있는 미소(품위 있게, 비선정적)' },
-  { id: 'blood', name: '윤혈통', emoji: '🧬', type: '혈통파', line: '피는 못 속여요. (부·모마 자료가 들어오기 전까진 산지·성별 계통으로 봐요)', look: '60대 남성, 회색 수염·트위드 조끼·회중시계, 온화한 노신사 목장주' },
+  { id: 'blood', name: '윤혈통', emoji: '🧬', type: '혈통파', line: '피는 못 속여요. 부마·외조부 자손의 거리별 성적과 도사지 지수로 봐요.', look: '60대 남성, 회색 수염·트위드 조끼·회중시계, 온화한 노신사 목장주' },
   { id: 'track', name: '하늘주로', emoji: '🌦️', type: '환경파', line: '모래 상태, 부담중량, 게이트. 그날의 조건이 승부를 가른다고 믿어요.', look: '20대 후반 여성, 늘씬하고 기품 있는 무대형 자태·세련된 트렌치코트와 투명 우산·바람에 날리는 긴 웨이브 머리, 우아한 감성파(품위 있게, 비선정적)' },
   { id: 'jockey', name: '마준기', emoji: '🏇', type: '기수파', line: '말은 사람이 탑니다. 기수 컨디션과 콤비 호흡을 먼저 봐요.', look: '40대 남성, 전직 기수 느낌의 작은 체구·헬멧을 옆구리에 낀 날카로운 눈매' },
 ];
@@ -24,6 +24,7 @@ function loadHist(dir = 'data/history') {
   return out;
 }
 export function computeAnalysts(k) {
+  const PED = existsSync('data/pedigree.json') ? JSON.parse(readFileSync('data/pedigree.json', 'utf8')).horses || {} : {};
   const attr = {}; // hrNo → {prd,sex}
   for (const e of [...(k.entries || []), ...(k.detail || [])]) { const a = attr[e.hrNo] = attr[e.hrNo] || {}; a.prd = a.prd || e.prd || e.prdCtyNm; a.sex = a.sex || e.sex; }
   for (const a of Object.values(attr)) a.prd = a.prd ? (/한/.test(a.prd) ? '한국' : a.prd) : null;
@@ -43,7 +44,7 @@ export function computeAnalysts(k) {
     R[kk].dist = R[kk].dist || num(e.rcDist); }
   const races = Object.values(R).filter(x => x.dist).sort((a, b) => a.d.localeCompare(b.d) || a.k.localeCompare(b.k));
   // 상태(그 날짜 이전 기록만)
-  const H = {}, J = {}, JH = {}, JT = {}, CO = {}, GT = {}; const W = { n: 0, t: 0 };
+  const H = {}, J = {}, JH = {}, JT = {}, CO = {}, GT = {}, CS = {}, CDS = {}, CM = {}; const W = { n: 0, t: 0 };
   const inc = (o, kk, t3) => { const c = o[kk] = o[kk] || { n: 0, t: 0 }; c.n++; c.t += t3; };
   const P = {}; const BT = Object.fromEntries(PERSONAS.map(p => [p.id, { races: 0, axis: 0, picks: 0, base: 0 }]));
   const f1 = x => Math.round(x * 10) / 10, pct = x => Math.round(x * 100) + '%';
@@ -63,10 +64,23 @@ export function computeAnalysts(k) {
       { const at = h.filter(x => Math.abs(x.dist - D) <= 100); const t3 = at.filter(x => x.ord <= 3).length; const r = sh(t3, at.length); const bb = at.filter(x => x.bh != null).map(x => x.bh); const best = bb.length ? Math.min(...bb) : null;
         const s = 70 * Math.min(1, r / .6) + 30 * (best == null ? .3 : Math.max(0, 1 - best / 3));
         out.distance.push([o, s, [`${D}m(±100m) ${at.length}전 3착내 ${t3}회 → 보정 ${pct(r)}`, best == null ? '이 거리 기록 없음' : `이 거리 최고 1착과 ${f1(best)}초/1000m 차`]]); }
-      // 3 혈통파 (부·모마 자료 없음 → 산지·성별·거리대 계통 통계)
-      { const ck = [a.prd, a.sex, band(D)].join('|'); const c = a.prd ? CO[ck] : null; const r = c ? sh(c.t, c.n, W.n ? W.t / W.n : .25, 20) : null; const rr = o.rt ?? (h.length ? 30 : null);
-        const s = (r == null ? 40 : 70 * Math.min(1, r / .45)) + 30 * ((rr ?? 20) / 100);
-        out.blood.push([o, s, ['부·모마 혈통 자료 미수집(API 미승인) → 산지·성별 계통으로 대체', c ? `${a.prd}·${a.sex}·${band(D)} ${c.n}전 3착내율 ${pct(c.t / c.n)}` : '계통 통계 없음(산지·성별 미상)', `레이팅 ${o.rt ?? '정보 없음'}`]]); }
+      // 3 혈통파: 부마 자손의 거리대 성적, 외조부(모마의 부) 자손 성적, 모마 자손(형제마) 성적, 도사지 CD와 거리 적합도
+      { const pd = PED[o.hr]; const base = W.n ? W.t / W.n : .25; const why = []; let s;
+        if (pd && (pd.s || pd.d)) {
+          const B = band(D); const sc = pd.s ? CS[pd.s + '|' + B] : null, dc = pd.ds ? CDS[pd.ds + '|' + B] : null, mc = pd.d ? CM[pd.d] : null;
+          const sr = sc ? sh(sc.t, sc.n, base, 20) : base, dr = dc ? sh(dc.t, dc.n, base, 20) : base, mr = mc ? sh(mc.t, mc.n, base, 8) : base;
+          const hasDos = pd.dp && pd.dp.some(x => x > 0); const ideal = D <= 1200 ? 1 : D <= 1600 ? .5 : 0; const fit = hasDos && pd.cd != null ? Math.max(0, 1 - Math.abs(pd.cd - ideal) / 1.5) : .5;
+          s = 40 * Math.min(1, sr / .45) + 20 * Math.min(1, dr / .45) + 20 * Math.min(1, mr / .45) + 20 * fit;
+          why.push(`부마 ${pd.sn || '-'} 자손 ${B} ${sc ? `${sc.n}전 3착내 ${pct(sc.t / sc.n)}` : '기록 없음'} → 보정 ${pct(sr)}`,
+            `외조부 ${pd.dsn || '-'} 자손 ${B} ${dc ? `${dc.n}전 3착내 ${pct(dc.t / dc.n)}` : '기록 없음'}`,
+            `모마 ${pd.dn || '-'} 자손 ${mc ? `${mc.n}전 3착내 ${pct(mc.t / mc.n)}` : '기록 없음'}`,
+            hasDos && pd.cd != null ? `도사지 CD ${pd.cd} · DI ${pd.di ?? '-'} → ${D}m 적합도 ${pct(fit)}` : '도사지 정보 없음(중립)');
+        } else {
+          const a2 = attr[o.hr] || {}; const ck = [a2.prd, a2.sex, band(D)].join('|'); const c = a2.prd ? CO[ck] : null; const r = c ? sh(c.t, c.n, base, 20) : null;
+          s = (r == null ? 40 : 70 * Math.min(1, r / .45)) + 30 * ((o.rt ?? 20) / 100);
+          why.push('혈통 정보 아직 미수집 → 산지·성별 계통으로 대체', c ? `${a2.prd}·${a2.sex}·${band(D)} ${c.n}전 3착내율 ${pct(c.t / c.n)}` : '계통 통계 없음');
+        }
+        out.blood.push([o, s, why]); }
       // 4 환경파
       { let s = 50, why = [], used = 0;
         if (o.bd != null && bdAvg != null) { s += (bdAvg - o.bd) * 3; used++; why.push(`부담중량 ${o.bd}kg (출전마 평균 ${f1(bdAvg)}kg)`); } else why.push('부담중량 정보 없음');
@@ -104,6 +118,7 @@ export function computeAnalysts(k) {
         (H[o.hr] = H[o.hr] || []).push({ ord: o.ord, n, dist: rc.dist, bh: o.tm && isFinite(wtm) ? Math.min(5, (o.tm - wtm) / rc.dist * 1000) : null, wet });
         if (o.jk) { (J[o.jk] = J[o.jk] || []).push(o.ord); if (J[o.jk].length > 200) J[o.jk].shift(); inc(JH, o.jk + '|' + o.hr, t3); if (o.tr) inc(JT, o.jk + '|' + o.tr, t3); }
         const a = attr[o.hr]; if (a && a.prd) { inc(CO, [a.prd, a.sex, band(rc.dist)].join('|'), t3); W.n++; W.t += t3; }
+        const pd = PED[o.hr]; if (pd) { if (pd.s) inc(CS, pd.s + '|' + band(rc.dist), t3); if (pd.ds) inc(CDS, pd.ds + '|' + band(rc.dist), t3); if (pd.d) inc(CM, pd.d, t3); }
         if (o.gate != null) inc(GT, [rc.m, band(rc.dist), gateB(o.gate)].join('|'), t3);
       }
     }

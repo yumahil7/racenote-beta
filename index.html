@@ -320,6 +320,9 @@ function closeSheet(){const x=$('#sh');if(x)x.remove();document.body.style.overf
 const pct=(k,n)=>n?Math.round(k/n*1000)/10+'%':'-';
 let GR={};
 const gBadge=no=>{const g=GR[no];return g&&g.g?`<span class="gb g-${g.g}">${g.g}</span>`:''};
+let PEDM={};function pedBlock(no){const p=PEDM[no];if(!p)return `<h3>혈통</h3><div class="card"><span class="muted">혈통 정보 수집 중이에요(하루 한도 내에서 차례로 받아요).</span></div>`;
+const dos=p.dp&&p.dp.some(x=>x>0);return `<h3>혈통</h3><div class="kv"><div><label>부마</label>${p.sn||NA}</div><div><label>모마</label>${p.dn||NA}</div><div><label>외조부(모마의 부)</label>${p.dsn||NA}</div><div><label>부계 주요 계통</label>${p.chef||NA}</div>
+<div><label>도사지 지수(DI)</label>${dos&&p.di!=null?p.di:NA}</div><div><label>중심 거리(CD)</label>${dos&&p.cd!=null?p.cd+' <span class="muted" style="font-size:11px">높을수록 단거리형</span>':NA}</div></div><p class="note">출처: 한국마사회 마필종합 상세정보·혈통정보기본(공공데이터포털).</p>`}
 function gradeBlock(no){const g=GR[no];if(!g||!g.g)return `<h3>레이스노트 등급</h3><div class="card">${NA}</div>`;
 return `<h3>레이스노트 등급 ${gBadge(no)}</h3><div class="hcard g-${g.g}">${gBadge(no)}<div class="in">${avHorse(no)}<span>카드 일러스트 준비 중</span></div></div>
 <details class="gr"><summary>등급 근거 보기</summary><ul>${g.f.map(x=>`<li>${x}</li>`).join('')}</ul></details>
@@ -332,7 +335,7 @@ const grp=(f)=>{const m={};hist.forEach(r=>{const k=f(r);(m[k]=m[k]||{n:0,t:0,w:
 const gb=r=>+r.chulNo<=3?'1~3번':+r.chulNo<=7?'4~7번':'8번 이상';
 sheet(`<div class="row" style="justify-content:flex-start;gap:12px">${avHorse(no)}<div><h2 style="margin:0">${h.hrName||e?.hrName||no} ${gBadge(no)}</h2><div class="muted">${h.prdCtyNm||'-'} · ${h.sex||'-'} · ${h.age||'-'} · 마주 ${h.owName||'-'}</div></div></div>
 <p class="note">그림은 실제 말이 아닌 기본 일러스트예요.</p>
-${gradeBlock(no)}
+${gradeBlock(no)}${pedBlock(no)}
 <h3>현재 컨디션</h3><div class="kv"><div><label>마체중(증감)</label>${w?`${w.wg}kg (${w.diff>0?'+':''}${w.diff})`:NA}</div><div><label>출전 간격</label>${gap!==null?gap+'일':(w&&w.recent==='신마'?'신마(첫 출전)':NA)}</div>
 <div><label>부담중량</label>${e?e.wgBudam+'kg':NA}</div><div><label>레이팅</label>${e&&e.rating!=='-'?e.rating:NA}</div></div>
 ${s&&s.flags.length?`<div class="flag" style="margin-top:6px">⚑ ${s.flags.join(' · ')}</div>`:'<p class="muted" style="margin-top:6px">특이 경고 없음</p>'}
@@ -390,7 +393,7 @@ addEventListener('hashchange',()=>{route();scrollTo(0,0)});
 const unc=k=>{if(k._fmt!=='cols1')return k;const o={};for(const x in k){const v=k[x];o[x]=v&&v.cols?v.rows.map(r=>Object.fromEntries(v.cols.map((c,i)=>[c,r[i]]).filter(p=>p[1]!==null))):v}return o};
 // 표시 이름 정리: 기수 감량 "(-4)", 말 산지 "[영남]" 접두어 제거 → jkTag/hrTag로 보관
 const PFX=/^\s*(\([^)]*\)|\[[^\]]*\])\s*/;const cleanNames=k=>{for(const x in k){const v=k[x];if(Array.isArray(v))v.forEach(o=>{if(!o||typeof o!=='object')return;for(const f of ['hrName','jkName','jkBefName','jkAftName']){const m=typeof o[f]==='string'&&o[f].match(PFX);if(m){o[f.startsWith('hr')?'hrTag':'jkTag']=m[1];o[f]=o[f].replace(PFX,'')}}})}return k};
-fetch('data/app.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()}).catch(()=>fetch('data/kra.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()})).then(unc).then(cleanNames).then(k=>{AN=k.analysts||null;JKR=k.jkRecent||{};if(!k.entries||!k.entries.length)throw 0;GR=k.grades||{};D=normKra(k)})
+fetch('data/app.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()}).catch(()=>fetch('data/kra.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()})).then(unc).then(cleanNames).then(k=>{AN=k.analysts||null;JKR=k.jkRecent||{};PEDM=k.ped||{};if(!k.entries||!k.entries.length)throw 0;GR=k.grades||{};D=normKra(k)})
 .catch(()=>fetch('data/sample.json').then(r=>r.json()).then(j=>{D=normSample(j)})).then(()=>{$('#srcb').innerHTML=srcBanner();calc();route();gate()});
 if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');
 </script></body></html>
