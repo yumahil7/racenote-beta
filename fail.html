@@ -1,0 +1,6 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>레이스노트 - 결제 fail</title>
+<style>body{font-family:-apple-system,"Noto Sans KR",sans-serif;background:#0f1a15;color:#e9f1ec;padding:24px;max-width:520px;margin:auto}.t{background:#7f1d1d;padding:8px;border-radius:10px;text-align:center;font-weight:700}.c{background:#16251e;border:1px solid #24382e;border-radius:14px;padding:16px;margin:14px 0;word-break:break-all}a{color:#4ade80}</style></head><body>
+<div class="t">테스트 결제 - 실제 청구 없음</div><div class="c" id="o"></div><a href="./#/pass">← 이용권으로</a> · <a href="./">홈</a>
+<script>const q=new URLSearchParams(location.search),e=s=>String(s||'-').replace(/[<>&"]/g,'');
+document.getElementById('o').innerHTML=`<h2>결제 실패/취소 (테스트)</h2><p>코드: ${e(q.get('code'))}<br>메시지: ${e(q.get('message'))}</p>`;
+</script></body></html>

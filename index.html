@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f2a1d"><meta name="description" content="레이스노트 베타 · 경마 기록·데이터 노트 (정보 제공 전용, 베팅 기능 없음)">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-192.png">
+<title>레이스노트 베타</title>
+<style>
+:root{--bg:#0f1a15;--card:#16251e;--line:#24382e;--t:#e9f1ec;--m:#93a89c;--p:#4ade80;--p2:#16a34a;--warn:#facc15}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--t);line-height:1.55;font-size:15px}
+.app{max-width:760px;margin:0 auto;min-height:100vh;padding-bottom:84px}
+header{position:sticky;top:0;z-index:5;background:rgba(15,26,21,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top{display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
+.logo{font-weight:800;font-size:18px}.logo b{color:var(--p)}.beta{font-size:11px;background:var(--p2);color:#fff;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:2px}
+.banner{background:#3b2f05;color:var(--warn);font-size:12.5px;padding:6px 16px;text-align:center}
+main{padding:14px 16px}
+h2{font-size:19px;margin:6px 0 12px}h3{font-size:15px;margin:16px 0 8px;color:var(--p)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:10px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.muted{color:var(--m);font-size:13px}.chip{display:inline-block;font-size:12px;border:1px solid var(--line);border-radius:99px;padding:2px 9px;margin:2px 4px 2px 0;color:var(--m)}
+.chip.on{background:var(--p2);color:#fff;border-color:var(--p2)}
+a{color:var(--p);text-decoration:none}button,select,input{font:inherit;color:inherit}
+.btn{background:var(--p2);color:#fff;border:0;border-radius:10px;padding:10px 14px;font-weight:700;cursor:pointer}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--t)}
+.star{background:none;border:0;font-size:20px;cursor:pointer;color:var(--m)}.star.on{color:var(--warn)}
+table{width:100%;border-collapse:collapse;font-size:13.5px}th,td{padding:8px 6px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--m);font-weight:600;font-size:12px}
+.si{font-weight:800;color:var(--p)}
+nav{position:fixed;bottom:0;left:0;right:0;background:#0b140f;border-top:1px solid var(--line);display:flex;justify-content:center;padding-bottom:env(safe-area-inset-bottom)}
+nav .in{display:flex;max-width:760px;width:100%}nav a{flex:1;text-align:center;padding:9px 0 8px;font-size:11px;color:var(--m)}nav a span{display:block;font-size:19px}nav a.on{color:var(--p)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}label{font-size:13px;color:var(--m);display:block;margin-bottom:4px}
+select,input{width:100%;background:#0b140f;border:1px solid var(--line);border-radius:10px;padding:9px}
+.bar{height:10px;border-radius:5px;background:#24382e;overflow:hidden}.bar i{display:block;height:100%;background:var(--p)}
+.note{font-size:12px;color:var(--m);margin-top:8px}.foot{font-size:12px;color:var(--m);padding:18px 16px;border-top:1px solid var(--line);margin-top:20px}
+.plan{border:2px solid var(--line)}.plan.sel{border-color:var(--p)}.price{font-size:22px;font-weight:800}
+.test{background:#7f1d1d;color:#fff;font-weight:700;text-align:center;border-radius:10px;padding:8px;margin:10px 0}
+.gate{position:fixed;inset:0;background:rgba(5,10,8,.96);z-index:20;display:flex;align-items:center;justify-content:center;padding:20px}
+.gate .card{max-width:420px}
+@media(min-width:900px){.app{padding-bottom:30px}nav{top:0;bottom:auto;left:auto;right:0;width:auto;background:none;border:0;justify-content:flex-end}nav .in{max-width:none;width:auto}nav a{padding:14px 10px;font-size:13px}nav a span{display:none}header .top{padding-right:640px}}
+</style></head><body>
+<div class="app">
+<header><div class="top"><div class="logo">레이스<b>노트</b><span class="beta">BETA</span></div><span class="muted">정보 제공 전용</span></div>
+<div class="banner">⚠️ 예시 데이터 — 실제 경주·마필·인물이 아닌 가상 데이터입니다</div></header>
+<main id="view"></main>
+<div class="foot">레이스노트는 경마 기록·통계 정보 서비스이며 마권 구매·베팅 기능을 제공하지 않습니다. 모든 지표는 참고용이며 결과를 보장하지 않습니다. 만 19세 이상 이용. 본 서비스는 한국마사회의 공식 서비스가 아닙니다.<br>도박 문제 상담: 한국도박문제예방치유원 헬프라인 <b>국번 없이 1336</b> (무료, 365일 09:00~22:00) · <a href="https://www.kcgp.or.kr" target="_blank" rel="noopener">kcgp.or.kr</a> · <a href="#/terms">약관·고지</a></div>
+</div>
+<nav><div class="in">
+<a href="#/" data-r="home"><span>🏠</span>홈</a><a href="#/search" data-r="search"><span>🔎</span>조건검색</a><a href="#/fav" data-r="fav"><span>⭐</span>관심마</a><a href="#/guide" data-r="guide"><span>📘</span>가이드</a><a href="#/pass" data-r="pass"><span>🎟️</span>이용권</a>
+</div></nav>
+<div id="gate"></div>
+<script>
+const $=s=>document.querySelector(s);let D;const FK='rn_fav',AK='rn_age19';
+const fav=()=>JSON.parse(localStorage.getItem(FK)||'[]');
+function toggleFav(no){let f=fav();f=f.includes(no)?f.filter(x=>x!==no):[...f,no];localStorage.setItem(FK,JSON.stringify(f));route()}
+const fd=d=>`${+d.slice(4,6)}/${+d.slice(6)}`;
+const sec=t=>{const[m,s]=t.split(':');return +m*60+ +s};
+let SI={},HSI={};
+function calc(){const g={};D.results.forEach(r=>{const k=r.meet+r.rcDist;(g[k]=g[k]||[]).push(sec(r.rcTime))});
+const st={};for(const k in g){const a=g[k],m=a.reduce((x,y)=>x+y)/a.length,sd=Math.sqrt(a.reduce((x,y)=>x+(y-m)**2,0)/a.length)||1;st[k]=[m,sd]}
+D.results.forEach(r=>{const[m,sd]=st[r.meet+r.rcDist];const adj=['포화','불량'].includes(r.track)?.4:0;r.si=Math.round(80+(m-sec(r.rcTime)+adj)/sd*10)});
+const by={};D.results.forEach(r=>(by[r.hrNo]=by[r.hrNo]||[]).push(r));
+for(const h in by){by[h].sort((a,b)=>b.rcDate.localeCompare(a.rcDate));HSI[h]=Math.max(...by[h].slice(0,3).map(r=>r.si))}SI=by}
+const races=()=>{const m={};D.entries.forEach(e=>{const k=[e.rcDate,e.meet,e.rcNo].join('|');(m[k]=m[k]||[]).push(e)});return m};
+function home(){const R=races();const days={};Object.keys(R).forEach(k=>{const[d,m]=k.split('|');((days[d]=days[d]||{})[m]=days[d][m]||[]).push(k)});
+let h='<h2>이번 주 경주</h2>';for(const d in days){const e0=R[Object.values(days[d])[0][0]][0];h+=`<h3>${fd(d)} (${e0.rcDay})</h3>`;
+for(const m in days[d]){h+=`<div class="card"><div class="row"><b>${m}</b><span class="muted">${days[d][m].length}개 경주</span></div><div style="margin-top:8px">`+
+days[d][m].map(k=>{const e=R[k][0];return `<a class="chip" href="#/race/${k}">${e.rcNo}R · ${e.rcDist}m · ${e.stTime}</a>`}).join('')+'</div></div>'}}
+h+=`<h3>최근 트랙 경향 (예시)</h3>`+bias();return h}
+function bias(){const m={};D.results.forEach(r=>{const k=r.meet;m[k]=m[k]||{w:0,f:0,i:0};if(r.ord==='1'){m[k].w++;if(+r.sjS1fOrd<=3)m[k].f++;if(+r.chulNo<=4)m[k].i++}});
+return Object.entries(m).map(([k,v])=>`<div class="card"><b>${k}</b> <span class="muted">최근 ${v.w}개 경주 1착마 기준</span>
+<div class="muted" style="margin-top:8px">초반 3위 이내(선행) 비율 ${Math.round(v.f/v.w*100)}%</div><div class="bar"><i style="width:${v.f/v.w*100}%"></i></div>
+<div class="muted" style="margin-top:6px">안쪽 출주번호(1~4) 비율 ${Math.round(v.i/v.w*100)}%</div><div class="bar"><i style="width:${v.i/v.w*100}%"></i></div></div>`).join('')+'<p class="note">트랙 경향은 과거 기록의 단순 집계이며 향후 결과를 예측·보장하지 않습니다.</p>'}
+function race(k){const es=races()[k];if(!es)return'<p>경주를 찾을 수 없습니다.</p>';const e=es[0];const f=fav();
+return `<a href="#/">← 홈</a><h2>${e.meet} ${e.rcNo}R 출마표</h2><div class="card"><div class="muted">${fd(e.rcDate)}(${e.rcDay}) ${e.stTime} · ${e.rcDist}m · ${e.rank} · ${e.dusu}두 · ${e.rcName}</div></div>
+<div class="card" style="overflow-x:auto"><table><tr><th>번</th><th>마명</th><th>성/령</th><th>중량</th><th>기수</th><th>레이팅</th><th>속도지수*</th><th></th></tr>`+
+es.map(x=>`<tr><td>${x.chulNo}</td><td><a href="#/horse/${x.hrNo}">${x.hrName}</a><div class="muted">${x.trName}</div></td><td>${x.sex}/${x.age}</td><td>${x.wgBudam}</td><td>${x.jkName}</td><td>${x.rating}</td><td class="si">${HSI[x.hrNo]??'-'}</td><td><button class="star ${f.includes(x.hrNo)?'on':''}" onclick="toggleFav('${x.hrNo}')" aria-label="관심마">★</button></td></tr>`).join('')+
+`</table><p class="note">* 속도지수: 최근 3경주 중 최고값. 같은 경마장·거리의 평균 기록 대비 상대값(평균 80)이며 참고용입니다.</p></div>`}
+function horse(no){const h=D.horses.find(x=>x.hrNo===no);if(!h)return'<p>마필 없음</p>';const rs=SI[no]||[];const on=fav().includes(no);
+const up=D.entries.filter(e=>e.hrNo===no);
+return `<a href="javascript:history.back()">← 뒤로</a><div class="row"><h2>${h.hrName}</h2><button class="btn ${on?'':'ghost'}" onclick="toggleFav('${no}')">${on?'★ 관심마':'☆ 관심마 추가'}</button></div>
+<div class="card grid"><div><label>마번</label>${h.hrNo}</div><div><label>산지/성/연령</label>${h.prdCtyNm} · ${h.sex} · ${h.age}</div><div><label>마주</label>${h.owName}</div><div><label>속도지수(최근3 최고)</label><span class="si">${HSI[no]??'-'}</span></div></div>
+${up.length?`<h3>출전 예정</h3>`+up.map(e=>`<a class="chip" href="#/race/${e.rcDate}|${e.meet}|${e.rcNo}">${fd(e.rcDate)} ${e.meet} ${e.rcNo}R</a>`).join(''):''}
+<h3>최근 기록</h3><div class="card" style="overflow-x:auto"><table><tr><th>일자</th><th>경마장</th><th>거리</th><th>주로</th><th>착순</th><th>기록</th><th>지수</th><th>마체중</th></tr>`+
+(rs.map(r=>`<tr><td>${fd(r.rcDate)}</td><td>${r.meet} ${r.rcNo}R</td><td>${r.rcDist}</td><td>${r.track}</td><td>${r.ord}</td><td>${r.rcTime}</td><td class="si">${r.si}</td><td>${r.wgHr}</td></tr>`).join('')||'<tr><td colspan=8 class="muted">기록 없음</td></tr>')+'</table></div>'}
+function favs(){const f=fav();if(!f.length)return'<h2>관심마</h2><div class="card muted">출마표나 마필 상세에서 ★를 눌러 관심마를 추가하세요. (이 기기 브라우저에만 저장)</div>';
+return '<h2>관심마</h2>'+f.map(no=>{const h=D.horses.find(x=>x.hrNo===no);if(!h)return'';const up=D.entries.find(e=>e.hrNo===no);
+return `<div class="card row"><div><a href="#/horse/${no}"><b>${h.hrName}</b></a><div class="muted">${h.sex} · ${h.age} · 지수 ${HSI[no]??'-'}</div>${up?`<span class="chip on">출전 예정 ${fd(up.rcDate)} ${up.meet} ${up.rcNo}R</span>`:''}</div><button class="star on" onclick="toggleFav('${no}')">★</button></div>`}).join('')}
+let Q={meet:'',dist:'',track:'',top:'3',min:''};
+function search(){const meets=[...new Set(D.results.map(r=>r.meet))],dists=[...new Set(D.results.map(r=>r.rcDist))].sort((a,b)=>a-b);
+const opt=(a,v)=>'<option value="">전체</option>'+a.map(x=>`<option ${x==v?'selected':''}>${x}</option>`).join('');
+const rs=D.results.filter(r=>(!Q.meet||r.meet==Q.meet)&&(!Q.dist||r.rcDist==Q.dist)&&(!Q.track||r.track==Q.track)&&+r.ord<=+Q.top&&(!Q.min||r.si>=+Q.min));
+const hs={};rs.forEach(r=>{(hs[r.hrNo]=hs[r.hrNo]||{n:r.hrName,c:0,b:0}).c++;hs[r.hrNo].b=Math.max(hs[r.hrNo].b,r.si)});
+const list=Object.entries(hs).sort((a,b)=>b[1].c-a[1].c||b[1].b-a[1].b);
+return `<h2>조건검색</h2><div class="card grid">
+<div><label>경마장</label><select onchange="Q.meet=this.value;route()">${opt(meets,Q.meet)}</select></div>
+<div><label>거리(m)</label><select onchange="Q.dist=this.value;route()">${opt(dists,Q.dist)}</select></div>
+<div><label>주로상태</label><select onchange="Q.track=this.value;route()">${opt(['건조','양호','다습','포화','불량'],Q.track)}</select></div>
+<div><label>착순 이내</label><select onchange="Q.top=this.value;route()">${[1,2,3,5].map(x=>`<option ${x==Q.top?'selected':''}>${x}</option>`).join('')}</select></div>
+<div style="grid-column:1/3"><label>속도지수 이상</label><input type="number" value="${Q.min}" placeholder="예: 85" onchange="Q.min=this.value;route()"></div></div>
+<p class="muted">조건에 맞는 기록 ${rs.length}건 · 마필 ${list.length}두</p>`+
+list.slice(0,40).map(([no,v])=>`<div class="card row"><a href="#/horse/${no}"><b>${v.n}</b></a><span class="muted">해당 ${v.c}회 · 최고지수 <span class="si">${v.b}</span></span></div>`).join('')}
+function guide(){const G=[['출마표 보는 법','출마표는 한 경주에 나서는 말 목록입니다. 번호(출주번호), 마명, 성별·연령, 부담중량(말이 지는 무게, kg), 기수, 조교사, 레이팅(능력 등급 점수)을 확인할 수 있습니다.'],
+['주로 상태','모래 주로의 수분 정도를 건조·양호·다습·포화·불량으로 나눕니다. 수분이 많을수록 기록이 빨라지거나 느려지는 등 경향이 달라질 수 있습니다.'],
+['구간 기록(S1F·G1F)','S1F는 출발 후 첫 200m, G1F는 결승 전 마지막 200m 구간입니다. 초반에 앞서는 "선행" 성향과 막판에 치고 나오는 "추입" 성향을 볼 수 있습니다.'],
+['레이스노트 속도지수','같은 경마장·같은 거리 경주들의 평균 기록을 80으로 놓고, 더 빠르면 높게 나오도록 만든 상대 지표입니다. 과거 기록을 요약한 참고 수치일 뿐 결과를 보장하지 않습니다.'],
+['등급과 부담중량','경주마는 실적에 따라 등급이 나뉘고, 핸디캡 경주에서는 능력이 높은 말일수록 무거운 중량을 집니다.'],
+['건전하게 즐기기','경마는 스포츠로 즐겨 주세요. 레이스노트는 베팅 기능이 없으며, 도박 문제로 어려움이 있다면 한국도박문제예방치유원 헬프라인 1336(무료)에서 상담받을 수 있습니다.']];
+return '<h2>입문 가이드</h2>'+G.map(([t,b])=>`<details class="card"><summary><b>${t}</b></summary><p style="margin-top:8px">${b}</p></details>`).join('')}
+let PLAN='day';const PL={day:{n:'하루 이용권',p:1500,d:'결제일 1일 · 전 경주 지수·검색'},month:{n:'30일 이용권',p:9900,d:'30일 · 전 기능 · 자동갱신 없음'}};
+function pass(){return `<h2>이용권</h2><div class="test">테스트 결제 - 실제 청구 없음</div>
+<p class="muted">현재 베타는 모든 기능이 무료입니다. 아래는 결제 흐름 테스트용이며, 기간제(자동갱신 없음) 상품입니다.</p>
+${Object.entries(PL).map(([k,v])=>`<div class="card plan ${PLAN==k?'sel':''}" onclick="PLAN='${k}';route()"><div class="row"><b>${v.n}</b><span class="price">${v.p.toLocaleString()}원</span></div><div class="muted">${v.d}</div></div>`).join('')}
+<div id="payment-method"></div><div id="agreement"></div>
+<button class="btn" id="paybtn" style="width:100%;margin-top:10px" disabled>테스트 결제하기</button>
+<p class="note">토스페이먼츠 문서용 테스트 키 사용. 가상계좌는 문서용 테스트 키로는 표시되지 않을 수 있습니다(토스페이먼츠 문서 안내). 결제 승인(confirm)은 서버가 필요하여 현재 미구현이며, 정식 출시 전 서버(예: Cloudflare Workers)에서 처리할 예정입니다. 디지털 콘텐츠 특성상 이용 시작 후 청약철회 제한 범위는 정식 출시 시 약관에 고지합니다.</p>`}
+let W;async function initPay(){if(!window.TossPayments){await new Promise((ok,er)=>{const s=document.createElement('script');s.src='https://js.tosspayments.com/v2/standard';s.onload=ok;s.onerror=er;document.head.appendChild(s)})}
+let ck=localStorage.getItem('rn_ck');if(!ck){ck='rn_'+crypto.randomUUID();localStorage.setItem('rn_ck',ck)}
+const tp=TossPayments('test_gck_docs_Ovk5rk1EwkEbP0W43n07xlzm');W=tp.widgets({customerKey:ck});
+await W.setAmount({currency:'KRW',value:PL[PLAN].p});
+await Promise.all([W.renderPaymentMethods({selector:'#payment-method',variantKey:'DEFAULT'}),W.renderAgreement({selector:'#agreement',variantKey:'AGREEMENT'})]);
+const b=$('#paybtn');b.disabled=false;b.onclick=()=>{const base=location.href.split('#')[0].replace(/index\.html$/,'');
+W.requestPayment({orderId:'rn'+Date.now()+Math.random().toString(36).slice(2,8),orderName:'레이스노트 '+PL[PLAN].n+' (테스트)',successUrl:base+'success.html',failUrl:base+'fail.html'})}}
+function terms(){return `<h2>이용약관·책임 고지 (베타)</h2><div class="card">
+<p><b>1. 서비스 성격</b> — 레이스노트는 경마 기록·통계·자체 지표를 제공하는 정보 서비스입니다. 마권 구매, 베팅 대행·알선, 배당금 지급, 사설경마 연결 기능을 제공하지 않으며 해당 사이트로의 링크·광고를 게재하지 않습니다.</p><br>
+<p><b>2. 결과 비보장</b> — 모든 지표·통계는 과거 데이터를 요약한 참고 정보이며 경주 결과나 수익을 보장하지 않습니다.</p><br>
+<p><b>3. 이용 연령</b> — 만 19세 이상만 이용할 수 있습니다. (베타는 자기 확인 방식이며 정식 출시 시 본인인증을 도입합니다.)</p><br>
+<p><b>4. 데이터 출처</b> — 현재 화면의 데이터는 <b>가상의 예시 데이터</b>입니다. 정식 서비스에서는 공공데이터포털(data.go.kr)의 한국마사회 제공 공공데이터를 이용할 예정입니다. 레이스노트는 한국마사회의 공식 서비스가 아니며 제휴 관계가 없습니다. 경주 영상·사진은 사용하지 않습니다.</p><br>
+<p><b>5. 이용권</b> — 기간제 상품이며 자동갱신·정기결제가 없습니다. 베타의 결제는 테스트 결제로 실제 청구가 발생하지 않습니다.</p><br>
+<p><b>6. 개인정보</b> — 베타는 회원가입이 없으며 관심마 목록은 사용자 기기의 브라우저(localStorage)에만 저장됩니다.</p><br>
+<p><b>7. 건전 이용</b> — 도박 문제로 어려움이 있다면 한국도박문제예방치유원 헬프라인 <b>국번 없이 1336</b>(무료, 365일 09:00~22:00, 출처: <a href="https://www.kcgp.or.kr/portal/main/contents.do?menuNo=200062" target="_blank" rel="noopener">kcgp.or.kr</a>)으로 상담받을 수 있습니다.</p></div>`}
+function gate(){if(localStorage.getItem(AK))return;$('#gate').innerHTML=`<div class="gate"><div class="card"><h2>레이스노트 베타</h2><p>이 서비스는 <b>만 19세 이상</b>을 위한 경마 기록·통계 정보 서비스입니다.</p><ul style="margin:10px 0 10px 18px" class="muted"><li>베팅·마권 구매 기능 없음</li><li>지표는 참고용, 적중·수익 보장 없음</li><li>현재 화면은 가상의 예시 데이터</li></ul>
+<button class="btn" style="width:100%" onclick="localStorage.setItem('${AK}',1);$('#gate').innerHTML=''">만 19세 이상이며 위 내용에 동의합니다</button>
+<button class="btn ghost" style="width:100%;margin-top:8px" onclick="document.body.innerHTML='<p style=padding:30px>만 19세 미만은 이용할 수 없습니다.</p>'">만 19세 미만입니다</button></div></div>`}
+function route(){const h=location.hash.slice(2)||'';const[p,a]=[h.split('/')[0],decodeURIComponent(h.split('/').slice(1).join('/'))];
+const v={'':home,race:()=>race(a),horse:()=>horse(a),fav:favs,search,guide,pass,terms}[p]||home;$('#view').innerHTML=v();
+document.querySelectorAll('nav a').forEach(x=>x.classList.toggle('on',x.dataset.r===(p||'home')));if(p==='pass')initPay().catch(e=>{$('#payment-method').innerHTML='<p class="muted">결제 위젯을 불러오지 못했습니다: '+e.message+'</p>'})}
+addEventListener('hashchange',()=>{route();scrollTo(0,0)});
+fetch('data/sample.json').then(r=>r.json()).then(j=>{D=j;calc();route();gate()});
+if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');
+</script></body></html>
