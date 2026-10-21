@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0f2a1d"><meta name="description" content="레이스노트 베타 · 경마 기록·데이터 노트 (정보 제공 전용, 베팅 기능 없음)">
+<meta name="theme-color" content="#fbf7f0"><meta name="description" content="레이스노트 베타 · 경마 기록·데이터 노트 (정보 제공 전용, 베팅 기능 없음)">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-192.png">
 <title>레이스노트 베타</title>
 <style>
-:root{--bg:#0f1a15;--card:#16251e;--line:#24382e;--t:#e9f1ec;--m:#93a89c;--p:#4ade80;--p2:#16a34a;--warn:#facc15}
+:root{--bg:#fbf7f0;--card:#fff;--line:#eee4d6;--t:#3a3128;--m:#8a7d6e;--p:#2f8f6b;--p2:#3fa47c;--warn:#c9821b;--soft:#eef7f1;--peach:#fde8d7}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 body{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:var(--bg);color:var(--t);line-height:1.55;font-size:15px}
 .app{max-width:760px;margin:0 auto;min-height:100vh;padding-bottom:84px}
-header{position:sticky;top:0;z-index:5;background:rgba(15,26,21,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header{position:sticky;top:0;z-index:5;background:rgba(251,247,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .top{display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
 .logo{font-weight:800;font-size:18px}.logo b{color:var(--p)}.beta{font-size:11px;background:var(--p2);color:#fff;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:2px}
-.banner{background:#3b2f05;color:var(--warn);font-size:12.5px;padding:6px 16px;text-align:center}.banner.ok{background:#0d2a1b;color:#a7f3c4}.rnnote{background:#14301f;border:1px solid #1f5135;border-radius:12px;padding:10px 12px;font-size:13px;margin-bottom:10px}.flag{font-size:11.5px;color:var(--warn)}.rnbox{background:#0b140f;border:1px solid var(--line);border-radius:10px;padding:10px;margin:-4px 0 10px}.hcard{display:flex;gap:10px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer}.hn{width:28px;height:28px;border-radius:8px;background:#24382e;display:flex;align-items:center;justify-content:center;font-weight:800;flex:none}.hm{flex:1;min-width:0}.hs{text-align:right;flex:none}.rn{font-size:20px;font-weight:800;color:var(--p)}.ord{font-size:12px;color:var(--warn);font-weight:700}.rnrow{display:flex;justify-content:space-between;font-size:13px;margin-top:4px}
+.banner{background:#fff4dc;color:#8a5a12;font-size:12.5px;padding:6px 16px;text-align:center}.banner.ok{background:var(--soft);color:#2f6f55}.rnnote{background:var(--soft);border:1px solid #cfe8da;border-radius:12px;padding:10px 12px;font-size:13px;margin-bottom:10px}.flag{font-size:11.5px;color:var(--warn)}.rnbox{background:#fffdf8;border:1px solid var(--line);border-radius:10px;padding:10px;margin:-4px 0 10px}.hcard{display:flex;gap:10px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 2px 8px rgba(120,90,50,.05);padding:10px;margin-bottom:8px;cursor:pointer}.hn{width:28px;height:28px;border-radius:8px;background:var(--peach);display:flex;align-items:center;justify-content:center;font-weight:800;flex:none}.hm{flex:1;min-width:0}.hs{text-align:right;flex:none}.rn{font-size:20px;font-weight:800;color:var(--p)}.ord{font-size:12px;color:var(--warn);font-weight:700}.rnrow{display:flex;justify-content:space-between;font-size:13px;margin-top:4px}
 main{padding:14px 16px}
 h2{font-size:19px;margin:6px 0 12px}h3{font-size:15px;margin:16px 0 8px;color:var(--p)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;margin-bottom:10px;box-shadow:0 2px 10px rgba(120,90,50,.06)}
 .row{display:flex;justify-content:space-between;align-items:center;gap:8px}
 .muted{color:var(--m);font-size:13px}.chip{display:inline-block;font-size:12px;border:1px solid var(--line);border-radius:99px;padding:2px 9px;margin:2px 4px 2px 0;color:var(--m)}
 .chip.on{background:var(--p2);color:#fff;border-color:var(--p2)}
@@ -25,18 +25,35 @@ a{color:var(--p);text-decoration:none}button,select,input{font:inherit;color:inh
 .star{background:none;border:0;font-size:20px;cursor:pointer;color:var(--m)}.star.on{color:var(--warn)}
 table{width:100%;border-collapse:collapse;font-size:13.5px}th,td{padding:8px 6px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--m);font-weight:600;font-size:12px}
 .si{font-weight:800;color:var(--p)}
-nav{position:fixed;bottom:0;left:0;right:0;background:#0b140f;border-top:1px solid var(--line);display:flex;justify-content:center;padding-bottom:env(safe-area-inset-bottom)}
+nav{position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,.96);border-top:1px solid var(--line);display:flex;justify-content:center;padding-bottom:env(safe-area-inset-bottom)}
 nav .in{display:flex;max-width:760px;width:100%}nav a{flex:1;text-align:center;padding:9px 0 8px;font-size:11px;color:var(--m)}nav a span{display:block;font-size:19px}nav a.on{color:var(--p)}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}label{font-size:13px;color:var(--m);display:block;margin-bottom:4px}
-select,input{width:100%;background:#0b140f;border:1px solid var(--line);border-radius:10px;padding:9px}
-.bar{height:10px;border-radius:5px;background:#24382e;overflow:hidden}.bar i{display:block;height:100%;background:var(--p)}
+select,input{width:100%;background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px}
+.bar{height:10px;border-radius:5px;background:#f1e9dc;overflow:hidden}.bar i{display:block;height:100%;background:var(--p)}
 .note{font-size:12px;color:var(--m);margin-top:8px}.foot{font-size:12px;color:var(--m);padding:18px 16px;border-top:1px solid var(--line);margin-top:20px}
 .plan{border:2px solid var(--line)}.plan.sel{border-color:var(--p)}.price{font-size:22px;font-weight:800}
 .test{background:#7f1d1d;color:#fff;font-weight:700;text-align:center;border-radius:10px;padding:8px;margin:10px 0}
-.gate{position:fixed;inset:0;background:rgba(5,10,8,.96);z-index:20;display:flex;align-items:center;justify-content:center;padding:20px}
+.gate{position:fixed;inset:0;background:rgba(58,49,40,.55);z-index:20;display:flex;align-items:center;justify-content:center;padding:20px}
 .gate .card{max-width:420px}
 @media(min-width:900px){nav a{font-size:13px}}
 .logo{white-space:nowrap}
+.hero{position:relative;border-radius:24px;padding:20px 18px 0;background:linear-gradient(160deg,#fde8d7,#eef7f1 70%);overflow:hidden;margin-bottom:14px;animation:up .5s ease}
+.hero h1{font-size:22px;line-height:1.35}.hero p{color:var(--m);font-size:14px;margin:6px 0 12px}.hero svg{display:block;width:100%;height:auto}
+.hero .cta{display:flex;gap:8px;flex-wrap:wrap}.pill{display:inline-block;background:#fff;border-radius:99px;padding:8px 14px;font-weight:700;font-size:13.5px;box-shadow:0 2px 8px rgba(120,90,50,.08)}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:6px}.tile{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;color:var(--t);animation:up .5s ease both}.tile b{display:block;margin-top:4px}.tile span{font-size:26px}.tile:nth-child(2){animation-delay:.06s}.tile:nth-child(3){animation-delay:.12s}.tile:nth-child(4){animation-delay:.18s}
+@keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.gallop{animation:bob 1.2s ease-in-out infinite;transform-origin:center}@keyframes bob{50%{transform:translateY(-4px)}}
+.cloud{animation:drift 14s linear infinite}@keyframes drift{from{transform:translateX(-30px)}to{transform:translateX(30px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+.top3{display:flex;gap:8px;margin:0 0 10px}.top3 div{flex:1;background:#fff;border:1px solid var(--line);border-radius:16px;padding:10px;text-align:center}.top3 .md{font-size:22px}.top3 b{display:block;font-size:14px}
+.tap{border-bottom:1.5px dashed #b9d9c8;color:var(--t);cursor:pointer;background:none;border-top:0;border-left:0;border-right:0;padding:0;font:inherit}.tap.b{font-weight:700}
+.sheetbg{position:fixed;inset:0;background:rgba(58,49,40,.4);z-index:30;animation:fade .2s}.sheet{position:fixed;left:0;right:0;bottom:0;max-height:86vh;overflow:auto;background:var(--bg);border-radius:24px 24px 0 0;padding:8px 16px 28px;z-index:31;animation:slide .28s ease;max-width:760px;margin:0 auto}
+.sheet .grab{width:44px;height:5px;border-radius:3px;background:#dccfbd;margin:4px auto 10px}@keyframes slide{from{transform:translateY(100%)}to{transform:none}}@keyframes fade{from{opacity:0}}
+.av{width:56px;height:56px;flex:none}.na{color:#b08a5a;font-size:12px}.kv{display:grid;grid-template-columns:1fr 1fr;gap:6px}.kv div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px}.kv label{margin:0;font-size:11.5px}
+.car{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 10px;margin:0 -16px;padding-left:16px;scrollbar-width:none}.car::-webkit-scrollbar{display:none}
+.jc{flex:0 0 150px;scroll-snap-align:start;background:linear-gradient(170deg,#fff,#fdf1e6);border:1px solid var(--line);border-radius:20px;padding:12px;text-align:center;cursor:pointer;box-shadow:0 3px 12px rgba(120,90,50,.08);animation:up .5s ease both}
+.jc .av,.jc img{width:84px;height:84px;margin:0 auto;display:block;border-radius:50%;object-fit:cover}.jc b{display:block;margin-top:6px}.stars{color:#f0a63a;letter-spacing:1px}.stars i{color:#e6dccd;font-style:normal}
+.card p+p{margin-top:8px}.acc{font-size:28px;font-weight:800;color:var(--p)}
 </style></head><body>
 <div class="app">
 <header><div class="top"><div class="logo">레이스<b>노트</b><span class="beta">BETA</span></div><span class="muted">정보 제공 전용</span></div>
@@ -45,7 +62,7 @@ select,input{width:100%;background:#0b140f;border:1px solid var(--line);border-r
 <div class="foot">레이스노트는 경마 기록·통계 정보 서비스이며 마권 구매·베팅 기능을 제공하지 않습니다. 모든 지표는 참고용이며 결과를 보장하지 않습니다. 만 19세 이상 이용. 본 서비스는 한국마사회의 공식 서비스가 아닙니다.<br>도박 문제 상담: 한국도박문제예방치유원 헬프라인 <b>국번 없이 1336</b> (무료, 365일 09:00~22:00) · <a href="https://www.kcgp.or.kr" target="_blank" rel="noopener">kcgp.or.kr</a> · <a href="#/terms">약관·고지</a></div>
 </div>
 <nav><div class="in">
-<a href="#/" data-r="home"><span>🏠</span>홈</a><a href="#/search" data-r="search"><span>🔎</span>조건검색</a><a href="#/fav" data-r="fav"><span>⭐</span>관심마</a><a href="#/guide" data-r="guide"><span>📘</span>가이드</a><a href="#/pass" data-r="pass"><span>🎟️</span>이용권</a>
+<a href="#/" data-r="home"><span>🏠</span>홈</a><a href="#/search" data-r="search"><span>🔎</span>검색</a><a href="#/fav" data-r="fav"><span>⭐</span>관심마</a><a href="#/know" data-r="know"><span>🐴</span>말 지식</a><a href="#/acc" data-r="acc"><span>📊</span>적중률</a><a href="#/pass" data-r="pass"><span>🎟️</span>이용권</a>
 </div></nav>
 <div id="gate"></div>
 <script>
@@ -72,8 +89,9 @@ function normKra(k){
   (k.jockeyResult||[]).forEach(j=>{if(!jk[j.jkNo]&&+j.rcCntY>0)jk[j.jkNo]={win:+j.winRateY,qu:+j.qnlRateY,n:+j.rcCntY,src:'최근1년'}});
   const wt={};(k.weight||[]).forEach(w=>wt[[w.rcDate,w.meet,w.rcNo,w.chulNo].join('|')]={wg:w.wgHr,diff:+w.wgHrDiff,recent:w.recentRcDate});
   const chg={};(k.jockeyChange||[]).forEach(c=>chg[[c.rcDate,c.meet,c.rcNo,c.chulNo].join('|')]=c);
-  return {source:'kra',updatedAt:k.updatedAt,entries:E,results:R,horses:Object.values(H),jk,wt,chg}}
-function normSample(s){return {...s,source:'sample',jk:{},wt:{},chg:{}}}
+  const jinfo={};(k.jockeys||[]).forEach(j=>jinfo[j.jkNo]=j);const jres={};(k.jockeyResult||[]).forEach(j=>jres[j.jkNo]=j);const jper={};(k.jockeyPeriod||[]).forEach(j=>jper[j.jkNo]=j);
+  return {source:'kra',updatedAt:k.updatedAt,entries:E,results:R,horses:Object.values(H),jk,wt,chg,jinfo,jres,jper}}
+function normSample(s){return {...s,source:'sample',jk:{},wt:{},chg:{},jinfo:{},jres:{},jper:{}}}
 function calc(){const g={};D.results.forEach(r=>{const k=r.meet+r.rcDist;(g[k]=g[k]||[]).push(sec(r.rcTime))});
 const st={};for(const k in g){const a=g[k],m=a.reduce((x,y)=>x+y)/a.length,sd=Math.sqrt(a.reduce((x,y)=>x+(y-m)**2,0)/a.length)||1;st[k]=[m,sd]}
 D.results.forEach(r=>{const[m,sd]=st[r.meet+r.rcDist];const adj=['포화','불량'].includes(r.track)?.4:0;r.si=Math.round(80+(m-sec(r.rcTime)+adj)/sd*10)});
@@ -107,13 +125,14 @@ function rnScore(e,field){const hist=(SI[e.hrNo]||[]).filter(r=>r.rcDate<e.rcDat
  if(l3[0]&&l3[0].hrTool&&l3[1]&&l3[1].hrTool&&l3[0].hrTool!==l3[1].hrTool)flags.push('장구 변경 이력');
  const total=Object.keys(W).reduce((a,k)=>a+W[k]*c[k],0)/100;return{total:Math.round(total*10)/10,c,ev,flags}}
 function srcBanner(){return D.source==='kra'?`<div class="banner ok">출처: 공공데이터포털 한국마사회 제공 데이터 · 업데이트 ${new Date(D.updatedAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})} KST</div>`:'<div class="banner">⚠️ 예시 데이터 — 실제 경주·마필·인물이 아닌 가상 데이터입니다</div>'}
-function home(){const R=races();const days={};Object.keys(R).forEach(k=>{const[d,m]=k.split('|');((days[d]=days[d]||{})[m]=days[d][m]||[]).push(k)});
+function homeRaces(){const R=races();const days={};Object.keys(R).forEach(k=>{const[d,m]=k.split('|');((days[d]=days[d]||{})[m]=days[d][m]||[]).push(k)});
 const ds=Object.keys(days).sort().reverse().slice(0,D.source==='kra'?4:9);const today=new Date(Date.now()+9*36e5).toISOString().slice(0,10).replaceAll('-','');
 let h=`<h2>${D.source==='kra'?'최근·예정 경주':'이번 주 경주'}</h2>`;if(D.source==='kra'&&!ds.some(d=>d>=today))h+='<p class="muted">이번 주 출마표가 아직 공개되지 않아 최근 경주일을 보여드립니다. 지난 경주의 RN-Score는 해당 경주 이전 기록만으로 계산합니다.</p>';
 for(const d of ds){const e0=R[Object.values(days[d])[0][0]][0];h+=`<h3>${fd(d)} (${e0.rcDay}) ${d<today?'<span class="chip">종료</span>':''}</h3>`;
 for(const m in days[d]){days[d][m].sort((a,b)=>a.split('|')[2]-b.split('|')[2]);h+=`<div class="card"><div class="row"><b>${m}</b><span class="muted">${days[d][m].length}개 경주</span></div><div style="margin-top:8px">`+
 days[d][m].map(k=>{const e=R[k][0];return `<a class="chip" href="#/race/${encodeURIComponent(k)}">${e.rcNo}R · ${e.rcDist}m${e.stTime?' · '+e.stTime:''}</a>`}).join('')+'</div></div>'}}
 h+=`<h3>최근 트랙 경향</h3>`+bias();return h}
+function home(){return heroHtml()}
 function bias(){const m={};D.results.forEach(r=>{const k=r.meet;m[k]=m[k]||{w:0,f:0,i:0,hasF:false};if(r.ord==='1'){m[k].w++;if(r.sjS1fOrd!==undefined){m[k].hasF=true;if(+r.sjS1fOrd<=3)m[k].f++}if(+r.chulNo<=4)m[k].i++}});
 return Object.entries(m).map(([k,v])=>`<div class="card"><b>${k}</b> <span class="muted">수집된 ${v.w}개 경주 1착마 기준</span>
 ${v.hasF?`<div class="muted" style="margin-top:8px">초반 3위 이내(선행) 비율 ${Math.round(v.f/v.w*100)}%</div><div class="bar"><i style="width:${v.f/v.w*100}%"></i></div>`:''}
@@ -122,11 +141,13 @@ let OPEN=null;
 function race(k){const es=races()[k];if(!es)return'<p>경주를 찾을 수 없습니다.</p>';const e=es[0];const f=fav();
 const sc=es.map(x=>({x,s:rnScore(x,es)}));const rank=[...sc].sort((a,b)=>b.s.total-a.s.total).map(o=>o.x.chulNo);
 const res=D.results.filter(r=>r.rcDate===e.rcDate&&r.meet===e.meet&&r.rcNo===e.rcNo);const ordOf={};res.forEach(r=>ordOf[r.chulNo]=r.ord);
-return `<a href="#/">← 홈</a><h2>${e.meet} ${e.rcNo}R 출마표</h2><div class="card"><div class="muted">${fd(e.rcDate)}(${e.rcDay}) ${e.stTime||''} · ${e.rcDist}m · ${e.rank||''} · ${e.dusu||es.length}두 · ${e.rcName||''}</div></div>
-<div class="rnnote">RN-Score v0는 공개된 규칙으로 계산한 <b>참고용 분석 지표</b>이며 결과를 예측·보장하지 않습니다. 말 이름 줄을 누르면 근거가 보입니다. <a href="#/method">계산 방법</a></div>
+const by=Object.fromEntries(sc.map(o=>[o.x.chulNo,o]));SC_FIELD=es;
+return `<a href="#/races">← 경주 목록</a><h2>${e.meet} ${e.rcNo}R 출마표</h2><div class="card"><div class="muted">${fd(e.rcDate)}(${e.rcDay}) ${e.stTime||''} · ${e.rcDist}m · ${e.rank||''} · ${e.dusu||es.length}두 · ${e.rcName||''}</div></div>
+<h3>RN 분석 순위 <span class="chip">무료</span></h3><div class="top3">${rank.slice(0,3).map((c,i)=>`<div><div class="md">${['🥇','🥈','🥉'][i]}</div><b>${c}번 ${by[c].x.hrName}</b><span class="muted">RN ${by[c].s.total}</span>${res.length?`<div class="ord">실제 ${ordOf[c]??'-'}착</div>`:''}</div>`).join('')}</div><p class="note" style="margin:-4px 0 10px">참고용 분석 순위이며 결과를 보장하지 않습니다.</p>
+<div class="rnnote">RN-Score v0는 공개된 규칙으로 계산한 <b>참고용 분석 지표</b>이며 결과를 예측·보장하지 않습니다. 카드를 누르면 점수 근거가, 말·기수 이름을 누르면 프로필이 열립니다. <a href="#/method">계산 방법</a></div>
 `+sc.map(({x,s})=>`<div class="hcard" onclick="OPEN=OPEN==='${x.chulNo}'?null:'${x.chulNo}';route()">
-<div class="hn">${x.chulNo}</div><div class="hm"><a href="#/horse/${x.hrNo}" onclick="event.stopPropagation()"><b>${x.hrName}</b></a> <span class="muted">${x.sex}/${x.age} · ${x.wgBudam}kg</span>
-<div class="muted">${x.jkName} · ${x.trName||''} · 레이팅 ${x.rating} · 지수 <span class="si">${HSI[x.hrNo]??'-'}</span></div>${s.flags.length?'<div class="flag">⚑ '+s.flags.join(' · ')+'</div>':''}</div>
+<div class="hn">${x.chulNo}</div><div class="hm"><button class="tap b" onclick="event.stopPropagation();openHorse('${x.hrNo}','${k}')">${x.hrName}</button> <span class="muted">${x.sex}/${x.age} · ${x.wgBudam}kg</span>
+<div class="muted"><button class="tap" onclick="event.stopPropagation();openJk('${x.jkNo}','${x.hrNo}','${k}')">${x.jkName}</button> · ${x.trName||''} · 레이팅 ${x.rating} · 지수 <span class="si">${HSI[x.hrNo]??'-'}</span></div>${s.flags.length?'<div class="flag">⚑ '+s.flags.join(' · ')+'</div>':''}</div>
 <div class="hs"><div class="rn">${s.total}</div><div class="muted">RN ${rank.indexOf(x.chulNo)+1}위</div>${res.length?`<div class="ord">${ordOf[x.chulNo]??'-'}착</div>`:''}</div>
 <button class="star ${f.includes(x.hrNo)?'on':''}" onclick="event.stopPropagation();toggleFav('${x.hrNo}')" aria-label="관심마">★</button></div>`+
 (OPEN===x.chulNo?`<div class="rnbox">${Object.keys(W).map(k=>`<div class="rnrow"><span>${WN[k]} <i class="muted">(${W[k]}%)</i></span><b>${s.c[k]}</b></div><div class="bar"><i style="width:${s.c[k]}%"></i></div><div class="muted" style="margin-bottom:6px">${s.ev[k]}</div>`).join('')}</div>`:'')).join('')+
@@ -149,7 +170,7 @@ function method(){return `<h2>RN-Score v0 계산 방법</h2><div class="card"><p
 <tr><td>조교사</td><td>5%</td><td>수집 기간 3착 이내율(5전 이상), 아니면 50</td></tr>
 <tr><td>컨디션</td><td>10%</td><td>마체중 증감 ±10kg↑ 35, ±6kg↑ 55, 그 외 70 · 90일 초과 휴양 −20</td></tr>
 <tr><td>게이트</td><td>10%</td><td>경마장별 최근 1착마의 1~4번 비율과 기대치 차이</td></tr></table>
-<p class="note">경고 표시(점수 미반영): 기수 변경, 마체중 ±10kg 이상, 휴양 후 복귀, 장구 변경. 지난 경주는 그 경주 이전 기록만 사용합니다. 수집 기간이 짧아(약 1개월) 표본이 적습니다. 적중률 공개 페이지는 데이터가 쌓인 뒤 전 경주 기준으로 제공할 예정입니다.</p>
+<h3 style="margin-top:14px">기수 별점(★1~5) 기준</h3><p>최근 1년 출전 20전 이상인 기수만 계산합니다. S = 0.6×승률(%) + 0.4×복승률(%, 1·2착). S 5 미만 ★1, 10 미만 ★2, 15 미만 ★3, 20 미만 ★4, 20 이상 ★5. 20전 미만은 "표본 부족"으로 표시합니다. 출처: 한국마사회 기수 정보(공공데이터포털).</p><p class="note">경고 표시(점수 미반영): 기수 변경, 마체중 ±10kg 이상, 휴양 후 복귀, 장구 변경. 지난 경주는 그 경주 이전 기록만 사용합니다. 수집 기간이 짧아(약 1개월) 표본이 적습니다. <a href="#/acc">지난 분석 적중률</a>에서 종료된 전 경주 기준 성적을 공개합니다.</p>
 <p class="note"><b>RN-Score는 참고용 분석 지표이며 결과를 예측·보장하지 않습니다.</b> 베팅·마권 구매 기능은 제공하지 않습니다.</p></div>`}
 function favs(){const f=fav();if(!f.length)return'<h2>관심마</h2><div class="card muted">출마표나 마필 상세에서 ★를 눌러 관심마를 추가하세요. (이 기기 브라우저에만 저장)</div>';
 return '<h2>관심마</h2>'+f.map(no=>{const h=D.horses.find(x=>x.hrNo===no);if(!h)return'';const up=D.entries.filter(e=>e.hrNo===no).sort((a,b)=>b.rcDate.localeCompare(a.rcDate))[0];
@@ -201,11 +222,95 @@ function terms(){return `<h2>이용약관·책임 고지 (베타)</h2><div class
 function gate(){if(localStorage.getItem(AK))return;$('#gate').innerHTML=`<div class="gate"><div class="card"><h2>레이스노트 베타</h2><p>이 서비스는 <b>만 19세 이상</b>을 위한 경마 기록·통계 정보 서비스입니다.</p><ul style="margin:10px 0 10px 18px" class="muted"><li>베팅·마권 구매 기능 없음</li><li>지표는 참고용, 적중·수익 보장 없음</li><li>현재 화면은 가상의 예시 데이터</li></ul>
 <button class="btn" style="width:100%" onclick="localStorage.setItem('${AK}',1);$('#gate').innerHTML=''">만 19세 이상이며 위 내용에 동의합니다</button>
 <button class="btn ghost" style="width:100%;margin-top:8px" onclick="document.body.innerHTML='<p style=padding:30px>만 19세 미만은 이용할 수 없습니다.</p>'">만 19세 미만입니다</button></div></div>`}
-function route(){const h=location.hash.slice(2)||'';const[p,a]=[h.split('/')[0],decodeURIComponent(h.split('/').slice(1).join('/'))];
-const v={'':home,race:()=>race(a),horse:()=>horse(a),fav:favs,search,guide,pass,terms,method}[p]||home;$('#view').innerHTML=v();
-document.querySelectorAll('nav a').forEach(x=>x.classList.toggle('on',x.dataset.r===(p||'home')));if(p==='pass')initPay().catch(e=>{$('#payment-method').innerHTML='<p class="muted">결제 위젯을 불러오지 못했습니다: '+e.message+'</p>'})}
+// ---- 홈 히어로 (자체 제작 일러스트, 실존 말·인물 아님) ----
+// ---- 기수 카드 캐러셀 ----
+let ART={};fetch('art/jockeys/map.json').then(r=>r.ok?r.json():{}).then(j=>{ART=j||{};if(!location.hash||location.hash==='#/')route()}).catch(()=>{});
+const jkImg=jk=>ART[jk]?`<img src="art/jockeys/${ART[jk]}" alt="" loading="lazy">`:avJk(jk);
+// 별점: 최근 1년 성적, 표본 20전 이상만. S = 0.6×승률 + 0.4×복승률(%) → 5미만★1, 10미만★2, 15미만★3, 20미만★4, 20이상★5
+function jkStar(jk){const i=D.jinfo[jk],r=D.jres[jk];let n,w,q;if(i&&i.rcCntY){n=i.rcCntY;w=i.ord1CntY/n*100;q=(i.ord1CntY+i.ord2CntY)/n*100}else if(r&&r.rcCntY){n=r.rcCntY;w=+r.winRateY;q=+r.qnlRateY}else return null;
+if(n<20)return{n,st:0};const S=.6*w+.4*q;return{n,w,q,S,st:S<5?1:S<10?2:S<15?3:S<20?4:5}}
+const starH=o=>!o?'<span class="na">데이터 없음</span>':!o.st?'<span class="na">표본 부족</span>':`<span class="stars">${'★'.repeat(o.st)}<i>${'★'.repeat(5-o.st)}</i></span>`;
+function jkCarousel(){const R=races();const ks=Object.keys(R).sort();const d=ks.length?ks[ks.length-1].split('|')[0]:'';
+const jks=[...new Map(D.entries.filter(e=>e.rcDate>=String(+d-7)).map(e=>[e.jkNo,e])).values()].map(e=>({e,s:jkStar(e.jkNo)})).sort((a,b)=>((b.s&&b.s.S)||0)-((a.s&&a.s.S)||0)).slice(0,12);
+if(!jks.length)return'';return `<h3>이번 주 기수 카드 <span class="muted">옆으로 넘겨보세요</span></h3><div class="car">${jks.map(({e,s},i)=>`<div class="jc" style="animation-delay:${i*.04}s" onclick="openJk('${e.jkNo}','','')">${jkImg(e.jkNo)}<b>${e.jkName}</b><div class="muted" style="font-size:12px">${e.meet}${D.jinfo[e.jkNo]?.part?' · '+D.jinfo[e.jkNo].part:''}</div>${starH(s)}${s&&s.st?`<div class="muted" style="font-size:11px">1년 승률 ${s.w.toFixed(1)}%</div>`:''}</div>`).join('')}</div><p class="note" style="margin-top:-4px">별점은 최근 1년 성적 요약이며 결과를 보장하지 않아요. 그림은 실제 인물이 아닌 기본 일러스트예요. <a href="#/method">별점 기준</a></p>`}
+function heroHtml(){const R=races();const ks=Object.keys(R).sort();const today=new Date(Date.now()+9*36e5).toISOString().slice(0,10).replaceAll('-','');
+const next=ks.filter(k=>k.split('|')[0]>=today);const last=ks[ks.length-1];const nd=next.length?next[0].split('|')[0]:null;
+return `<section class="hero"><h1>오늘도 천천히,<br>경주를 읽어볼까요? 🌿</h1><p>출마표 · RN 분석 · 말 지식을 한곳에.<br>베팅 기능 없는 경마 기록·정보 노트예요.</p>
+<div class="cta"><a class="pill" href="#/races">🏇 경주 보기</a><a class="pill" href="#/know">🐴 말 지식</a></div>
+<svg viewBox="0 0 360 130" aria-hidden="true"><g class="cloud"><ellipse cx="70" cy="28" rx="26" ry="10" fill="#fff" opacity=".8"/><ellipse cx="290" cy="20" rx="20" ry="8" fill="#fff" opacity=".7"/></g>
+<circle cx="300" cy="40" r="16" fill="#ffd59e"/><path d="M0 110 Q90 80 180 100 T360 92 V130 H0Z" fill="#cfe8d6"/><path d="M0 118 Q120 100 240 114 T360 110 V130 H0Z" fill="#b5dbc2"/>
+<g class="gallop"><path d="M130 92 q10-26 44-24 l22-14 q8-2 10 6 l-6 4 6 8 q-6 6-14 2 l-6 10 q4 14-8 22 l4 14 h-6 l-6-14 q-18 4-30-2 l-8 16 h-6 l4-18 q-8-4-6-10z" fill="#c98b5b"/>
+<path d="M176 68 q-6-6-2-14 l8 4" fill="#8a5a36"/><circle cx="203" cy="60" r="1.8" fill="#3a3128"/><path d="M128 92 q-14 2-18 14 q10-4 18-6" fill="#8a5a36"/>
+<path d="M160 70 q6-16 20-12 l-4 12z" fill="#f28c8c"/><circle cx="170" cy="52" r="7" fill="#ffe1c4"/><path d="M163 50 q7-10 14 0z" fill="#f28c8c"/></g></svg></section>
+<div class="tiles"><a class="tile" href="#/races"><span>📋</span><b>출마표</b><span class="muted" style="font-size:12px">${nd?fd(nd)+' 예정':'최근 '+fd(last.split('|')[0])}</span></a>
+<a class="tile" href="#/acc"><span>📊</span><b>지난 분석 적중률</b><span class="muted" style="font-size:12px">솔직하게 공개해요</span></a>
+<a class="tile" href="#/know"><span>🐴</span><b>말 지식</b><span class="muted" style="font-size:12px">입문부터 차근차근</span></a>
+<a class="tile" href="#/fav"><span>⭐</span><b>관심마</b><span class="muted" style="font-size:12px">${fav().length}두 저장됨</span></a></div>
+${jkCarousel()}<p class="note">모든 분석은 참고용이며 결과를 보장하지 않아요.</p>`}
+// ---- 플레이스홀더 아바타: 실존 인물·말을 묘사하지 않는 범용 일러스트 ----
+const PAL=['#f28c8c','#7cc3a5','#f6b26b','#8fb3e8','#c9a0e0','#e8c46a'];
+const hcode=s=>[...String(s)].reduce((a,c)=>a*31+c.charCodeAt(0)>>>0,7);
+function avHorse(id){const c=['#c98b5b','#8a5a36','#d9b48f','#6b6b6b','#a0522d'][hcode(id)%5];return `<svg class="av" viewBox="0 0 56 56"><circle cx="28" cy="28" r="28" fill="#eef7f1"/><path d="M18 46 q-2-20 10-28 l6-8 q4 0 4 6 q6 6 4 14 q-2 4-6 2 l-2-4 q-4 8 0 18z" fill="${c}"/><circle cx="34" cy="22" r="1.6" fill="#3a3128"/></svg>`}
+function avJk(id){const c=PAL[hcode(id)%6];return `<svg class="av" viewBox="0 0 56 56"><circle cx="28" cy="28" r="28" fill="#fde8d7"/><circle cx="28" cy="27" r="11" fill="#ffe1c4"/><path d="M16 25 q12-18 24 0z" fill="${c}"/><rect x="14" y="23" width="28" height="3" rx="1.5" fill="${c}"/><path d="M12 56 q4-14 16-14 q12 0 16 14z" fill="${c}"/></svg>`}
+const NA='<span class="na">데이터 없음</span>';
+function sheet(h){closeSheet();const b=document.createElement('div');b.id='sh';b.innerHTML=`<div class="sheetbg" onclick="closeSheet()"></div><div class="sheet" role="dialog"><div class="grab"></div>${h}<button class="btn ghost" style="width:100%;margin-top:14px" onclick="closeSheet()">닫기</button></div>`;document.body.appendChild(b);document.body.style.overflow='hidden'}
+function closeSheet(){const x=$('#sh');if(x)x.remove();document.body.style.overflow=''}
+const pct=(k,n)=>n?Math.round(k/n*1000)/10+'%':'-';
+let SC_FIELD=[];
+function openHorse(no,rk){const es=races()[rk]||[];const e=es.find(x=>x.hrNo===no)||D.entries.find(x=>x.hrNo===no);const h=D.horses.find(x=>x.hrNo===no)||{};
+const hist=(SI[no]||[]).filter(r=>!e||r.rcDate<e.rcDate);const s=e&&es.length?rnScore(e,es):null;const w=e&&D.wt[[e.rcDate,e.meet,e.rcNo,e.chulNo].join('|')];
+const gap=e&&hist[0]?Math.round((new Date(e.rcDate.replace(/(\d{4})(\d\d)(\d\d)/,'$1-$2-$3'))-new Date(hist[0].rcDate.replace(/(\d{4})(\d\d)(\d\d)/,'$1-$2-$3')))/864e5):null;
+const grp=(f)=>{const m={};hist.forEach(r=>{const k=f(r);(m[k]=m[k]||{n:0,t:0,w:0}).n++;if(+r.ord<=3)m[k].t++;if(r.ord==='1')m[k].w++});return Object.entries(m).map(([k,v])=>`<tr><td>${k}</td><td>${v.n}전 ${v.w}승</td><td>${pct(v.t,v.n)}</td></tr>`).join('')||`<tr><td colspan=3>${NA}</td></tr>`};
+const gb=r=>+r.chulNo<=3?'1~3번':+r.chulNo<=7?'4~7번':'8번 이상';
+sheet(`<div class="row" style="justify-content:flex-start;gap:12px">${avHorse(no)}<div><h2 style="margin:0">${h.hrName||e?.hrName||no}</h2><div class="muted">${h.prdCtyNm||'-'} · ${h.sex||'-'} · ${h.age||'-'} · 마주 ${h.owName||'-'}</div></div></div>
+<p class="note">그림은 실제 말이 아닌 기본 일러스트예요.</p>
+<h3>현재 컨디션</h3><div class="kv"><div><label>마체중(증감)</label>${w?`${w.wg}kg (${w.diff>0?'+':''}${w.diff})`:NA}</div><div><label>출전 간격</label>${gap!==null?gap+'일':(w&&w.recent==='신마'?'신마(첫 출전)':NA)}</div>
+<div><label>부담중량</label>${e?e.wgBudam+'kg':NA}</div><div><label>레이팅</label>${e&&e.rating!=='-'?e.rating:NA}</div></div>
+${s&&s.flags.length?`<div class="flag" style="margin-top:6px">⚑ ${s.flags.join(' · ')}</div>`:'<p class="muted" style="margin-top:6px">특이 경고 없음</p>'}
+<h3>적성 (수집 기간 기록)</h3><div class="card" style="padding:8px"><table><tr><th>거리</th><th>성적</th><th>3착내</th></tr>${grp(r=>r.rcDist+'m')}</table>
+<table style="margin-top:6px"><tr><th>주로상태</th><th>성적</th><th>3착내</th></tr>${grp(r=>r.track)}</table><table style="margin-top:6px"><tr><th>게이트</th><th>성적</th><th>3착내</th></tr>${grp(gb)}</table></div>
+<h3>최근 5경주</h3><div class="card" style="padding:8px;overflow-x:auto"><table><tr><th>일자</th><th>경주</th><th>거리</th><th>착순</th><th>기록</th><th>기수</th></tr>${hist.slice(0,5).map(r=>`<tr><td>${fd(r.rcDate)}</td><td>${r.meet} ${r.rcNo}R</td><td>${r.rcDist}</td><td>${r.ord}</td><td>${r.rcTime}</td><td>${r.jkName}</td></tr>`).join('')||`<tr><td colspan=6>${NA} (수집 기간 내 출전 기록 없음)</td></tr>`}</table></div>
+<h3>혈통</h3><div class="card">${h.fhrName?`부마 ${h.fhrName} · 모마 ${h.mhrName||'-'}`:NA+' <span class="muted">— 경주마 혈통 API 승인 후 표시 예정</span>'}</div>
+${s?`<h3>RN-Score 구성 <span class="muted">총 ${s.total}</span></h3>`+Object.keys(W).map(k=>`<div class="rnrow"><span>${WN[k]} <i class="muted">(${W[k]}%)</i></span><b>${s.c[k]}</b></div><div class="bar"><i style="width:${s.c[k]}%"></i></div><div class="muted" style="margin-bottom:6px">${s.ev[k]}</div>`).join(''):''}
+<a class="btn ghost" style="display:block;text-align:center;margin-top:10px" href="#/horse/${no}" onclick="closeSheet()">마필 전체 기록 보기</a>`)}
+function openJk(jk,hr,rk){const i=D.jinfo[jk]||{},r=D.jres[jk]||{},p=D.jper[jk]||{};const e=(races()[rk]||[]).find(x=>x.jkNo===jk)||D.entries.find(x=>x.jkNo===jk)||{};
+const combo=(SI[hr]||[]).filter(x=>x.jkNo===jk&&(!e.rcDate||x.rcDate<e.rcDate));const ct=combo.filter(x=>+x.ord<=3).length,cw=combo.filter(x=>x.ord==='1').length;
+const y=i.rcCntY??r.rcCntY,t=i.rcCntT??r.rcCntT;const yr=(a,b,c,n)=>n?`${n}전 ${a}/${b}/${c} · 승률 ${pct(a,n)} · 복승률 ${pct(a+b,n)}`:NA;
+sheet(`<div class="row" style="justify-content:flex-start;gap:12px">${jkImg(jk)}<div><h2 style="margin:0">${i.jkName||e.jkName||jk} 기수</h2><div class="muted">${i.meet||e.meet||''} · ${i.part||'소속 정보 없음'}</div></div></div>
+<p class="note">그림은 실제 인물이 아닌 기본 일러스트예요.</p>
+<h3>최근 성적</h3><div class="kv"><div><label>최근 30일</label>${NA}<div class="muted" style="font-size:11px">API 미제공</div></div><div><label>최근 60일 (KRA 집계)</label>${p.raceCnttsum?`${p.raceCnttsum}전 ${p.firstCnt}승 · 승률 ${p.winRateTsum}% · 복승률 ${p.quRateTsum}%`:NA}</div>
+<div><label>최근 1년</label>${i.rcCntY!==undefined?yr(i.ord1CntY,i.ord2CntY,i.ord3CntY,i.rcCntY):r.rcCntY?`${r.rcCntY}전 · 승률 ${r.winRateY}% · 복승률 ${r.qnlRateY}%`:NA}</div><div><label>통산</label>${i.rcCntT!==undefined?yr(i.ord1CntT,i.ord2CntT,i.ord3CntT,i.rcCntT):r.rcCntT?`${r.rcCntT}전 · 승률 ${r.winRateT}%`:NA}</div></div>
+<div style="margin-top:8px">기수 별점 ${starH(jkStar(jk))}</div><h3>이 말과의 호흡</h3><div class="card">${!hr?'<span class="muted">출마표에서 열면 해당 말과의 기록을 보여드려요.</span>':combo.length?`${e.hrName||''} 기승 ${combo.length}전 ${cw}승 · 3착 이내 ${ct}회 (수집 기간)`:NA+' <span class="muted">(수집 기간 내 함께 출전한 기록 없음)</span>'}</div>
+<h3>경력</h3><div class="kv"><div><label>데뷔</label>${i.debut?String(i.debut).replace(/(\d{4})(\d\d)(\d\d)/,'$1.$2.$3'):NA}</div><div><label>나이</label>${i.age?i.age+'세':NA}</div><div><label>기본 기승중량</label>${i.wgPart?i.wgPart+'kg':NA}</div><div><label>소속</label>${i.part||NA}</div></div>
+<p class="note">출처: 공공데이터포털 한국마사회 기수 정보. "최근 30일"은 현재 제공 API에 없어 표시하지 않아요.</p>`)}
+// ---- 지난 분석 적중률: 종료 경주마다 그 경주 이전 기록만으로 RN 순위를 계산해 실제 결과와 비교 ----
+function acc(){const R=races();let n=0,w1=0,t1=0,top3in=0,ex3=0,base=0,base3=0;const rows=[];
+for(const k in R){const es=R[k],e=es[0];const res=D.results.filter(r=>r.rcDate===e.rcDate&&r.meet===e.meet&&r.rcNo===e.rcNo);if(res.length<3)continue;
+const ord={};res.forEach(r=>ord[r.chulNo]=+r.ord);const rk=es.map(x=>({c:x.chulNo,t:rnScore(x,es).total})).sort((a,b)=>b.t-a.t).map(o=>o.c);
+n++;const o1=ord[rk[0]];if(o1===1)w1++;if(o1&&o1<=3)t1++;const hit=rk.slice(0,3).filter(c=>ord[c]&&ord[c]<=3).length;top3in+=hit;if(hit===3)ex3++;
+const fn=es.length;base+=1/fn;base3+=Math.min(3,fn)/fn;rows.push([k,rk.slice(0,3).map(c=>ord[c]??'-')])}
+if(!n)return '<h2>지난 분석 적중률</h2><div class="card muted">아직 결과가 확정된 경주가 없어요.</div>';
+const dates=rows.map(r=>r[0].split('|')[0]).sort();
+return `<h2>지난 분석 적중률</h2><div class="rnnote">종료된 경주마다 <b>그 경주 이전의 기록만</b>으로 RN 순위를 다시 계산해, 실제 공식 착순과 비교했어요. 좋은 결과만 골라 보여주지 않고 수집된 전 경주를 집계해요. 과거 성적은 미래 결과를 보장하지 않아요.</div>
+<div class="kv"><div><label>RN 1위 → 실제 1착</label><span class="acc">${pct(w1,n)}</span><div class="muted">무작위 기대 ${pct(base,n)}</div></div><div><label>RN 1위 → 3착 이내</label><span class="acc">${pct(t1,n)}</span><div class="muted">무작위 기대 ${pct(base3,n)}</div></div>
+<div><label>RN 1~3위 중 3착 이내 (평균)</label><span class="acc">${(top3in/n).toFixed(2)}</span><div class="muted">마리 / 3마리</div></div><div><label>RN 1~3위 = 실제 1~3착 (순서 무관)</label><span class="acc">${pct(ex3,n)}</span></div></div>
+<p class="note">대상: ${n}개 경주 · ${fd(dates[0])}~${fd(dates[dates.length-1])} · 수집 기간이 짧고, 초반 경주는 이전 기록이 적어 점수가 중립값에 가까워요.</p>
+<h3>경주별 기록</h3><div class="card" style="padding:8px;overflow-x:auto"><table><tr><th>경주</th><th>RN1위</th><th>RN2위</th><th>RN3위</th></tr>${rows.sort((a,b)=>b[0].localeCompare(a[0])).slice(0,60).map(([k,o])=>{const[d,m,no]=k.split('|');return `<tr><td><a href="#/race/${encodeURIComponent(k)}">${fd(d)} ${m} ${no}R</a></td>${o.map(x=>`<td>${x}${x!=='-'?'착':''}</td>`).join('')}</tr>`}).join('')}</table></div><p class="note">최근 60경주 표시 · 숫자는 실제 착순</p>`}
+// ---- 말 지식 (knowledge/kra-knowledge.md 요약 + 일반 상식) ----
+const KN=[['eco','🌱','말의 생태',`<p>말은 초식동물이고 위가 작아서 하루 종일 조금씩 자주 먹어요. 시야가 거의 360°로 넓은 대신 바로 앞과 바로 뒤는 잘 보지 못해요. 무리 생활을 하는 동물이라 겁이 많고 소리와 움직임에 예민해요.</p><p>경주마는 대부분 서서 잠깐씩 졸고, 깊은 잠은 누워서 짧게 자요. 경주 전후 마체중을 재는 이유도 컨디션이 몸무게에 잘 드러나기 때문이에요. 보통 ±10kg 이상 변하면 컨디션 변화 신호로 봐요(통설).</p><p class="note">일반 상식 요약 · 수의학적 판단이 아니에요.</p>`],
+['breed','🧬','품종·혈통',`<p><b>더러브렛</b>은 서울·부산경남 경주에 나서는 경주용 순혈 품종이에요. 제주에서는 <b>제주마</b>와 더러브렛·제주마 교잡종인 <b>한라마</b>(체고 137cm 이하)가 달려요.</p><p>산지는 국산과 외산으로 나눠요. 혈통은 <b>부마</b>(아버지), <b>모마</b>(어머니), <b>모부마</b>(어머니의 아버지)를 보고, 씨수말 계열에 따라 거리 적성이 갈린다고들 해요(통설). 성별은 수말·암말·거세마(거)로 표시해요.</p><p>모든 말은 1월 1일에 한 살씩 나이를 먹어요.</p>`],
+['track','🏟️','거리·주로',`<p>국내 경마장은 모두 <b>모래 주로</b>예요. 서울은 외주로 1,800m·내주로 1,600m, 결승 직선 450m, 폭 25m(직선 30m), 모래 평균 8cm예요(KRA 공개 자료).</p><p><b>함수율</b>(모래 속 수분)은 1~5% 건조, 6~9% 양호, 10~14% 다습, 15~19% 포화, 20% 이상 불량으로 표시해요. 물기가 많으면 주로가 단단해져 기록이 빨라지는 경향이 있다고 알려져 있어요(업계 통설).</p><p>출발 직후 코너까지 거리가 짧은 코스는 안쪽 게이트가 유리하다는 말이 있어요. 레이스노트는 이런 통설을 실제 데이터로 확인해 보여드려요.</p>`],
+['grade','🏅','등급·레이팅',`<p><b>레이팅</b>은 말의 능력을 숫자로 나타낸 값이에요. <b>레이팅 1점 = 부담중량 0.5kg</b>이고, 기준마보다 1마신 앞서면 대략 1점 올라요.</p><p>서울·부산경남: 1등급 81 이상, 2등급 80 이하, 3등급 65 이하, 4등급 50 이하, 5등급 35 이하, 6등급은 레이팅 없음.</p><p><b>부담중량</b>은 마령중량(나이 기준), 별정(조건별), 핸디캡(능력별 차등)이 있어요. 핸디캡 최고중량은 1등급 60kg부터 5등급 57kg, 최저는 51kg이에요. 암말은 2kg 감량을 받아요.</p><p class="note">출처: 한국마사회 2026 경마시행계획·레이팅 안내 요약</p>`],
+['words','📖','용어 사전',null]];
+const WORDS=[['출마표','경주별 출전마·기수·부담중량을 정리한 표'],['게이트(마번)','출발할 때 들어가는 칸 번호'],['마신','말 한 마리 몸길이 단위 착차(약 2.4m)'],['착차','도착할 때 거리 차이(코·머리·목·마신)'],['외주로/내주로','바깥쪽·안쪽 경주로'],['펄롱','200m 단위'],['S1F/G1F','초반 200m / 마지막 200m 기록'],['G3F','마지막 600m 기록'],['함수율','주로 모래의 수분 비율'],['레이팅','능력을 나타내는 숫자'],['승급/강급','등급이 오르거나 내리는 것'],['부담중량','말이 지는 무게(기수·장구 포함)'],['핸디캡','레이팅에 따라 중량을 차등하는 방식'],['별정','정해진 조건에 따른 중량'],['마령중량','나이에 따른 기준 중량'],['감량기수(견습)','부담 감량 혜택을 받는 기수'],['마체중','경주 전에 잰 말의 체중'],['조교사','말의 훈련을 책임지는 사람'],['마방','조교사가 운영하는 마구간 단위'],['조교','훈련'],['신마','처음 출전하는 말'],['휴양','장기간 쉬는 것'],['선행','앞에서 달리는 전법'],['선입','앞 무리에 붙어 가는 전법'],['추입','뒤에서 막판에 치고 나오는 전법'],['페이스','구간별 속도 흐름'],['진로방해','다른 말의 진로를 막는 반칙'],['강착/실격','반칙으로 순위를 내리거나 없애는 것'],['사진판정','근소한 차이를 사진으로 가리는 것'],['대상경주','최상위 경주(G1~G3)'],['장구','블링커·혀끈 같은 장비'],['교차경주','다른 경마장 경주를 중계하는 것']];
+function know(a){const t=KN.find(x=>x[0]===a);if(!t)return `<h2>말 지식</h2><p class="muted" style="margin-bottom:10px">처음이어도 괜찮아요. 하나씩 가볍게 읽어보세요.</p><div class="tiles">${KN.map(([id,ic,n])=>`<a class="tile" href="#/know/${id}"><span>${ic}</span><b>${n}</b></a>`).join('')}<a class="tile" href="#/guide"><span>📘</span><b>입문 가이드</b></a></div>`;
+return `<a href="#/know">← 말 지식</a><h2>${t[1]} ${t[2]}</h2><div class="card">${t[3]||`<input placeholder="용어 검색" oninput="document.querySelectorAll('.wd').forEach(r=>r.style.display=r.textContent.includes(this.value)?'':'none')"><table style="margin-top:8px">${WORDS.map(([w,d])=>`<tr class="wd"><td><b>${w}</b></td><td>${d}</td></tr>`).join('')}</table>`}</div>`}
+function route(){closeSheet();const h=location.hash.slice(2)||'';const[p,a]=[h.split('/')[0],decodeURIComponent(h.split('/').slice(1).join('/'))];
+const v={'':home,race:()=>race(a),horse:()=>horse(a),fav:favs,search,guide,pass,terms,method,know:()=>know(a),acc,races:homeRaces}[p]||home;$('#view').innerHTML=v();
+document.querySelectorAll('nav a').forEach(x=>x.classList.toggle('on',x.dataset.r===({races:'home',race:'home'}[p]||p||'home')));if(p==='pass')initPay().catch(e=>{$('#payment-method').innerHTML='<p class="muted">결제 위젯을 불러오지 못했습니다: '+e.message+'</p>'})}
 addEventListener('hashchange',()=>{route();scrollTo(0,0)});
-fetch('data/kra.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(k=>{if(!k.entries||!k.entries.length)throw 0;D=normKra(k)})
+const unc=k=>{if(k._fmt!=='cols1')return k;const o={};for(const x in k){const v=k[x];o[x]=v&&v.cols?v.rows.map(r=>Object.fromEntries(v.cols.map((c,i)=>[c,r[i]]).filter(p=>p[1]!==null))):v}return o};
+fetch('data/app.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()}).catch(()=>fetch('data/kra.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()})).then(unc).then(k=>{if(!k.entries||!k.entries.length)throw 0;D=normKra(k)})
 .catch(()=>fetch('data/sample.json').then(r=>r.json()).then(j=>{D=normSample(j)})).then(()=>{$('#srcb').innerHTML=srcBanner();calc();route();gate()});
 if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');
 </script></body></html>
