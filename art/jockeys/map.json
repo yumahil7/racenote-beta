@@ -1,1 +1,28 @@
-{}
+{
+ "003073": {
+  "normal": "img/003073.webp"
+ },
+ "080473": {
+  "normal": "img/080473.webp"
+ },
+ "080512": {
+  "normal": "img/080512.webp",
+  "bad": "img/080512_bad.webp",
+  "good": "img/080512_good.webp"
+ },
+ "003066": {
+  "normal": "img/003066.webp"
+ },
+ "080608": {
+  "normal": "img/080608.webp"
+ },
+ "080602": {
+  "normal": "img/080602.webp"
+ },
+ "080622": {
+  "normal": "img/080622.webp"
+ },
+ "080566": {
+  "normal": "img/080566.webp"
+ }
+}

@@ -52,7 +52,7 @@ select,input{width:100%;background:#fff;border:1px solid var(--line);border-radi
 .av{width:56px;height:56px;flex:none}.na{color:#b08a5a;font-size:12px}.kv{display:grid;grid-template-columns:1fr 1fr;gap:6px}.kv div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px}.kv label{margin:0;font-size:11.5px}
 .car{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 10px;margin:0 -16px;padding-left:16px;scrollbar-width:none}.car::-webkit-scrollbar{display:none}
 .jc{flex:0 0 150px;scroll-snap-align:start;background:linear-gradient(170deg,#fff,#fdf1e6);border:1px solid var(--line);border-radius:20px;padding:12px;text-align:center;cursor:pointer;box-shadow:0 3px 12px rgba(120,90,50,.08);animation:up .5s ease both}
-.jc .av,.jc img{width:84px;height:84px;margin:0 auto;display:block;border-radius:50%;object-fit:cover}.jc b{display:block;margin-top:6px}.stars{color:#f0a63a;letter-spacing:1px}.stars i{color:#e6dccd;font-style:normal}
+.jc .av,.jc img{width:84px;height:84px;margin:0 auto;display:block;border-radius:50%;object-fit:cover}.jc b{display:block;margin-top:6px}.jart{display:block;text-align:center}.jc .jimg,.jart .jimg{width:96px;height:128px;border-radius:14px;object-fit:cover;display:block;margin:0 auto}.jlbl{display:block;font-size:9px;color:#998;margin-top:2px}.stars{color:#f0a63a;letter-spacing:1px}.stars i{color:#e6dccd;font-style:normal}
 .card p+p{margin-top:8px}.acc{font-size:28px;font-weight:800;color:var(--p)}
 .gb{display:inline-block;min-width:34px;text-align:center;font-weight:900;font-size:13px;border-radius:8px;padding:2px 7px;color:#fff;letter-spacing:.5px;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55),0 1px 4px rgba(0,0,0,.15)}
 .g-SS{background:linear-gradient(135deg,#f9e27a,#d4a017 55%,#fff3b0);color:#5a3d00}.g-S{background:linear-gradient(135deg,#ffffff,#cfd8e3 50%,#f4f8ff);color:#3a4a5c}.g-AA{background:linear-gradient(135deg,#e0115f,#9b0d3f)}.g-A{background:linear-gradient(135deg,#2f6fdc,#0f3a8a)}.g-B{background:linear-gradient(135deg,#2ebf7f,#0f7a4c)}.g-C{background:linear-gradient(135deg,#a06cd5,#5e2f9a)}
@@ -229,13 +229,16 @@ function gate(){if(localStorage.getItem(AK))return;$('#gate').innerHTML=`<div cl
 // ---- 홈 히어로 (자체 제작 일러스트, 실존 말·인물 아님) ----
 // ---- 기수 카드 캐러셀 ----
 let ART={};fetch('art/jockeys/map.json').then(r=>r.ok?r.json():{}).then(j=>{ART=j||{};if(!location.hash||location.hash==='#/')route()}).catch(()=>{});
-const jkImg=jk=>ART[jk]?`<img src="art/jockeys/${ART[jk]}" alt="" loading="lazy">`:avJk(jk);
+// 컨디션 표정 규칙: 해당 기수의 최근 10기승(D.results, 최소 5기승) 3착 이내율 ≥40% → good(투지), ≤10% → bad(불안), 그 외 normal. 변형 그림 없으면 normal.
+function jkCond(jk){const r=(D.results||[]).filter(x=>x.jkNo===jk&&+x.ord>0).sort((a,b)=>(b.rcDate+'').localeCompare(a.rcDate+'')).slice(0,10);if(r.length<5)return'normal';const t=r.filter(x=>+x.ord<=3).length/r.length;return t>=.4?'good':t<=.1?'bad':'normal'}
+const artOf=jk=>{const a=ART[jk];if(!a)return null;if(typeof a==='string')return a;const c=jkCond(jk);return a[c]||a.normal}
+const jkImg=jk=>{const a=artOf(jk);return a?`<span class="jart"><img class="jimg" src="art/jockeys/${a}" alt="" loading="lazy"><small class="jlbl">실제 인물과 무관한 캐릭터</small></span>`:avJk(jk)};
 // 별점: 최근 1년 성적, 표본 20전 이상만. S = 0.6×승률 + 0.4×복승률(%) → 5미만★1, 10미만★2, 15미만★3, 20미만★4, 20이상★5
 function jkStar(jk){const i=D.jinfo[jk],r=D.jres[jk];let n,w,q;if(i&&i.rcCntY){n=i.rcCntY;w=i.ord1CntY/n*100;q=(i.ord1CntY+i.ord2CntY)/n*100}else if(r&&r.rcCntY){n=r.rcCntY;w=+r.winRateY;q=+r.qnlRateY}else return null;
 if(n<20)return{n,st:0};const S=.6*w+.4*q;return{n,w,q,S,st:S<5?1:S<10?2:S<15?3:S<20?4:5}}
 const starH=o=>!o?'<span class="na">데이터 없음</span>':!o.st?'<span class="na">표본 부족</span>':`<span class="stars">${'★'.repeat(o.st)}<i>${'★'.repeat(5-o.st)}</i></span>`;
 function jkCarousel(){const R=races();const ks=Object.keys(R).sort();const d=ks.length?ks[ks.length-1].split('|')[0]:'';
-const jks=[...new Map(D.entries.filter(e=>e.rcDate>=String(+d-7)).map(e=>[e.jkNo,e])).values()].map(e=>({e,s:jkStar(e.jkNo)})).sort((a,b)=>((b.s&&b.s.S)||0)-((a.s&&a.s.S)||0)).slice(0,12);
+const jks=[...new Map(D.entries.filter(e=>e.rcDate>=String(+d-7)).map(e=>[e.jkNo,e])).values()].map(e=>({e,s:jkStar(e.jkNo)})).sort((a,b)=>(!!ART[b.e.jkNo]-!!ART[a.e.jkNo])||((b.s&&b.s.S)||0)-((a.s&&a.s.S)||0)).slice(0,12);
 if(!jks.length)return'';return `<h3>이번 주 기수 카드 <span class="muted">옆으로 넘겨보세요</span></h3><div class="car">${jks.map(({e,s},i)=>`<div class="jc" style="animation-delay:${i*.04}s" onclick="openJk('${e.jkNo}','','')">${jkImg(e.jkNo)}<b>${e.jkName}</b><div class="muted" style="font-size:12px">${e.meet}${D.jinfo[e.jkNo]?.part?' · '+D.jinfo[e.jkNo].part:''}</div>${starH(s)}${s&&s.st?`<div class="muted" style="font-size:11px">1년 승률 ${s.w.toFixed(1)}%</div>`:''}</div>`).join('')}</div><p class="note" style="margin-top:-4px">별점은 최근 1년 성적 요약이며 결과를 보장하지 않아요. 그림은 실제 인물이 아닌 기본 일러스트예요. <a href="#/method">별점 기준</a></p>`}
 function heroHtml(){const R=races();const ks=Object.keys(R).sort();const today=new Date(Date.now()+9*36e5).toISOString().slice(0,10).replaceAll('-','');
 const next=ks.filter(k=>k.split('|')[0]>=today);const last=ks[ks.length-1];const nd=next.length?next[0].split('|')[0]:null;
