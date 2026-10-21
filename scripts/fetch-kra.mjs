@@ -41,6 +41,7 @@ async function call(path, params = {}, rows = 1000) {
       code = h.resultCode; msg = h.resultMsg; total = b.totalCount;
       const it = b.items?.item ?? b.items; items = Array.isArray(it) ? it : it && typeof it === 'object' ? [it] : [];
     } catch { code = 'PARSE'; msg = 'JSON parse error'; }
+    if (code === undefined) { code = `HTTP${status}`; msg = mask(t.slice(0, 160)).replace(/\s+/g, ' '); }
   } else {
     code = (t.match(/<resultCode>([^<]*)/) || t.match(/<returnReasonCode>([^<]*)/) || [])[1];
     msg = (t.match(/<resultMsg>([^<]*)/) || t.match(/<returnAuthMsg>([^<]*)/) || t.match(/<errMsg>([^<]*)/) || [])[1];
@@ -87,7 +88,8 @@ async function runApi(a) {
 }
 for (const a of APIS) {
   if (a.key === 'detail') {
-    const dates = [...new Set((out.results || []).map(r => String(r.rcDate)))].sort().slice(-4);
+    const src = (out.results?.length ? out.results : out.entries || []).filter(r => String(r.rcDate) <= today);
+    const dates = [...new Set(src.map(r => String(r.rcDate)))].sort().slice(-8);
     a.runs = dates.length ? dates.flatMap(d => MEETS.map(meet => ({ meet, rc_date: d }))) : [{ meet: '1', rc_date: ymd(addDays(-((kst.getUTCDay() + 1) % 7))) }];
   }
   if (a.key === 'horseTotal') {
