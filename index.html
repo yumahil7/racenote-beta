@@ -340,7 +340,7 @@ ${s&&s.flags.length?`<div class="flag" style="margin-top:6px">⚑ ${s.flags.join
 <h3>적성 (수집 기간 기록)</h3><div class="card" style="padding:8px"><table><tr><th>거리</th><th>성적</th><th>3착내</th></tr>${grp(r=>r.rcDist+'m')}</table>
 <table style="margin-top:6px"><tr><th>주로상태</th><th>성적</th><th>3착내</th></tr>${grp(r=>r.track)}</table><table style="margin-top:6px"><tr><th>게이트</th><th>성적</th><th>3착내</th></tr>${grp(gb)}</table></div>
 <h3>최근 5경주</h3><div class="card" style="padding:8px;overflow-x:auto"><table><tr><th>일자</th><th>경주</th><th>거리</th><th>착순</th><th>기록</th><th>기수</th></tr>${hist.slice(0,5).map(r=>`<tr><td>${fd(r.rcDate)}</td><td>${r.meet} ${r.rcNo}R</td><td>${r.rcDist}</td><td>${r.ord}</td><td>${r.rcTime}</td><td>${r.jkName}</td></tr>`).join('')||`<tr><td colspan=6>${NA} (수집 기간 내 출전 기록 없음)</td></tr>`}</table></div>
-<h3>혈통</h3><div class="card">${h.fhrName?`부마 ${h.fhrName} · 모마 ${h.mhrName||'-'}`:NA+' <span class="muted">— 경주마 혈통 API 승인 후 표시 예정</span>'}</div>
+
 ${s?`<h3>RN-Score 구성 <span class="muted">총 ${s.total}</span></h3>`+Object.keys(W).map(k=>`<div class="rnrow"><span>${WN[k]} <i class="muted">(${W[k]}%)</i></span><b>${s.c[k]}</b></div><div class="bar"><i style="width:${s.c[k]}%"></i></div><div class="muted" style="margin-bottom:6px">${s.ev[k]}</div>`).join(''):''}
 <a class="btn ghost" style="display:block;text-align:center;margin-top:10px" href="#/horse/${no}" onclick="closeSheet()">마필 전체 기록 보기</a>`)}
 // 기수 최근 30일: 데이터 마지막 경주일 기준 30일(경주결과 D.results + 과거이력 JKR). 없으면 이력상 최근 기승.
