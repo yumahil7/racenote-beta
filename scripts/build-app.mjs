@@ -26,6 +26,12 @@ out.analysts = computeAnalysts(k);
   const nm = {}; for (const e of [...(k.entries || []), ...(k.detail || [])]) nm[e.jkNo] = nm[e.jkNo] || String(e.jkName || '').replace(/^\s*(\([^)]*\)|\[[^\]]*\])\s*/, '');
   out.jkPriority = Object.entries(J).map(([jk, L]) => { const r = L.filter(x => x[0] >= from); const w = r.filter(x => x[4] === 1).length; return { jkNo: jk, name: nm[jk] || null, w, n: r.length, wr: r.length ? +(w / r.length * 100).toFixed(1) : 0 }; })
     .filter(x => x.n > 0).sort((a, b) => b.w - a.w || b.wr - a.wr || b.n - a.n);
+  // 기수 소속 경마장: 최근 90일 실제 기승 경마장 최다 → 없으면 KRA 현직기수정보 소속. 표기는 서울/부산경남/제주로 통일
+  const NM = m => ({ '1': '서울', '2': '제주', '3': '부산경남', '영남': '부산경남', '부경': '부산경남' })[String(m)] || String(m || '');
+  const t90 = new Date(last.replace(/(\d{4})(\d\d)(\d\d)/, '$1-$2-$3')); t90.setDate(t90.getDate() - 89); const f90 = t90.toISOString().slice(0, 10).replaceAll('-', '');
+  const JM = {}; for (const j of k.jockeys || []) if (j.jkNo) JM[j.jkNo] = { m: NM(j.meet), src: 'kra' };
+  for (const [jk, L] of Object.entries(J)) { const c = {}; L.filter(x => x[0] >= f90).forEach(x => { const m = NM(x[1]); c[m] = (c[m] || 0) + 1; }); const off = JM[jk]?.m; const top = Object.entries(c).sort((a, b) => b[1] - a[1] || (b[0] === off) - (a[0] === off))[0]; if (top) JM[jk] = { m: top[0], src: 'rides', off: JM[jk]?.m }; }
+  out.jkMeet = Object.fromEntries(Object.entries(JM).map(([a, b]) => [a, b.m]));
   mkdirSync('art/jockeys', { recursive: true }); writeFileSync('art/jockeys/priority.json', JSON.stringify(out.jkPriority, null, 1)); }
 // 혈통(부·모·외조부·도사지) — 출전마만, 화면 표시용
 if (existsSync('data/pedigree.json')) { const P = JSON.parse(readFileSync('data/pedigree.json', 'utf8')).horses || {}; const cur = new Set([...(k.entries || []), ...(k.detail || [])].map(e => String(e.hrNo)));

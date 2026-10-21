@@ -114,8 +114,8 @@ function normKra(k){
   const wt={};(k.weight||[]).forEach(w=>wt[[w.rcDate,w.meet,w.rcNo,w.chulNo].join('|')]={wg:w.wgHr,diff:+w.wgHrDiff,recent:w.recentRcDate});
   const chg={};(k.jockeyChange||[]).forEach(c=>chg[[c.rcDate,c.meet,c.rcNo,c.chulNo].join('|')]=c);
   const jinfo={};(k.jockeys||[]).forEach(j=>jinfo[j.jkNo]=j);const jres={};(k.jockeyResult||[]).forEach(j=>jres[j.jkNo]=j);const jper={};(k.jockeyPeriod||[]).forEach(j=>jper[j.jkNo]=j);
-  return {source:'kra',updatedAt:k.updatedAt,entries:E,results:R,horses:Object.values(H),jk,wt,chg,jinfo,jres,jper}}
-function normSample(s){return {...s,source:'sample',jk:{},wt:{},chg:{},jinfo:{},jres:{},jper:{}}}
+  return {source:'kra',updatedAt:k.updatedAt,entries:E,results:R,horses:Object.values(H),jk,wt,chg,jinfo,jres,jper,jkMeet:k.jkMeet||{}}}
+function normSample(s){return {...s,source:'sample',jk:{},wt:{},chg:{},jinfo:{},jres:{},jper:{},jkMeet:{}}}
 function calc(){const g={};D.results.forEach(r=>{const k=r.meet+r.rcDist;(g[k]=g[k]||[]).push(sec(r.rcTime))});
 const st={};for(const k in g){const a=g[k],m=a.reduce((x,y)=>x+y)/a.length,sd=Math.sqrt(a.reduce((x,y)=>x+(y-m)**2,0)/a.length)||1;st[k]=[m,sd]}
 D.results.forEach(r=>{const[m,sd]=st[r.meet+r.rcDist];const adj=['포화','불량'].includes(r.track)?.4:0;r.si=Math.round(80+(m-sec(r.rcTime)+adj)/sd*10)});
@@ -293,7 +293,7 @@ const pcard=(no,nm,g,sub,extra='')=>{g=g||{};const G=g.g||'C';return HART[no]?`<
 // ---- 기수 카드 / 말 카드 갤러리 ----
 const GF={jm:'',js:'star',hg:'SS',hm:'',hq:''};const setGF=(k,v)=>{GF[k]=v;route()};
 const fbtn=(k,v,t)=>`<button class="${GF[k]===v?'on':''}" onclick="setGF('${k}','${v}')">${t}</button>`;
-function jgal(){const M={};D.entries.concat(D.results).forEach(e=>{if(e.jkNo&&!M[e.jkNo])M[e.jkNo]={no:e.jkNo,name:e.jkName,meet:e.meet}});Object.values(D.jinfo).forEach(j=>{M[j.jkNo]=M[j.jkNo]||{no:j.jkNo,name:j.jkName,meet:j.meet}});
+function jgal(){const M={},JM=D.jkMeet||{},nmM=m=>({'영남':'부산경남','부경':'부산경남'})[m]||m;D.entries.concat(D.results).forEach(e=>{if(e.jkNo&&!M[e.jkNo])M[e.jkNo]={no:e.jkNo,name:e.jkName}});Object.values(D.jinfo).forEach(j=>{M[j.jkNo]=M[j.jkNo]||{no:j.jkNo,name:j.jkName,meet:j.meet}});Object.values(M).forEach(j=>j.meet=nmM(JM[j.no]||(D.jinfo[j.no]||{}).meet||j.meet||''));
 let L=Object.values(M).map(j=>({...j,s:jkStar(j.no)}));const meets=[...new Set(L.map(j=>j.meet).filter(Boolean))];if(GF.jm)L=L.filter(j=>j.meet===GF.jm);
 L.sort(GF.js==='star'?(a,b)=>(!!ART[b.no]-!!ART[a.no])||((b.s&&b.s.S)||0)-((a.s&&a.s.S)||0):(a,b)=>String(a.name).localeCompare(b.name,'ko'));
 return `<h2>기수 카드</h2><p class="muted">그림은 실제 인물과 무관한 캐릭터예요. 카드를 누르면 프로필이 열려요.</p><div class="fl">${fbtn('jm','','전체')}${meets.map(m=>fbtn('jm',m,m)).join('')}</div><div class="fl">${fbtn('js','star','별점순')}${fbtn('js','name','이름순')}</div>
