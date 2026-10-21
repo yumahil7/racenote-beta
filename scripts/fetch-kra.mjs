@@ -104,7 +104,11 @@ writeFileSync('data/status.json', JSON.stringify({ checkedAt: new Date().toISOSt
 if (anyReal) {
   const pick = ['entries', 'results', 'detail', 'raceInfo', 'track', 'parkTrack', 'topRecord', 'jockeys', 'jockeyPeriod', 'jockeyResult', 'weight', 'horses', 'jockeyChange', 'cancel'];
   const data = { source: 'kra', updatedAt: new Date().toISOString(), notice: '출처: 공공데이터포털 한국마사회 제공 데이터. 배당·매출 필드는 제외.' };
-  for (const k of pick) data[k] = out[k] || [];
+  const SLIM = /(En$|^chaksun|^_meetReq$|^birthday$|^owCloth$)/;
+  const slim = a => (a || []).map(o => Object.fromEntries(Object.entries(o).filter(([k]) => !SLIM.test(k))));
+  for (const k of pick) data[k] = slim(out[k]);
+  const minDate = Math.min(...data.entries.map(e => +e.rcDate).filter(Boolean), +today);
+  data.track = data.track.filter(t => +t.rcDate >= minDate - 100);
   const s = JSON.stringify(data);
   if (s.includes(KEY) || s.includes(encodeURIComponent(KEY))) { console.error('키 포함 감지 — 저장 중단'); process.exit(2); }
   writeFileSync('data/kra.json', s);

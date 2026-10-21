@@ -12,7 +12,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sa
 header{position:sticky;top:0;z-index:5;background:rgba(15,26,21,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .top{display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
 .logo{font-weight:800;font-size:18px}.logo b{color:var(--p)}.beta{font-size:11px;background:var(--p2);color:#fff;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:2px}
-.banner{background:#3b2f05;color:var(--warn);font-size:12.5px;padding:6px 16px;text-align:center}
+.banner{background:#3b2f05;color:var(--warn);font-size:12.5px;padding:6px 16px;text-align:center}.banner.ok{background:#0d2a1b;color:#a7f3c4}.rnnote{background:#14301f;border:1px solid #1f5135;border-radius:12px;padding:10px 12px;font-size:13px;margin-bottom:10px}.flag{font-size:11.5px;color:var(--warn)}.rnbox{background:#0b140f;border:1px solid var(--line);border-radius:10px;padding:10px;margin:-4px 0 10px}.hcard{display:flex;gap:10px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:8px;cursor:pointer}.hn{width:28px;height:28px;border-radius:8px;background:#24382e;display:flex;align-items:center;justify-content:center;font-weight:800;flex:none}.hm{flex:1;min-width:0}.hs{text-align:right;flex:none}.rn{font-size:20px;font-weight:800;color:var(--p)}.ord{font-size:12px;color:var(--warn);font-weight:700}.rnrow{display:flex;justify-content:space-between;font-size:13px;margin-top:4px}
 main{padding:14px 16px}
 h2{font-size:19px;margin:6px 0 12px}h3{font-size:15px;margin:16px 0 8px;color:var(--p)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:10px}
@@ -40,7 +40,7 @@ select,input{width:100%;background:#0b140f;border:1px solid var(--line);border-r
 </style></head><body>
 <div class="app">
 <header><div class="top"><div class="logo">레이스<b>노트</b><span class="beta">BETA</span></div><span class="muted">정보 제공 전용</span></div>
-<div class="banner">⚠️ 예시 데이터 — 실제 경주·마필·인물이 아닌 가상 데이터입니다</div></header>
+<div id="srcb"></div></header>
 <main id="view"></main>
 <div class="foot">레이스노트는 경마 기록·통계 정보 서비스이며 마권 구매·베팅 기능을 제공하지 않습니다. 모든 지표는 참고용이며 결과를 보장하지 않습니다. 만 19세 이상 이용. 본 서비스는 한국마사회의 공식 서비스가 아닙니다.<br>도박 문제 상담: 한국도박문제예방치유원 헬프라인 <b>국번 없이 1336</b> (무료, 365일 09:00~22:00) · <a href="https://www.kcgp.or.kr" target="_blank" rel="noopener">kcgp.or.kr</a> · <a href="#/terms">약관·고지</a></div>
 </div>
@@ -52,39 +52,108 @@ select,input{width:100%;background:#0b140f;border:1px solid var(--line);border-r
 const $=s=>document.querySelector(s);let D;const FK='rn_fav',AK='rn_age19';
 const fav=()=>JSON.parse(localStorage.getItem(FK)||'[]');
 function toggleFav(no){let f=fav();f=f.includes(no)?f.filter(x=>x!==no):[...f,no];localStorage.setItem(FK,JSON.stringify(f));route()}
-const fd=d=>`${+d.slice(4,6)}/${+d.slice(6)}`;
-const sec=t=>{const[m,s]=t.split(':');return +m*60+ +s};
+const fd=d=>`${+String(d).slice(4,6)}/${+String(d).slice(6)}`;
+const sec=t=>{const[m,s]=String(t).split(':');return s===undefined?+m:+m*60+ +s};
+const num=v=>{const n=parseFloat(v);return isNaN(n)?null:n};
+const clamp=v=>Math.max(0,Math.min(100,Math.round(v)));
+const dayShort=d=>String(d||'').replace('요일','');
 let SI={},HSI={};
+// ---- 데이터 정규화: 실데이터(kra.json) 또는 예시(sample.json)를 같은 구조로 ----
+function normKra(k){
+  const E=k.entries.map(e=>({...e,meet:e.meet,rcDate:String(e.rcDate),rcNo:String(e.rcNo),chulNo:String(e.chulNo),rcDay:dayShort(e.rcDay),
+    age:String(e.age).includes('세')?e.age:e.age+'세',stTime:(String(e.stTime).match(/\d{1,2}:\d{2}/)||[''])[0],rating:e.rating,rcDist:String(e.rcDist)}));
+  const dist={};E.forEach(e=>dist[[e.rcDate,e.meet,e.rcNo].join('|')]=e.rcDist);
+  const trk={};(k.track||[]).forEach(t=>trk[[t.rcDate,t.meet,t.rcNo].join('|')]=t);
+  const R=(k.detail||[]).filter(r=>+r.stOrd>0&&/\d/.test(r.rcTime)).map(r=>{const key=[r.rcDate,r.meet,r.rcNo].join('|');const t=trk[key]||{};
+    return {meet:r.meet,rcDate:String(r.rcDate),rcNo:String(r.rcNo),rcDist:dist[key]||'',track:t.track||'-',water:t.waterPercent,ord:String(r.stOrd),chulNo:String(r.chulNo),
+      hrNo:r.hrNo,hrName:r.hrName,age:r.age,sex:r.sex,wgBudam:r.wgBudam,jkNo:r.jkNo,jkName:r.jkName,trNo:r.trNo,trName:r.trName,wgHr:`${r.wgHr}(${+r.df>0?'+':''}${r.df})`,wgNum:+r.wgHr,df:+r.df,rcTime:r.rcTime,hrTool:r.hrTool||'-'}}).filter(r=>r.rcDist);
+  const H={};E.forEach(e=>H[e.hrNo]={hrNo:e.hrNo,hrName:e.hrName,prdCtyNm:e.prd,sex:e.sex,age:e.age,owName:e.owName});
+  const jk={};(k.jockeyPeriod||[]).forEach(j=>jk[j.jkNo]={win:+j.winRateTsum,qu:+j.quRateTsum,n:+j.raceCnttsum,src:'최근60일'});
+  (k.jockeyResult||[]).forEach(j=>{if(!jk[j.jkNo]&&+j.rcCntY>0)jk[j.jkNo]={win:+j.winRateY,qu:+j.qnlRateY,n:+j.rcCntY,src:'최근1년'}});
+  const wt={};(k.weight||[]).forEach(w=>wt[[w.rcDate,w.meet,w.rcNo,w.chulNo].join('|')]={wg:w.wgHr,diff:+w.wgHrDiff,recent:w.recentRcDate});
+  const chg={};(k.jockeyChange||[]).forEach(c=>chg[[c.rcDate,c.meet,c.rcNo,c.chulNo].join('|')]=c);
+  return {source:'kra',updatedAt:k.updatedAt,entries:E,results:R,horses:Object.values(H),jk,wt,chg}}
+function normSample(s){return {...s,source:'sample',jk:{},wt:{},chg:{}}}
 function calc(){const g={};D.results.forEach(r=>{const k=r.meet+r.rcDist;(g[k]=g[k]||[]).push(sec(r.rcTime))});
 const st={};for(const k in g){const a=g[k],m=a.reduce((x,y)=>x+y)/a.length,sd=Math.sqrt(a.reduce((x,y)=>x+(y-m)**2,0)/a.length)||1;st[k]=[m,sd]}
 D.results.forEach(r=>{const[m,sd]=st[r.meet+r.rcDist];const adj=['포화','불량'].includes(r.track)?.4:0;r.si=Math.round(80+(m-sec(r.rcTime)+adj)/sd*10)});
 const by={};D.results.forEach(r=>(by[r.hrNo]=by[r.hrNo]||[]).push(r));
-for(const h in by){by[h].sort((a,b)=>b.rcDate.localeCompare(a.rcDate));HSI[h]=Math.max(...by[h].slice(0,3).map(r=>r.si))}SI=by}
-const races=()=>{const m={};D.entries.forEach(e=>{const k=[e.rcDate,e.meet,e.rcNo].join('|');(m[k]=m[k]||[]).push(e)});return m};
+for(const h in by){by[h].sort((a,b)=>b.rcDate.localeCompare(a.rcDate));HSI[h]=Math.max(...by[h].slice(0,3).map(r=>r.si))}SI=by;
+// 게이트 경향: 경마장별 1착마 중 안쪽(1~4번) 비율
+D.gate={};const cnt={};D.results.forEach(r=>{if(r.ord==='1'){const c=cnt[r.meet]=cnt[r.meet]||{w:0,i:0};c.w++;if(+r.chulNo<=4)c.i++}});
+for(const m in cnt)D.gate[m]=cnt[m].i/cnt[m].w}
+const races=()=>{const m={};D.entries.forEach(e=>{const k=[e.rcDate,e.meet,e.rcNo].join('|');(m[k]=m[k]||[]).push(e)});for(const k in m)m[k].sort((a,b)=>a.chulNo-b.chulNo);return m};
+// ---- RN-Score v0 (규칙 기반, 참고용) ----
+const W={S:30,R:15,D:10,P:5,J:10,C:5,T:5,W:10,G:10};
+const WN={S:'능력(속도지수)',R:'레이팅·중량',D:'거리·주로 적성',P:'혈통 적성',J:'기수',C:'기수×말 조합',T:'조교사',W:'컨디션(마체중·휴양)',G:'게이트 경향'};
+function rate(rs,f){const n=rs.length,k=rs.filter(f).length;return{n,k,r:(k+0.9)/(n+3)}}
+function rnScore(e,field){const hist=(SI[e.hrNo]||[]).filter(r=>r.rcDate<e.rcDate);const c={},ev={},flags=[];
+ const l3=hist.slice(0,3);if(l3.length){const w=[.5,.3,.2].slice(0,l3.length),ws=w.reduce((a,b)=>a+b);const v=l3.reduce((a,r,i)=>a+r.si*w[i],0)/ws;c.S=clamp(50+(v-80)*2.5);ev.S=`최근 ${l3.length}회 지수 ${l3.map(r=>r.si).join('/')}`}else{c.S=50;ev.S='이전 기록 없음(중립 50)'}
+ const rt=num(e.rating),avg=field.map(x=>num(x.rating)).filter(x=>x!==null);let R=50,rv=[];
+ if(rt!==null&&avg.length){const a=avg.reduce((x,y)=>x+y)/avg.length;R+= (rt-a)*2;rv.push(`레이팅 ${rt} (경주 평균 ${a.toFixed(0)})`)}else rv.push('레이팅 없음');
+ if(l3[0]&&num(e.wgBudam)!==null&&num(l3[0].wgBudam)!==null){const d=num(e.wgBudam)-num(l3[0].wgBudam);R-=d*2;rv.push(`부담중량 ${d>=0?'+':''}${d}kg`)}
+ c.R=clamp(R);ev.R=rv.join(', ');
+ const sd=hist.filter(r=>Math.abs(+r.rcDist-+e.rcDist)<=200);const dr=rate(sd,r=>+r.ord<=3);c.D=clamp(dr.r/0.6*100);ev.D=`비슷한 거리(±200m) ${dr.n}전 중 3착 이내 ${dr.k}회`;
+ c.P=50;ev.P='혈통 데이터 미연동(중립 50)';
+ const j=D.jk[e.jkNo];if(j){c.J=clamp(20+j.win*2+j.qu*0.6);ev.J=`${e.jkName} ${j.src} 승률 ${j.win}% · 복승률 ${j.qu}% (${j.n}전)`}else{c.J=50;ev.J='기수 성적 데이터 없음(중립 50)'}
+ const cb=hist.filter(r=>r.jkNo&&r.jkNo===e.jkNo);if(cb.length>=3){const x=rate(cb,r=>+r.ord<=3);c.C=clamp(x.r/0.6*100);ev.C=`이 기수와 ${x.n}전 3착 이내 ${x.k}회`}else{c.C=50;ev.C=`조합 표본 ${cb.length}회(<3, 중립 50)`}
+ const tr=D.results.filter(r=>r.trNo&&r.trNo===e.trNo&&r.rcDate<e.rcDate);if(tr.length>=5){const x=rate(tr,r=>+r.ord<=3);c.T=clamp(x.r/0.6*100);ev.T=`수집 기간 ${x.n}전 3착 이내 ${x.k}회(자체 집계)`}else{c.T=50;ev.T='표본 부족(중립 50)'}
+ const w=D.wt[[e.rcDate,e.meet,e.rcNo,e.chulNo].join('|')];let Wc=65,wv=[];
+ if(w){const a=Math.abs(w.diff);Wc=a>=10?35:a>=6?55:70;wv.push(`마체중 ${w.wg}kg (${w.diff>0?'+':''}${w.diff})`);if(a>=10)flags.push('마체중 ±10kg 이상')}else wv.push('마체중 정보 없음');
+ if(l3[0]){const gap=(new Date(e.rcDate.replace(/(\d{4})(\d\d)(\d\d)/,'$1-$2-$3'))-new Date(l3[0].rcDate.replace(/(\d{4})(\d\d)(\d\d)/,'$1-$2-$3')))/864e5;if(gap>90){Wc-=20;flags.push(`휴양 후 복귀(${gap|0}일)`)}wv.push(`직전 출전 ${gap|0}일 전`)}
+ c.W=clamp(Wc);ev.W=wv.join(', ');
+ const gi=D.gate[e.meet];if(gi!==undefined){const exp=4/Math.max(8,+e.dusu||field.length);const inside=+e.chulNo<=4;c.G=clamp(50+(inside?1:-1)*(gi-exp)*100);ev.G=`${e.meet} 최근 1착마 중 1~4번 ${Math.round(gi*100)}% (기대치 ${Math.round(exp*100)}%), 이 말 ${e.chulNo}번`}else{c.G=50;ev.G='게이트 데이터 없음(중립 50)'}
+ const ch=D.chg[[e.rcDate,e.meet,e.rcNo,e.chulNo].join('|')];if(ch)flags.push(`기수 변경: ${ch.jkBefName}→${ch.jkAftName}${ch.reason?' ('+ch.reason+')':''}`);
+ if(l3[0]&&l3[0].hrTool&&l3[1]&&l3[1].hrTool&&l3[0].hrTool!==l3[1].hrTool)flags.push('장구 변경 이력');
+ const total=Object.keys(W).reduce((a,k)=>a+W[k]*c[k],0)/100;return{total:Math.round(total*10)/10,c,ev,flags}}
+function srcBanner(){return D.source==='kra'?`<div class="banner ok">출처: 공공데이터포털 한국마사회 제공 데이터 · 업데이트 ${new Date(D.updatedAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})} KST</div>`:'<div class="banner">⚠️ 예시 데이터 — 실제 경주·마필·인물이 아닌 가상 데이터입니다</div>'}
 function home(){const R=races();const days={};Object.keys(R).forEach(k=>{const[d,m]=k.split('|');((days[d]=days[d]||{})[m]=days[d][m]||[]).push(k)});
-let h='<h2>이번 주 경주</h2>';for(const d in days){const e0=R[Object.values(days[d])[0][0]][0];h+=`<h3>${fd(d)} (${e0.rcDay})</h3>`;
-for(const m in days[d]){h+=`<div class="card"><div class="row"><b>${m}</b><span class="muted">${days[d][m].length}개 경주</span></div><div style="margin-top:8px">`+
-days[d][m].map(k=>{const e=R[k][0];return `<a class="chip" href="#/race/${k}">${e.rcNo}R · ${e.rcDist}m · ${e.stTime}</a>`}).join('')+'</div></div>'}}
-h+=`<h3>최근 트랙 경향 (예시)</h3>`+bias();return h}
-function bias(){const m={};D.results.forEach(r=>{const k=r.meet;m[k]=m[k]||{w:0,f:0,i:0};if(r.ord==='1'){m[k].w++;if(+r.sjS1fOrd<=3)m[k].f++;if(+r.chulNo<=4)m[k].i++}});
-return Object.entries(m).map(([k,v])=>`<div class="card"><b>${k}</b> <span class="muted">최근 ${v.w}개 경주 1착마 기준</span>
-<div class="muted" style="margin-top:8px">초반 3위 이내(선행) 비율 ${Math.round(v.f/v.w*100)}%</div><div class="bar"><i style="width:${v.f/v.w*100}%"></i></div>
-<div class="muted" style="margin-top:6px">안쪽 출주번호(1~4) 비율 ${Math.round(v.i/v.w*100)}%</div><div class="bar"><i style="width:${v.i/v.w*100}%"></i></div></div>`).join('')+'<p class="note">트랙 경향은 과거 기록의 단순 집계이며 향후 결과를 예측·보장하지 않습니다.</p>'}
+const ds=Object.keys(days).sort().reverse().slice(0,D.source==='kra'?4:9);const today=new Date(Date.now()+9*36e5).toISOString().slice(0,10).replaceAll('-','');
+let h=`<h2>${D.source==='kra'?'최근·예정 경주':'이번 주 경주'}</h2>`;if(D.source==='kra'&&!ds.some(d=>d>=today))h+='<p class="muted">이번 주 출마표가 아직 공개되지 않아 최근 경주일을 보여드립니다. 지난 경주의 RN-Score는 해당 경주 이전 기록만으로 계산합니다.</p>';
+for(const d of ds){const e0=R[Object.values(days[d])[0][0]][0];h+=`<h3>${fd(d)} (${e0.rcDay}) ${d<today?'<span class="chip">종료</span>':''}</h3>`;
+for(const m in days[d]){days[d][m].sort((a,b)=>a.split('|')[2]-b.split('|')[2]);h+=`<div class="card"><div class="row"><b>${m}</b><span class="muted">${days[d][m].length}개 경주</span></div><div style="margin-top:8px">`+
+days[d][m].map(k=>{const e=R[k][0];return `<a class="chip" href="#/race/${encodeURIComponent(k)}">${e.rcNo}R · ${e.rcDist}m${e.stTime?' · '+e.stTime:''}</a>`}).join('')+'</div></div>'}}
+h+=`<h3>최근 트랙 경향</h3>`+bias();return h}
+function bias(){const m={};D.results.forEach(r=>{const k=r.meet;m[k]=m[k]||{w:0,f:0,i:0,hasF:false};if(r.ord==='1'){m[k].w++;if(r.sjS1fOrd!==undefined){m[k].hasF=true;if(+r.sjS1fOrd<=3)m[k].f++}if(+r.chulNo<=4)m[k].i++}});
+return Object.entries(m).map(([k,v])=>`<div class="card"><b>${k}</b> <span class="muted">수집된 ${v.w}개 경주 1착마 기준</span>
+${v.hasF?`<div class="muted" style="margin-top:8px">초반 3위 이내(선행) 비율 ${Math.round(v.f/v.w*100)}%</div><div class="bar"><i style="width:${v.f/v.w*100}%"></i></div>`:''}
+<div class="muted" style="margin-top:6px">안쪽 출주번호(1~4) 비율 ${Math.round(v.i/v.w*100)}%</div><div class="bar"><i style="width:${v.i/v.w*100}%"></i></div></div>`).join('')+'<p class="note">트랙 경향은 과거 기록의 단순 집계이며 향후 결과를 예측·보장하지 않습니다.'+(D.source==='kra'?' 선행 비율은 경주성적정보 API 승인 후 제공됩니다.':'')+'</p>'}
+let OPEN=null;
 function race(k){const es=races()[k];if(!es)return'<p>경주를 찾을 수 없습니다.</p>';const e=es[0];const f=fav();
-return `<a href="#/">← 홈</a><h2>${e.meet} ${e.rcNo}R 출마표</h2><div class="card"><div class="muted">${fd(e.rcDate)}(${e.rcDay}) ${e.stTime} · ${e.rcDist}m · ${e.rank} · ${e.dusu}두 · ${e.rcName}</div></div>
-<div class="card" style="overflow-x:auto"><table><tr><th>번</th><th>마명</th><th>성/령</th><th>중량</th><th>기수</th><th>레이팅</th><th>속도지수*</th><th></th></tr>`+
-es.map(x=>`<tr><td>${x.chulNo}</td><td><a href="#/horse/${x.hrNo}">${x.hrName}</a><div class="muted">${x.trName}</div></td><td>${x.sex}/${x.age}</td><td>${x.wgBudam}</td><td>${x.jkName}</td><td>${x.rating}</td><td class="si">${HSI[x.hrNo]??'-'}</td><td><button class="star ${f.includes(x.hrNo)?'on':''}" onclick="toggleFav('${x.hrNo}')" aria-label="관심마">★</button></td></tr>`).join('')+
-`</table><p class="note">* 속도지수: 최근 3경주 중 최고값. 같은 경마장·거리의 평균 기록 대비 상대값(평균 80)이며 참고용입니다.</p></div>`}
+const sc=es.map(x=>({x,s:rnScore(x,es)}));const rank=[...sc].sort((a,b)=>b.s.total-a.s.total).map(o=>o.x.chulNo);
+const res=D.results.filter(r=>r.rcDate===e.rcDate&&r.meet===e.meet&&r.rcNo===e.rcNo);const ordOf={};res.forEach(r=>ordOf[r.chulNo]=r.ord);
+return `<a href="#/">← 홈</a><h2>${e.meet} ${e.rcNo}R 출마표</h2><div class="card"><div class="muted">${fd(e.rcDate)}(${e.rcDay}) ${e.stTime||''} · ${e.rcDist}m · ${e.rank||''} · ${e.dusu||es.length}두 · ${e.rcName||''}</div></div>
+<div class="rnnote">RN-Score v0는 공개된 규칙으로 계산한 <b>참고용 분석 지표</b>이며 결과를 예측·보장하지 않습니다. 말 이름 줄을 누르면 근거가 보입니다. <a href="#/method">계산 방법</a></div>
+`+sc.map(({x,s})=>`<div class="hcard" onclick="OPEN=OPEN==='${x.chulNo}'?null:'${x.chulNo}';route()">
+<div class="hn">${x.chulNo}</div><div class="hm"><a href="#/horse/${x.hrNo}" onclick="event.stopPropagation()"><b>${x.hrName}</b></a> <span class="muted">${x.sex}/${x.age} · ${x.wgBudam}kg</span>
+<div class="muted">${x.jkName} · ${x.trName||''} · 레이팅 ${x.rating} · 지수 <span class="si">${HSI[x.hrNo]??'-'}</span></div>${s.flags.length?'<div class="flag">⚑ '+s.flags.join(' · ')+'</div>':''}</div>
+<div class="hs"><div class="rn">${s.total}</div><div class="muted">RN ${rank.indexOf(x.chulNo)+1}위</div>${res.length?`<div class="ord">${ordOf[x.chulNo]??'-'}착</div>`:''}</div>
+<button class="star ${f.includes(x.hrNo)?'on':''}" onclick="event.stopPropagation();toggleFav('${x.hrNo}')" aria-label="관심마">★</button></div>`+
+(OPEN===x.chulNo?`<div class="rnbox">${Object.keys(W).map(k=>`<div class="rnrow"><span>${WN[k]} <i class="muted">(${W[k]}%)</i></span><b>${s.c[k]}</b></div><div class="bar"><i style="width:${s.c[k]}%"></i></div><div class="muted" style="margin-bottom:6px">${s.ev[k]}</div>`).join('')}</div>`:'')).join('')+
+`<p class="note">* 지수: RN-Speed(같은 경마장·거리 평균 기록=80 기준 상대값), 최근 3경주 최고. ${res.length?'착순은 경주 종료 후 공식 결과입니다. RN-Score는 해당 경주 이전 기록만으로 계산했습니다.':''}</p>`}
 function horse(no){const h=D.horses.find(x=>x.hrNo===no);if(!h)return'<p>마필 없음</p>';const rs=SI[no]||[];const on=fav().includes(no);
 const up=D.entries.filter(e=>e.hrNo===no);
 return `<a href="javascript:history.back()">← 뒤로</a><div class="row"><h2>${h.hrName}</h2><button class="btn ${on?'':'ghost'}" onclick="toggleFav('${no}')">${on?'★ 관심마':'☆ 관심마 추가'}</button></div>
 <div class="card grid"><div><label>마번</label>${h.hrNo}</div><div><label>산지/성/연령</label>${h.prdCtyNm} · ${h.sex} · ${h.age}</div><div><label>마주</label>${h.owName}</div><div><label>속도지수(최근3 최고)</label><span class="si">${HSI[no]??'-'}</span></div></div>
-${up.length?`<h3>출전 예정</h3>`+up.map(e=>`<a class="chip" href="#/race/${e.rcDate}|${e.meet}|${e.rcNo}">${fd(e.rcDate)} ${e.meet} ${e.rcNo}R</a>`).join(''):''}
+${up.length?`<h3>출전 경주</h3>`+up.map(e=>`<a class="chip" href="#/race/${encodeURIComponent(e.rcDate+'|'+e.meet+'|'+e.rcNo)}">${fd(e.rcDate)} ${e.meet} ${e.rcNo}R</a>`).join(''):''}
 <h3>최근 기록</h3><div class="card" style="overflow-x:auto"><table><tr><th>일자</th><th>경마장</th><th>거리</th><th>주로</th><th>착순</th><th>기록</th><th>지수</th><th>마체중</th></tr>`+
-(rs.map(r=>`<tr><td>${fd(r.rcDate)}</td><td>${r.meet} ${r.rcNo}R</td><td>${r.rcDist}</td><td>${r.track}</td><td>${r.ord}</td><td>${r.rcTime}</td><td class="si">${r.si}</td><td>${r.wgHr}</td></tr>`).join('')||'<tr><td colspan=8 class="muted">기록 없음</td></tr>')+'</table></div>'}
+(rs.map(r=>`<tr><td>${fd(r.rcDate)}</td><td>${r.meet} ${r.rcNo}R</td><td>${r.rcDist}</td><td>${r.track}</td><td>${r.ord}</td><td>${r.rcTime}</td><td class="si">${r.si}</td><td>${r.wgHr}</td></tr>`).join('')||'<tr><td colspan=8 class="muted">수집 기간 내 기록 없음</td></tr>')+'</table></div>'}
+function method(){return `<h2>RN-Score v0 계산 방법</h2><div class="card"><p>RN-Score는 출전마를 <b>같은 경주 안에서 상대 비교</b>하기 위한 규칙 기반 점수입니다. 각 요소를 0~100점으로 만든 뒤 아래 가중치로 더합니다. 데이터가 없거나 표본이 적은 요소는 중립 50점으로 둡니다.</p>
+<table style="margin-top:10px"><tr><th>요소</th><th>가중치</th><th>계산</th></tr>
+<tr><td>능력</td><td>30%</td><td>최근 3회 RN-Speed 가중평균(0.5/0.3/0.2), 50+(값−80)×2.5</td></tr>
+<tr><td>레이팅·중량</td><td>15%</td><td>50+(레이팅−경주 평균)×2 − 직전 대비 부담중량 증가kg×2</td></tr>
+<tr><td>거리·주로 적성</td><td>10%</td><td>±200m 거리 3착 이내율(표본 보정 (k+0.9)/(n+3))</td></tr>
+<tr><td>혈통</td><td>5%</td><td>v0 미연동 — 중립 50</td></tr>
+<tr><td>기수</td><td>10%</td><td>최근 60일(없으면 1년) 승률·복승률: 20+승률×2+복승률×0.6</td></tr>
+<tr><td>기수×말 조합</td><td>5%</td><td>조합 3회 이상일 때 3착 이내율, 아니면 50</td></tr>
+<tr><td>조교사</td><td>5%</td><td>수집 기간 3착 이내율(5전 이상), 아니면 50</td></tr>
+<tr><td>컨디션</td><td>10%</td><td>마체중 증감 ±10kg↑ 35, ±6kg↑ 55, 그 외 70 · 90일 초과 휴양 −20</td></tr>
+<tr><td>게이트</td><td>10%</td><td>경마장별 최근 1착마의 1~4번 비율과 기대치 차이</td></tr></table>
+<p class="note">경고 표시(점수 미반영): 기수 변경, 마체중 ±10kg 이상, 휴양 후 복귀, 장구 변경. 지난 경주는 그 경주 이전 기록만 사용합니다. 수집 기간이 짧아(약 1개월) 표본이 적습니다. 적중률 공개 페이지는 데이터가 쌓인 뒤 전 경주 기준으로 제공할 예정입니다.</p>
+<p class="note"><b>RN-Score는 참고용 분석 지표이며 결과를 예측·보장하지 않습니다.</b> 베팅·마권 구매 기능은 제공하지 않습니다.</p></div>`}
 function favs(){const f=fav();if(!f.length)return'<h2>관심마</h2><div class="card muted">출마표나 마필 상세에서 ★를 눌러 관심마를 추가하세요. (이 기기 브라우저에만 저장)</div>';
-return '<h2>관심마</h2>'+f.map(no=>{const h=D.horses.find(x=>x.hrNo===no);if(!h)return'';const up=D.entries.find(e=>e.hrNo===no);
-return `<div class="card row"><div><a href="#/horse/${no}"><b>${h.hrName}</b></a><div class="muted">${h.sex} · ${h.age} · 지수 ${HSI[no]??'-'}</div>${up?`<span class="chip on">출전 예정 ${fd(up.rcDate)} ${up.meet} ${up.rcNo}R</span>`:''}</div><button class="star on" onclick="toggleFav('${no}')">★</button></div>`}).join('')}
+return '<h2>관심마</h2>'+f.map(no=>{const h=D.horses.find(x=>x.hrNo===no);if(!h)return'';const up=D.entries.filter(e=>e.hrNo===no).sort((a,b)=>b.rcDate.localeCompare(a.rcDate))[0];
+return `<div class="card row"><div><a href="#/horse/${no}"><b>${h.hrName}</b></a><div class="muted">${h.sex} · ${h.age} · 지수 ${HSI[no]??'-'}</div>${up?`<span class="chip on">${fd(up.rcDate)} ${up.meet} ${up.rcNo}R</span>`:''}</div><button class="star on" onclick="toggleFav('${no}')">★</button></div>`}).join('')}
 let Q={meet:'',dist:'',track:'',top:'3',min:''};
 function search(){const meets=[...new Set(D.results.map(r=>r.meet))],dists=[...new Set(D.results.map(r=>r.rcDist))].sort((a,b)=>a-b);
 const opt=(a,v)=>'<option value="">전체</option>'+a.map(x=>`<option ${x==v?'selected':''}>${x}</option>`).join('');
@@ -102,6 +171,7 @@ list.slice(0,40).map(([no,v])=>`<div class="card row"><a href="#/horse/${no}"><b
 function guide(){const G=[['출마표 보는 법','출마표는 한 경주에 나서는 말 목록입니다. 번호(출주번호), 마명, 성별·연령, 부담중량(말이 지는 무게, kg), 기수, 조교사, 레이팅(능력 등급 점수)을 확인할 수 있습니다.'],
 ['주로 상태','모래 주로의 수분 정도를 건조·양호·다습·포화·불량으로 나눕니다. 수분이 많을수록 기록이 빨라지거나 느려지는 등 경향이 달라질 수 있습니다.'],
 ['구간 기록(S1F·G1F)','S1F는 출발 후 첫 200m, G1F는 결승 전 마지막 200m 구간입니다. 초반에 앞서는 "선행" 성향과 막판에 치고 나오는 "추입" 성향을 볼 수 있습니다.'],
+['RN-Score란?','출전마의 능력·레이팅·적성·기수·컨디션·게이트 등 공개된 규칙으로 계산한 참고용 점수입니다. 출마표에서 말을 누르면 요소별 근거를 볼 수 있습니다. 결과를 예측·보장하지 않습니다. <a href="#/method">계산 방법 보기</a>'],
 ['레이스노트 속도지수','같은 경마장·같은 거리 경주들의 평균 기록을 80으로 놓고, 더 빠르면 높게 나오도록 만든 상대 지표입니다. 과거 기록을 요약한 참고 수치일 뿐 결과를 보장하지 않습니다.'],
 ['등급과 부담중량','경주마는 실적에 따라 등급이 나뉘고, 핸디캡 경주에서는 능력이 높은 말일수록 무거운 중량을 집니다.'],
 ['건전하게 즐기기','경마는 스포츠로 즐겨 주세요. 레이스노트는 베팅 기능이 없으며, 도박 문제로 어려움이 있다면 한국도박문제예방치유원 헬프라인 1336(무료)에서 상담받을 수 있습니다.']];
@@ -113,18 +183,18 @@ ${Object.entries(PL).map(([k,v])=>`<div class="card plan ${PLAN==k?'sel':''}" on
 <div id="payment-method"></div><div id="agreement"></div>
 <button class="btn" id="paybtn" style="width:100%;margin-top:10px" disabled>테스트 결제하기</button>
 <p class="note">토스페이먼츠 문서용 테스트 키 사용. 가상계좌는 문서용 테스트 키로는 표시되지 않을 수 있습니다(토스페이먼츠 문서 안내). 결제 승인(confirm)은 서버가 필요하여 현재 미구현이며, 정식 출시 전 서버(예: Cloudflare Workers)에서 처리할 예정입니다. 디지털 콘텐츠 특성상 이용 시작 후 청약철회 제한 범위는 정식 출시 시 약관에 고지합니다.</p>`}
-let W;async function initPay(){if(!window.TossPayments){await new Promise((ok,er)=>{const s=document.createElement('script');s.src='https://js.tosspayments.com/v2/standard';s.onload=ok;s.onerror=er;document.head.appendChild(s)})}
+let PW;async function initPay(){if(!window.TossPayments){await new Promise((ok,er)=>{const s=document.createElement('script');s.src='https://js.tosspayments.com/v2/standard';s.onload=ok;s.onerror=er;document.head.appendChild(s)})}
 let ck=localStorage.getItem('rn_ck');if(!ck){ck='rn_'+crypto.randomUUID();localStorage.setItem('rn_ck',ck)}
-const tp=TossPayments('test_gck_docs_Ovk5rk1EwkEbP0W43n07xlzm');W=tp.widgets({customerKey:ck});
-await W.setAmount({currency:'KRW',value:PL[PLAN].p});
-await Promise.all([W.renderPaymentMethods({selector:'#payment-method',variantKey:'DEFAULT'}),W.renderAgreement({selector:'#agreement',variantKey:'AGREEMENT'})]);
+const tp=TossPayments('test_gck_docs_Ovk5rk1EwkEbP0W43n07xlzm');PW=tp.widgets({customerKey:ck});
+await PW.setAmount({currency:'KRW',value:PL[PLAN].p});
+await Promise.all([PW.renderPaymentMethods({selector:'#payment-method',variantKey:'DEFAULT'}),PW.renderAgreement({selector:'#agreement',variantKey:'AGREEMENT'})]);
 const b=$('#paybtn');b.disabled=false;b.onclick=()=>{const base=location.href.split('#')[0].replace(/index\.html$/,'');
-W.requestPayment({orderId:'rn'+Date.now()+Math.random().toString(36).slice(2,8),orderName:'레이스노트 '+PL[PLAN].n+' (테스트)',successUrl:base+'success.html',failUrl:base+'fail.html'})}}
+PW.requestPayment({orderId:'rn'+Date.now()+Math.random().toString(36).slice(2,8),orderName:'레이스노트 '+PL[PLAN].n+' (테스트)',successUrl:base+'success.html',failUrl:base+'fail.html'})}}
 function terms(){return `<h2>이용약관·책임 고지 (베타)</h2><div class="card">
 <p><b>1. 서비스 성격</b> — 레이스노트는 경마 기록·통계·자체 지표를 제공하는 정보 서비스입니다. 마권 구매, 베팅 대행·알선, 배당금 지급, 사설경마 연결 기능을 제공하지 않으며 해당 사이트로의 링크·광고를 게재하지 않습니다.</p><br>
 <p><b>2. 결과 비보장</b> — 모든 지표·통계는 과거 데이터를 요약한 참고 정보이며 경주 결과나 수익을 보장하지 않습니다.</p><br>
 <p><b>3. 이용 연령</b> — 만 19세 이상만 이용할 수 있습니다. (베타는 자기 확인 방식이며 정식 출시 시 본인인증을 도입합니다.)</p><br>
-<p><b>4. 데이터 출처</b> — 현재 화면의 데이터는 <b>가상의 예시 데이터</b>입니다. 정식 서비스에서는 공공데이터포털(data.go.kr)의 한국마사회 제공 공공데이터를 이용할 예정입니다. 레이스노트는 한국마사회의 공식 서비스가 아니며 제휴 관계가 없습니다. 경주 영상·사진은 사용하지 않습니다.</p><br>
+<p><b>4. 데이터 출처</b> — 공공데이터포털(data.go.kr)의 한국마사회 제공 공공데이터를 이용합니다(수집 실패 시 가상의 예시 데이터로 대체되며 화면 상단에 표시). 배당률·매출 정보는 표시하지 않습니다. 레이스노트는 한국마사회의 공식 서비스가 아니며 제휴 관계가 없습니다. 경주 영상·사진은 사용하지 않습니다.</p><br>
 <p><b>5. 이용권</b> — 기간제 상품이며 자동갱신·정기결제가 없습니다. 베타의 결제는 테스트 결제로 실제 청구가 발생하지 않습니다.</p><br>
 <p><b>6. 개인정보</b> — 베타는 회원가입이 없으며 관심마 목록은 사용자 기기의 브라우저(localStorage)에만 저장됩니다.</p><br>
 <p><b>7. 건전 이용</b> — 도박 문제로 어려움이 있다면 한국도박문제예방치유원 헬프라인 <b>국번 없이 1336</b>(무료, 365일 09:00~22:00, 출처: <a href="https://www.kcgp.or.kr/portal/main/contents.do?menuNo=200062" target="_blank" rel="noopener">kcgp.or.kr</a>)으로 상담받을 수 있습니다.</p></div>`}
@@ -132,9 +202,10 @@ function gate(){if(localStorage.getItem(AK))return;$('#gate').innerHTML=`<div cl
 <button class="btn" style="width:100%" onclick="localStorage.setItem('${AK}',1);$('#gate').innerHTML=''">만 19세 이상이며 위 내용에 동의합니다</button>
 <button class="btn ghost" style="width:100%;margin-top:8px" onclick="document.body.innerHTML='<p style=padding:30px>만 19세 미만은 이용할 수 없습니다.</p>'">만 19세 미만입니다</button></div></div>`}
 function route(){const h=location.hash.slice(2)||'';const[p,a]=[h.split('/')[0],decodeURIComponent(h.split('/').slice(1).join('/'))];
-const v={'':home,race:()=>race(a),horse:()=>horse(a),fav:favs,search,guide,pass,terms}[p]||home;$('#view').innerHTML=v();
+const v={'':home,race:()=>race(a),horse:()=>horse(a),fav:favs,search,guide,pass,terms,method}[p]||home;$('#view').innerHTML=v();
 document.querySelectorAll('nav a').forEach(x=>x.classList.toggle('on',x.dataset.r===(p||'home')));if(p==='pass')initPay().catch(e=>{$('#payment-method').innerHTML='<p class="muted">결제 위젯을 불러오지 못했습니다: '+e.message+'</p>'})}
 addEventListener('hashchange',()=>{route();scrollTo(0,0)});
-fetch('data/sample.json').then(r=>r.json()).then(j=>{D=j;calc();route();gate()});
+fetch('data/kra.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(k=>{if(!k.entries||!k.entries.length)throw 0;D=normKra(k)})
+.catch(()=>fetch('data/sample.json').then(r=>r.json()).then(j=>{D=normSample(j)})).then(()=>{$('#srcb').innerHTML=srcBanner();calc();route();gate()});
 if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');
 </script></body></html>
