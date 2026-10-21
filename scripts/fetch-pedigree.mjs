@@ -61,7 +61,10 @@ const MAX = +(process.env.MAX || 1200); let n = 0, fail = 0, lastErr = '';
 for (const hr of want.slice(0, MAX)) {
   const { a, b } = await one(hr);
   if (!a.ok && !b.ok) { fail++; lastErr = `${a.code} ${a.msg} / ${b.code} ${b.msg}`; if (fail >= 5 && n === 0) break; continue; }
-  P.horses[hr] = { t: keep(a.items[0]), d: keep(b.items[0]), at: new Date().toISOString().slice(0, 10) }; n++;
+  const t = a.items[0] || {}, d = b.items[0] || {}; const v = x => (x === '-' || x === '' || x == null) ? null : x; const nb = x => (x === '-' || x == null || isNaN(+x)) ? null : +x;
+  // s=부마, d=모마, ds=외조부(모마의 부), chef=부계 주요 계통마, di=도사지 지수(DI), cd=중심 거리(CD), dp=도사지 프로필[B,I,C,S,P]
+  P.horses[hr] = { sn: v(t.fhrNm), s: v(t.fhrNo), dn: v(t.mhrNm), d: v(t.mhrNo), dsn: v(t.mhrFhrNm), ds: v(t.mhrFhrNo), chef: v(t.chefHrNm),
+    di: nb(d.dsidxVl), cd: nb(d.dsaCtdIndxVl), dp: [d.dsaBriVl, d.dsaIerVl, d.dsaClcVl, d.dsaSldVl, d.dsaPrfVl].map(nb), at: new Date().toISOString().slice(0, 10) }; n++;
   if (/LIMITED|22/.test(a.code + b.code)) break;
 }
 P.updatedAt = new Date().toISOString();
