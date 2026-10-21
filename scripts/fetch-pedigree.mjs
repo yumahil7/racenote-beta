@@ -53,6 +53,7 @@ const P = existsSync('data/pedigree.json') ? JSON.parse(readFileSync('data/pedig
 if (process.env.PROBE) {
   const { a, b } = await one(process.env.PROBE);
   for (const [n, r] of [['API42_1', a], ['API284', b]]) console.log(n, 'code', r.code, r.msg, 'items', r.items.length, JSON.stringify(Object.fromEntries(Object.entries(keep(r.items[0])).filter(([k]) => /hr|Hr|dam|sire|chef|Vl|Rt/i.test(k)))));
+  for (const [lab, prm] of [['hr_no', { hr_no: process.env.PROBE }], ['hrno pad', { hrno: process.env.PROBE.padStart(7, '0') }], ['hrNo', { hrNo: process.env.PROBE }]]) { const r = await call('API284/HorseBloodBasicInfo', prm, 5); console.log('API284 alt', lab, r.code, r.msg, 'items', r.items.length, 'total', r.total); await sleep(150); }
   process.exit(0);
 }
 const k = JSON.parse(readFileSync('data/kra.json', 'utf8'));
