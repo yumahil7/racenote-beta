@@ -1,16 +1,12 @@
 {
- "updatedAt": "2026-10-21T04:30:25.959Z",
- "oldest": "20200711",
+ "updatedAt": "2026-10-21T05:38:29.929Z",
+ "oldest": null,
  "range": [
   "20150101",
-  "20221231"
+  "20200215"
  ],
- "entryParam": "rc_month",
- "calls": 1543,
- "fails": 70,
- "rows": {
-  "2020": 10137,
-  "2021": 23787,
-  "2022": 25458
- }
+ "entryParam": null,
+ "calls": 296,
+ "fails": 74,
+ "rows": {}
 }
