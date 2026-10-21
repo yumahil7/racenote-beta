@@ -20,12 +20,28 @@ out.analysts = computeAnalysts(k);
   for (const f of fs.readdirSync(dir).filter(f => /^\d{4}\.json$/.test(f)).sort().slice(-2)) { const o = JSON.parse(fs.readFileSync(`${dir}/${f}`, 'utf8')); const ix = Object.fromEntries(o.cols.map((c, i) => [c, i]));
     for (const r of o.rows) { const jk = r[ix.jk]; if (!jk) continue; (J[jk] = J[jk] || []).push([String(r[ix.d]), r[ix.m], +r[ix.r], String(r[ix.nm] || '').replace(/^\s*(\([^)]*\)|\[[^\]]*\])\s*/, ''), +r[ix.ord] || 0]); } }
   for (const k in J) J[k] = J[k].sort((a, b) => b[0].localeCompare(a[0]) || b[2] - a[2]).slice(0, 60);
-  out.jkRecent = J; }
+  out.jkRecent = J;
+  // 기수 우선순위: 마지막 경주일 기준 30일 승수 → 승률 → 기승수 (그림 우선 제작용 art/jockeys/priority.json)
+  const last = Object.values(J).flat().map(x => x[0]).sort().pop() || ''; const t = new Date(last.replace(/(\d{4})(\d\d)(\d\d)/, '$1-$2-$3')); t.setDate(t.getDate() - 29); const from = t.toISOString().slice(0, 10).replaceAll('-', '');
+  const nm = {}; for (const e of [...(k.entries || []), ...(k.detail || [])]) nm[e.jkNo] = nm[e.jkNo] || String(e.jkName || '').replace(/^\s*(\([^)]*\)|\[[^\]]*\])\s*/, '');
+  out.jkPriority = Object.entries(J).map(([jk, L]) => { const r = L.filter(x => x[0] >= from); const w = r.filter(x => x[4] === 1).length; return { jkNo: jk, name: nm[jk] || null, w, n: r.length, wr: r.length ? +(w / r.length * 100).toFixed(1) : 0 }; })
+    .filter(x => x.n > 0).sort((a, b) => b.w - a.w || b.wr - a.wr || b.n - a.n);
+  mkdirSync('art/jockeys', { recursive: true }); writeFileSync('art/jockeys/priority.json', JSON.stringify(out.jkPriority, null, 1)); }
 // 혈통(부·모·외조부·도사지) — 출전마만, 화면 표시용
 if (existsSync('data/pedigree.json')) { const P = JSON.parse(readFileSync('data/pedigree.json', 'utf8')).horses || {}; const cur = new Set([...(k.entries || []), ...(k.detail || [])].map(e => String(e.hrNo)));
   out.ped = Object.fromEntries(Object.entries(P).filter(([h]) => cur.has(h)).map(([h, p]) => [h, { sn: p.sn, dn: p.dn, dsn: p.dsn, chef: p.chef, di: p.di, cd: p.cd, dp: p.dp }])); }
+// 상승세 말: 최근 승군 또는 등급 가감 합계 + (배너·그림 우선순위용)
+{ const R = [];
+  for (const [h, g] of Object.entries(out.grades)) { const f = g.f || []; const up = f.find(x => /최근 승군/.test(x)); const tot = +((f.join(' ').match(/가감 합계 ([+-]?[\d.]+)/) || [])[1] || 0);
+    const m5 = f.find(x => /최근 5전/.test(x) && /\+$/.test(x));
+    if (up || tot >= 1) R.push({ hrNo: h, g: g.g, meet: g.meet, why: up ? up.replace(/^최근 승군 \((.*)\).*$/, '$1 승급') : m5 ? m5.replace(/ \+$/, '') : `등급 가감 +${tot}` , score: (up ? 2 : 0) + tot }); }
+  R.sort((a, b) => b.score - a.score || a.hrNo.localeCompare(b.hrNo)); out.rising = R;
+  mkdirSync('art/horses', { recursive: true });
+  const nm = {}; for (const e of [...(k.entries || []), ...(k.detail || [])]) nm[e.hrNo] = nm[e.hrNo] || String(e.hrName || '').replace(/^\s*(\([^)]*\)|\[[^\]]*\])\s*/, '');
+  writeFileSync('art/horses/rising.json', JSON.stringify(R.map(r => ({ ...r, name: nm[r.hrNo] || null })), null, 1)); }
 mkdirSync('art/horses', { recursive: true });
 writeFileSync('art/horses/variants.json', JSON.stringify(computeVariants(k, out.grades), null, 1));
+out.horseArt = existsSync('art/horses') ? (await import('node:fs')).readdirSync('art/horses').filter(f => /^\d+\.webp$/.test(f)).map(f => f.slice(0, -5)) : [];
 const s = JSON.stringify(out);
 writeFileSync('data/app.json', s);
 console.log('app.json', s.length >> 10, 'KB (kra.json', JSON.stringify(k).length >> 10, 'KB)');
