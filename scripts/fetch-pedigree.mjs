@@ -52,7 +52,7 @@ async function one(hr) {
 const P = existsSync('data/pedigree.json') ? JSON.parse(readFileSync('data/pedigree.json', 'utf8')) : { horses: {} };
 if (process.env.PROBE) {
   const { a, b } = await one(process.env.PROBE);
-  for (const [n, r] of [['API42_1', a], ['API284', b]]) console.log(n, 'code', r.code, r.msg, 'items', r.items.length, JSON.stringify(keep(r.items[0])).slice(0, 1500));
+  for (const [n, r] of [['API42_1', a], ['API284', b]]) console.log(n, 'code', r.code, r.msg, 'items', r.items.length, JSON.stringify(Object.fromEntries(Object.entries(keep(r.items[0])).filter(([k]) => /hr|Hr|dam|sire|chef|Vl|Rt/i.test(k)))));
   process.exit(0);
 }
 const k = JSON.parse(readFileSync('data/kra.json', 'utf8'));
