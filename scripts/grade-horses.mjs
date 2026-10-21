@@ -66,8 +66,8 @@ export function computeGrades(k, history = []) {
       // 최근 6경주 안의 가장 낮은/높은 군과 비교 (단기 승군·강등)
       const win6 = hist.slice(0, 6).map(h => h.cls); const lo = Math.max(...win6), hi = Math.min(...win6);
       const prev = hist[0].cls !== cls ? hist[0].cls : (lo > cls ? lo : hi < cls ? hi : cls);
-      if (prev > cls) { adj += 0.5; f.push(`최근 승군 (${prev || 'OPEN'}군 → ${cls || 'OPEN'}군) +`); }
-      else if (prev < cls) { adj -= 0.5; f.push(`최근 강등 (${prev || 'OPEN'}군 → ${cls}군) −`); }
+      if (prev > cls) { adj += 0.5; f.push(`최근 승군 (${prev ? prev + '군' : 'OPEN'} → ${cls ? cls + '군' : 'OPEN'}) +`); }
+      else if (prev < cls) { adj -= 0.5; f.push(`최근 강등 (${prev ? prev + '군' : 'OPEN'} → ${cls}군) −`); }
       else f.push(`직전 경주와 같은 군 (추세 유지)`);
     } else f.push('수집 기간 내 이전 등급 기록 없음 — 추세 미반영');
     // 2) 레이팅: 같은 경마장·같은 군 중앙값 대비
