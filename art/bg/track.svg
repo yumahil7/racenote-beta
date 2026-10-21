@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd9a8"/><stop offset=".45" stop-color="#ffeedd"/><stop offset="1" stop-color="#cfe9f7"/></linearGradient>
+<linearGradient id="dirt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9a873"/><stop offset="1" stop-color="#a8703f"/></linearGradient>
+<linearGradient id="turf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7cc48a"/><stop offset="1" stop-color="#3f8f57"/></linearGradient></defs>
+<rect width="600" height="800" fill="url(#sky)"/><circle cx="470" cy="170" r="60" fill="#fff3c4" opacity=".9"/>
+<path d="M0 360 Q80 330 160 350 T320 345 T480 340 T600 350 V420 H0Z" fill="#9fc8b0" opacity=".7"/>
+<rect x="40" y="300" width="160" height="70" rx="6" fill="#f4efe6"/><path d="M30 300 L120 262 L210 300Z" fill="#c9503c"/><g fill="#8aa7c0"><rect x="55" y="318" width="20" height="14"/><rect x="85" y="318" width="20" height="14"/><rect x="115" y="318" width="20" height="14"/><rect x="145" y="318" width="20" height="14"/></g>
+<rect x="0" y="400" width="600" height="400" fill="url(#turf)"/>
+<path d="M-50 800 Q300 430 650 520 V800Z" fill="url(#dirt)"/>
+<path d="M-50 800 Q300 450 650 540" fill="none" stroke="#fff" stroke-width="5" opacity=".9"/>
+<path d="M-50 760 Q300 470 650 560" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="2 16" opacity=".8"/>
+<g stroke="#fff" stroke-width="4"><line x1="560" y1="470" x2="560" y2="535"/></g><circle cx="560" cy="466" r="9" fill="#e0523c"/>
+</svg>
