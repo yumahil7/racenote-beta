@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-10-21T00:48:24.051Z",
+ "checkedAt": "2026-10-21T00:49:56.211Z",
  "apis": [
   {
    "key": "entries",
@@ -18,8 +18,8 @@
    "dataId": "15063979",
    "endpoint": "https://apis.data.go.kr/B551015/API214_1/RaceDetailResult_1",
    "endpointSource": "govapiatlas(2차)",
-   "resultCode": "",
-   "resultMsg": "",
+   "resultCode": "HTTP403",
+   "resultMsg": "{ \"OpenAPI_ServiceResponse\": { \"cmmMsgHeader\": { \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\", \"returnAuthMsg\": \"등록되지 않은 서비스키\", \"retu",
    "items": 0,
    "ok": false
   },
@@ -31,7 +31,7 @@
    "endpointSource": "data.go.kr",
    "resultCode": "00",
    "resultMsg": "NORMAL SERVICE.",
-   "items": 109,
+   "items": 1230,
    "ok": true
   },
   {
@@ -40,8 +40,8 @@
    "dataId": "15059144",
    "endpoint": "https://apis.data.go.kr/B551015/API3_1/raceInfo_1",
    "endpointSource": "govapiatlas(2차)",
-   "resultCode": "",
-   "resultMsg": "",
+   "resultCode": "HTTP403",
+   "resultMsg": "{ \"OpenAPI_ServiceResponse\": { \"cmmMsgHeader\": { \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\", \"returnAuthMsg\": \"등록되지 않은 서비스키\", \"retu",
    "items": 0,
    "ok": false
   },
@@ -73,8 +73,8 @@
    "dataId": "15057344",
    "endpoint": "https://apis.data.go.kr/B551015/API32_1/topRecordByCondition_1",
    "endpointSource": "govapiatlas(2차)",
-   "resultCode": "",
-   "resultMsg": "",
+   "resultCode": "HTTP403",
+   "resultMsg": "{ \"OpenAPI_ServiceResponse\": { \"cmmMsgHeader\": { \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\", \"returnAuthMsg\": \"등록되지 않은 서비스키\", \"retu",
    "items": 0,
    "ok": false
   },
@@ -128,8 +128,8 @@
    "dataId": "15058115",
    "endpoint": "https://apis.data.go.kr/B551015/API8_2/raceHorseInfo_2",
    "endpointSource": "govapiatlas(2차)",
-   "resultCode": "",
-   "resultMsg": "",
+   "resultCode": "HTTP403",
+   "resultMsg": "{ \"OpenAPI_ServiceResponse\": { \"cmmMsgHeader\": { \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\", \"returnAuthMsg\": \"등록되지 않은 서비스키\", \"retu",
    "items": 0,
    "ok": false
   },
@@ -161,8 +161,8 @@
    "dataId": "(govapiatlas)",
    "endpoint": "https://apis.data.go.kr/B551015/API9_1/raceHorseCancelInfo_1",
    "endpointSource": "govapiatlas(2차)",
-   "resultCode": "",
-   "resultMsg": "",
+   "resultCode": "HTTP403",
+   "resultMsg": "{ \"OpenAPI_ServiceResponse\": { \"cmmMsgHeader\": { \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\", \"returnAuthMsg\": \"등록되지 않은 서비스키\", \"retu",
    "items": 0,
    "ok": false
   }
