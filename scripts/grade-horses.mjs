@@ -98,7 +98,9 @@ export function computeGrades(k, history = []) {
     // 가감점 합계를 ±1단계로 제한 (0.5 이상이면 한 단계, 반올림)
     const mv = adj >= 1 ? -1 : adj <= -1 ? 1 : 0;
     // SS: 1군/OPEN 말만 오를 수 있음. 1군 아래 말은 최대 S
-    let g = Math.min(5, Math.max(cls <= 1 ? 0 : 1, step + mv));
+    const jeju = cur.meet === '제주' || /^제/.test(cur.rank);
+    let g = Math.min(5, Math.max(cls <= 1 && !jeju ? 0 : 1, step + mv));
+    if (jeju && cls <= 1 && step + mv <= 0) f.push('제주 경마는 별도 체계라 최고 S까지만 부여');
     if (mv) f.push(`가감 합계 ${adj > 0 ? '+' : ''}${adj} → ${mv < 0 ? '한 단계 상향' : '한 단계 하향'}`); else f.push(`가감 합계 ${adj} → 기본 등급 유지`);
     out[no] = { g: GRADES[g], cls, meet: cur.meet, f };
   }

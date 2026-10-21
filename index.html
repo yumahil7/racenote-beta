@@ -81,13 +81,13 @@ const dayShort=d=>String(d||'').replace('요일','');
 let SI={},HSI={};
 // ---- 데이터 정규화: 실데이터(kra.json) 또는 예시(sample.json)를 같은 구조로 ----
 function normKra(k){
-  const E=k.entries.map(e=>({...e,meet:e.meet,rcDate:String(e.rcDate),rcNo:String(e.rcNo),chulNo:String(e.chulNo),rcDay:dayShort(e.rcDay),
+  const E=k.entries.map(e=>({...e,hrNo:String(e.hrNo),jkNo:String(e.jkNo),trNo:String(e.trNo),meet:e.meet,rcDate:String(e.rcDate),rcNo:String(e.rcNo),chulNo:String(e.chulNo),rcDay:dayShort(e.rcDay),
     age:String(e.age).includes('세')?e.age:e.age+'세',stTime:(String(e.stTime).match(/\d{1,2}:\d{2}/)||[''])[0],rating:e.rating,rcDist:String(e.rcDist)}));
   const dist={};E.forEach(e=>dist[[e.rcDate,e.meet,e.rcNo].join('|')]=e.rcDist);
   const trk={};(k.track||[]).forEach(t=>trk[[t.rcDate,t.meet,t.rcNo].join('|')]=t);
   const R=(k.detail||[]).filter(r=>+r.stOrd>0&&/\d/.test(r.rcTime)).map(r=>{const key=[r.rcDate,r.meet,r.rcNo].join('|');const t=trk[key]||{};
     return {meet:r.meet,rcDate:String(r.rcDate),rcNo:String(r.rcNo),rcDist:dist[key]||'',track:t.track||'-',water:t.waterPercent,ord:String(r.stOrd),chulNo:String(r.chulNo),
-      hrNo:r.hrNo,hrName:r.hrName,age:r.age,sex:r.sex,wgBudam:r.wgBudam,jkNo:r.jkNo,jkName:r.jkName,trNo:r.trNo,trName:r.trName,wgHr:`${r.wgHr}(${+r.df>0?'+':''}${r.df})`,wgNum:+r.wgHr,df:+r.df,rcTime:r.rcTime,hrTool:r.hrTool||'-'}}).filter(r=>r.rcDist);
+      hrNo:String(r.hrNo),hrName:r.hrName,age:r.age,sex:r.sex,wgBudam:r.wgBudam,jkNo:String(r.jkNo),jkName:r.jkName,trNo:r.trNo,trName:r.trName,wgHr:`${r.wgHr}(${+r.df>0?'+':''}${r.df})`,wgNum:+r.wgHr,df:+r.df,rcTime:r.rcTime,hrTool:r.hrTool||'-'}}).filter(r=>r.rcDist);
   const H={};E.forEach(e=>H[e.hrNo]={hrNo:e.hrNo,hrName:e.hrName,prdCtyNm:e.prd,sex:e.sex,age:e.age,owName:e.owName});
   const jk={};(k.jockeyPeriod||[]).forEach(j=>jk[j.jkNo]={win:+j.winRateTsum,qu:+j.quRateTsum,n:+j.raceCnttsum,src:'최근60일'});
   (k.jockeyResult||[]).forEach(j=>{if(!jk[j.jkNo]&&+j.rcCntY>0)jk[j.jkNo]={win:+j.winRateY,qu:+j.qnlRateY,n:+j.rcCntY,src:'최근1년'}});
@@ -267,7 +267,7 @@ return `<h3>레이스노트 등급 ${gBadge(no)}</h3><div class="hcard g-${g.g}"
 <details class="gr"><summary>등급 근거 보기</summary><ul>${g.f.map(x=>`<li>${x}</li>`).join('')}</ul></details>
 <p class="note">KRA 공식 등급(군)과 최근 승군·강등, 레이팅, 최근 성적을 합쳐 만든 참고용 요약이에요. 결과를 보장하지 않아요.</p>`}
 let SC_FIELD=[];
-function openHorse(no,rk){const es=races()[rk]||[];const e=es.find(x=>x.hrNo===no)||D.entries.find(x=>x.hrNo===no);const h=D.horses.find(x=>x.hrNo===no)||{};
+function openHorse(no,rk){const es=races()[rk]||[];const e=es.find(x=>x.hrNo===no)||D.entries.find(x=>x.hrNo===no);no=String(no);const h=D.horses.find(x=>x.hrNo===no)||(()=>{const r=D.results.find(x=>x.hrNo===no);return r?{hrNo:no,hrName:r.hrName,sex:r.sex,age:r.age}:{}})();
 const hist=(SI[no]||[]).filter(r=>!e||r.rcDate<e.rcDate);const s=e&&es.length?rnScore(e,es):null;const w=e&&D.wt[[e.rcDate,e.meet,e.rcNo,e.chulNo].join('|')];
 const gap=e&&hist[0]?Math.round((new Date(e.rcDate.replace(/(\d{4})(\d\d)(\d\d)/,'$1-$2-$3'))-new Date(hist[0].rcDate.replace(/(\d{4})(\d\d)(\d\d)/,'$1-$2-$3')))/864e5):null;
 const grp=(f)=>{const m={};hist.forEach(r=>{const k=f(r);(m[k]=m[k]||{n:0,t:0,w:0}).n++;if(+r.ord<=3)m[k].t++;if(r.ord==='1')m[k].w++});return Object.entries(m).map(([k,v])=>`<tr><td>${k}</td><td>${v.n}전 ${v.w}승</td><td>${pct(v.t,v.n)}</td></tr>`).join('')||`<tr><td colspan=3>${NA}</td></tr>`};
