@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-10-21T00:55:16.800Z",
+ "checkedAt": "2026-10-21T21:28:51.691Z",
  "apis": [
   {
    "key": "entries",
@@ -9,7 +9,7 @@
    "endpointSource": "govapiatlas(2차)",
    "resultCode": "00",
    "resultMsg": "NORMAL SERVICE.",
-   "items": 2007,
+   "items": 2004,
    "ok": true
   },
   {
@@ -29,10 +29,10 @@
    "dataId": "15089492",
    "endpoint": "https://apis.data.go.kr/B551015/racedetailresult/getracedetailresult",
    "endpointSource": "data.go.kr",
-   "resultCode": "00",
-   "resultMsg": "NORMAL SERVICE.",
-   "items": 1230,
-   "ok": true
+   "resultCode": "HTTP200",
+   "resultMsg": "{ \"OpenAPI_ServiceResponse\": { \"cmmMsgHeader\": { \"errMsg\": \"HTTP_ERROR\", \"returnAuthMsg\": \"HTTP 에러\", \"returnReasonCode\": \"04\" } } ",
+   "items": 0,
+   "ok": false
   },
   {
    "key": "raceInfo",
@@ -53,7 +53,7 @@
    "endpointSource": "govapiatlas(2차)",
    "resultCode": "00",
    "resultMsg": "NORMAL SERVICE.",
-   "items": 4507,
+   "items": 4557,
    "ok": true
   },
   {
@@ -97,7 +97,7 @@
    "endpointSource": "data.go.kr",
    "resultCode": "00",
    "resultMsg": "NORMAL SERVICE.",
-   "items": 84,
+   "items": 83,
    "ok": true
   },
   {
@@ -119,7 +119,7 @@
    "endpointSource": "govapiatlas(2차)",
    "resultCode": "00",
    "resultMsg": "NORMAL SERVICE.",
-   "items": 2007,
+   "items": 2004,
    "ok": true
   },
   {
