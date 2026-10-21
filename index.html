@@ -342,14 +342,23 @@ ${s&&s.flags.length?`<div class="flag" style="margin-top:6px">⚑ ${s.flags.join
 <h3>혈통</h3><div class="card">${h.fhrName?`부마 ${h.fhrName} · 모마 ${h.mhrName||'-'}`:NA+' <span class="muted">— 경주마 혈통 API 승인 후 표시 예정</span>'}</div>
 ${s?`<h3>RN-Score 구성 <span class="muted">총 ${s.total}</span></h3>`+Object.keys(W).map(k=>`<div class="rnrow"><span>${WN[k]} <i class="muted">(${W[k]}%)</i></span><b>${s.c[k]}</b></div><div class="bar"><i style="width:${s.c[k]}%"></i></div><div class="muted" style="margin-bottom:6px">${s.ev[k]}</div>`).join(''):''}
 <a class="btn ghost" style="display:block;text-align:center;margin-top:10px" href="#/horse/${no}" onclick="closeSheet()">마필 전체 기록 보기</a>`)}
+// 기수 최근 30일: 데이터 마지막 경주일 기준 30일(경주결과 D.results + 과거이력 JKR). 없으면 이력상 최근 기승.
+let JKR={};function jk30(jk){jk=String(jk);const m={};(JKR[jk]||[]).forEach(([d,mt,r,nm,o])=>m[d+'|'+mt+'|'+r]={d,mt,r,nm,o});
+D.results.filter(x=>String(x.jkNo)===jk).forEach(x=>m[x.rcDate+'|'+x.meet+'|'+(+x.rcNo)]={d:String(x.rcDate),mt:x.meet,r:+x.rcNo,nm:x.hrName,o:+x.ord||0});
+const all=Object.values(m).sort((a,b)=>b.d.localeCompare(a.d)||b.r-a.r);const lastD=[...D.results.map(x=>String(x.rcDate)),...Object.values(JKR).flat().map(x=>x[0])].sort().pop()||'';
+const t=new Date(lastD.replace(/(\d{4})(\d\d)(\d\d)/,'$1-$2-$3'));t.setDate(t.getDate()-29);const from=t.toISOString().slice(0,10).replaceAll('-','');
+let L=all.filter(x=>x.d>=from),fb=false;if(!L.length){L=all.slice(0,10);fb=true}
+if(!L.length)return{sum:NA,list:''};const w=L.filter(x=>x.o===1).length,t3=L.filter(x=>x.o>0&&x.o<=3).length;
+const sum=fb?`<span class="muted">30일 내 기승 없음</span>`:`${L.length}전 ${w}승 · 3착내 ${Math.round(t3/L.length*100)}%<div class="muted" style="font-size:11px">${fd(from)}~${fd(lastD)} 기준</div>`;
+return{sum,list:`<h3>${fb?'최근 기승 (30일 내 없음 · 이력 기준 최근 '+L.length+'건)':'최근 30일 기승'}</h3><div class="card" style="padding:8px;overflow-x:auto"><table><tr><th>일자</th><th>경주</th><th>말</th><th>착순</th></tr>${L.map(x=>`<tr><td>${fd(x.d)}</td><td>${x.mt} ${x.r}R</td><td>${x.nm||'-'}</td><td>${x.o||'-'}</td></tr>`).join('')}</table>${fb?'':`<div class="muted" style="font-size:12px;margin-top:4px">${L.length}전 ${w}승 · 3착 이내 ${t3}회 (${Math.round(t3/L.length*100)}%)</div>`}</div>`}}
 function openJk(jk,hr,rk){const i=D.jinfo[jk]||{},r=D.jres[jk]||{},p=D.jper[jk]||{};const e=(races()[rk]||[]).find(x=>x.jkNo===jk)||D.entries.find(x=>x.jkNo===jk)||{};
 const combo=(SI[hr]||[]).filter(x=>x.jkNo===jk&&(!e.rcDate||x.rcDate<e.rcDate));const ct=combo.filter(x=>+x.ord<=3).length,cw=combo.filter(x=>x.ord==='1').length;
-const y=i.rcCntY??r.rcCntY,t=i.rcCntT??r.rcCntT;const yr=(a,b,c,n)=>n?`${n}전 ${a}/${b}/${c} · 승률 ${pct(a,n)} · 복승률 ${pct(a+b,n)}`:NA;
+const j30=jk30(jk);const y=i.rcCntY??r.rcCntY,t=i.rcCntT??r.rcCntT;const yr=(a,b,c,n)=>n?`${n}전 ${a}/${b}/${c} · 승률 ${pct(a,n)} · 복승률 ${pct(a+b,n)}`:NA;
 sheet(`<div class="row" style="justify-content:flex-start;gap:12px">${jkImg(jk)}<div><h2 style="margin:0">${i.jkName||e.jkName||jk} 기수</h2><div class="muted">${i.meet||e.meet||''} · ${i.part||'소속 정보 없음'}</div></div></div>
-<p class="note">그림은 실제 인물이 아닌 기본 일러스트예요.</p>
-<h3>최근 성적</h3><div class="kv"><div><label>최근 30일</label>${NA}<div class="muted" style="font-size:11px">API 미제공</div></div><div><label>최근 60일 (KRA 집계)</label>${p.raceCnttsum?`${p.raceCnttsum}전 ${p.firstCnt}승 · 승률 ${p.winRateTsum}% · 복승률 ${p.quRateTsum}%`:NA}</div>
+<p class="note">${artOf(jk)?'그림은 실제 인물과 무관한 캐릭터예요.':'그림은 실제 인물이 아닌 기본 일러스트예요.'}</p>
+<h3>최근 성적</h3><div class="kv"><div><label>최근 30일</label>${j30.sum}</div><div><label>최근 60일 (KRA 집계)</label>${p.raceCnttsum?`${p.raceCnttsum}전 ${p.firstCnt}승 · 승률 ${p.winRateTsum}% · 복승률 ${p.quRateTsum}%`:NA}</div>
 <div><label>최근 1년</label>${i.rcCntY!==undefined?yr(i.ord1CntY,i.ord2CntY,i.ord3CntY,i.rcCntY):r.rcCntY?`${r.rcCntY}전 · 승률 ${r.winRateY}% · 복승률 ${r.qnlRateY}%`:NA}</div><div><label>통산</label>${i.rcCntT!==undefined?yr(i.ord1CntT,i.ord2CntT,i.ord3CntT,i.rcCntT):r.rcCntT?`${r.rcCntT}전 · 승률 ${r.winRateT}%`:NA}</div></div>
-<div style="margin-top:8px">기수 별점 ${starH(jkStar(jk))}</div><h3>이 말과의 호흡</h3><div class="card">${!hr?'<span class="muted">출마표에서 열면 해당 말과의 기록을 보여드려요.</span>':combo.length?`${e.hrName||''} 기승 ${combo.length}전 ${cw}승 · 3착 이내 ${ct}회 (수집 기간)`:NA+' <span class="muted">(수집 기간 내 함께 출전한 기록 없음)</span>'}</div>
+${j30.list}<div style="margin-top:8px">기수 별점 ${starH(jkStar(jk))}</div><h3>이 말과의 호흡</h3><div class="card">${!hr?'<span class="muted">출마표에서 열면 해당 말과의 기록을 보여드려요.</span>':combo.length?`${e.hrName||''} 기승 ${combo.length}전 ${cw}승 · 3착 이내 ${ct}회 (수집 기간)`:NA+' <span class="muted">(수집 기간 내 함께 출전한 기록 없음)</span>'}</div>
 <h3>경력</h3><div class="kv"><div><label>데뷔</label>${i.debut?String(i.debut).replace(/(\d{4})(\d\d)(\d\d)/,'$1.$2.$3'):NA}</div><div><label>나이</label>${i.age?i.age+'세':NA}</div><div><label>기본 기승중량</label>${i.wgPart?i.wgPart+'kg':NA}</div><div><label>소속</label>${i.part||NA}</div></div>
 <p class="note">출처: 공공데이터포털 한국마사회 기수 정보. "최근 30일"은 현재 제공 API에 없어 표시하지 않아요.</p>`)}
 // ---- 지난 분석 적중률: 종료 경주마다 그 경주 이전 기록만으로 RN 순위를 계산해 실제 결과와 비교 ----
@@ -381,7 +390,7 @@ addEventListener('hashchange',()=>{route();scrollTo(0,0)});
 const unc=k=>{if(k._fmt!=='cols1')return k;const o={};for(const x in k){const v=k[x];o[x]=v&&v.cols?v.rows.map(r=>Object.fromEntries(v.cols.map((c,i)=>[c,r[i]]).filter(p=>p[1]!==null))):v}return o};
 // 표시 이름 정리: 기수 감량 "(-4)", 말 산지 "[영남]" 접두어 제거 → jkTag/hrTag로 보관
 const PFX=/^\s*(\([^)]*\)|\[[^\]]*\])\s*/;const cleanNames=k=>{for(const x in k){const v=k[x];if(Array.isArray(v))v.forEach(o=>{if(!o||typeof o!=='object')return;for(const f of ['hrName','jkName','jkBefName','jkAftName']){const m=typeof o[f]==='string'&&o[f].match(PFX);if(m){o[f.startsWith('hr')?'hrTag':'jkTag']=m[1];o[f]=o[f].replace(PFX,'')}}})}return k};
-fetch('data/app.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()}).catch(()=>fetch('data/kra.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()})).then(unc).then(cleanNames).then(k=>{AN=k.analysts||null;if(!k.entries||!k.entries.length)throw 0;GR=k.grades||{};D=normKra(k)})
+fetch('data/app.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()}).catch(()=>fetch('data/kra.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()})).then(unc).then(cleanNames).then(k=>{AN=k.analysts||null;JKR=k.jkRecent||{};if(!k.entries||!k.entries.length)throw 0;GR=k.grades||{};D=normKra(k)})
 .catch(()=>fetch('data/sample.json').then(r=>r.json()).then(j=>{D=normSample(j)})).then(()=>{$('#srcb').innerHTML=srcBanner();calc();route();gate()});
 if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');
 </script></body></html>
