@@ -1,0 +1,26 @@
+name: fetch-kra
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 21 * * *'          # 매일 06:00 KST
+    - cron: '0 0-9/2 * * 5,6,0'   # 금·토·일 09~18시 KST, 2시간마다
+permissions:
+  contents: write
+concurrency: { group: fetch-kra, cancel-in-progress: false }
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Fetch KRA data
+        env: { KRA_API_KEY: '${{ secrets.KRA_API_KEY }}' }
+        run: node scripts/fetch-kra.mjs
+      - name: Commit data
+        run: |
+          git config user.name "racenote-bot"
+          git config user.email "racenote-bot@users.noreply.github.com"
+          git add data/status.json data/kra.json 2>/dev/null || git add data/status.json
+          git diff --cached --quiet || (git commit -m "data: KRA 자동 수집 $(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M') KST" && git push)
