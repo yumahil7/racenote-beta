@@ -58,7 +58,9 @@ if (process.env.PROBE) {
 const k = JSON.parse(readFileSync('data/kra.json', 'utf8'));
 const want = [...new Set([...(k.entries || []), ...(k.detail || [])].map(e => String(e.hrNo)).filter(Boolean))].filter(h => !P.horses[h]);
 const MAX = +(process.env.MAX || 1200); let n = 0, fail = 0, lastErr = '';
+const T0 = Date.now(), BUDGET = +(process.env.BUDGET_MIN || 20) * 60e3; // 작업 시간 한도 내에서 멈추고 저장
 for (const hr of want.slice(0, MAX)) {
+  if (Date.now() - T0 > BUDGET) break;
   const { a, b } = await one(hr);
   if (!a.ok && !b.ok) { fail++; lastErr = `${a.code} ${a.msg} / ${b.code} ${b.msg}`; if (fail >= 5 && n === 0) break; continue; }
   const t = a.items[0] || {}, d = b.items[0] || {}; const v = x => (x === '-' || x === '' || x == null) ? null : x; const nb = x => (x === '-' || x == null || isNaN(+x)) ? null : +x;
