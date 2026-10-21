@@ -27,7 +27,7 @@
  },
  "1411749": {
   "name": "스터닝플래터",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -176,7 +176,7 @@
  },
  "1412246": {
   "name": "스파크선더",
-  "grade": "AA",
+  "grade": "S",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -269,7 +269,7 @@
  },
  "1412314": {
   "name": "루지",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -282,7 +282,7 @@
  },
  "1412318": {
   "name": "더노미네이트",
-  "grade": "A",
+  "grade": "AA",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -335,7 +335,7 @@
  },
  "3014189": {
   "name": "원당봉",
-  "grade": "S",
+  "grade": "SS",
   "coatSource": "hash",
   "accessories": [
    "편자 색 포인트"
@@ -345,7 +345,7 @@
  },
  "3014265": {
   "name": "삼다황제",
-  "grade": "S",
+  "grade": "SS",
   "coatSource": "hash",
   "accessories": [
    "다리 붕대"
@@ -376,7 +376,7 @@
  },
  "3016573": {
   "name": "문무태왕",
-  "grade": "A",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "쉐도우롤(흙막이 코밴드)"
@@ -451,7 +451,7 @@
  },
  "3017622": {
   "name": "경성제일",
-  "grade": "AA",
+  "grade": "S",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -462,7 +462,7 @@
  },
  "3017791": {
   "name": "일사십리",
-  "grade": "S",
+  "grade": "SS",
   "coatSource": "hash",
   "accessories": [
    "쉐도우롤(흙막이 코밴드)"
@@ -524,7 +524,7 @@
  },
  "3018120": {
   "name": "금누리",
-  "grade": "A",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -597,7 +597,7 @@
  },
  "3018658": {
   "name": "일사만리",
-  "grade": "AA",
+  "grade": "S",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -672,7 +672,7 @@
  },
  "3018865": {
   "name": "광명진언",
-  "grade": "S",
+  "grade": "SS",
   "coatSource": "hash",
   "accessories": [
    "편자 색 포인트"
@@ -711,7 +711,7 @@
  },
  "3018909": {
   "name": "오라드림",
-  "grade": "S",
+  "grade": "SS",
   "coatSource": "hash",
   "accessories": [
    "차안대(블링커)",
@@ -722,7 +722,7 @@
  },
  "3018916": {
   "name": "삼다열풍",
-  "grade": "A",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "accessories": [
@@ -774,7 +774,7 @@
  },
  "3019010": {
   "name": "광해전차",
-  "grade": "AA",
+  "grade": "S",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -804,7 +804,7 @@
  },
  "3019081": {
   "name": "한라왕자",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "다리 붕대",
@@ -815,7 +815,7 @@
  },
  "3101432": {
   "name": "결초보은",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -879,7 +879,7 @@
  },
  "3101705": {
   "name": "멘탈",
-  "grade": "S",
+  "grade": "SS",
   "coatSource": "hash",
   "accessories": [
    "차안대(블링커)",
@@ -923,7 +923,7 @@
  },
  "3101784": {
   "name": "영웅변신",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -999,7 +999,7 @@
  },
  "3102105": {
   "name": "황금시대",
-  "grade": "AA",
+  "grade": "S",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -1019,7 +1019,7 @@
  },
  "3102255": {
   "name": "미래세계",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "다리 붕대"
@@ -1049,7 +1049,7 @@
  },
  "3102307": {
   "name": "산호섬",
-  "grade": "B",
+  "grade": "C",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "accessories": [
@@ -1072,7 +1072,7 @@
  },
  "3102338": {
   "name": "명문대부",
-  "grade": "AA",
+  "grade": "S",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "accessories": [
@@ -1223,7 +1223,7 @@
  },
  "3102840": {
   "name": "전농미르",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "반차안대"
@@ -1264,7 +1264,7 @@
  },
  "3102943": {
   "name": "장타최강",
-  "grade": "AA",
+  "grade": "S",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크",
@@ -1335,7 +1335,7 @@
  },
  "3103294": {
   "name": "드림매직",
-  "grade": "S",
+  "grade": "SS",
   "coatSource": "hash",
   "accessories": [
    "차안대(블링커)"
@@ -1356,7 +1356,7 @@
  },
  "3103322": {
   "name": "영원최고",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "차안대(블링커)"
@@ -1376,7 +1376,7 @@
  },
  "3103388": {
   "name": "우당대목",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "반차안대",
@@ -1387,7 +1387,7 @@
  },
  "3103390": {
   "name": "한라장사",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "편자 색 포인트"
@@ -1417,7 +1417,7 @@
  },
  "3103413": {
   "name": "신수",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -1467,7 +1467,7 @@
  },
  "3103453": {
   "name": "세계자랑",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "편자 색 포인트"
@@ -1476,7 +1476,7 @@
  },
  "3103457": {
   "name": "백호여걸",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "쉐도우롤(흙막이 코밴드)"
@@ -1526,7 +1526,7 @@
  },
  "3103519": {
   "name": "환상지오",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "반차안대",
@@ -1549,7 +1549,7 @@
  },
  "3103557": {
   "name": "웅비성",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -1571,7 +1571,7 @@
  },
  "3103578": {
   "name": "최강지존",
-  "grade": "B",
+  "grade": "C",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -1626,7 +1626,7 @@
  },
  "3103597": {
   "name": "서산히어로",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "쉐도우롤(흙막이 코밴드)"
@@ -1637,7 +1637,7 @@
  },
  "3103607": {
   "name": "영웅본색",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -1663,7 +1663,7 @@
  },
  "3103621": {
   "name": "청마특급",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -1736,7 +1736,7 @@
  },
  "3103690": {
   "name": "청룡불빛",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "다리 붕대"
@@ -1816,7 +1816,7 @@
  },
  "3103748": {
   "name": "질풍태양",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크",
@@ -1874,7 +1874,7 @@
  },
  "3103795": {
   "name": "로한",
-  "grade": "AA",
+  "grade": "S",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -1885,7 +1885,7 @@
  },
  "3103802": {
   "name": "광풍천리",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "다리 붕대",
@@ -1955,7 +1955,7 @@
  },
  "3103874": {
   "name": "일품성",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -2024,7 +2024,7 @@
  },
  "3103929": {
   "name": "드림히트",
-  "grade": "AA",
+  "grade": "S",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크",
@@ -2134,7 +2134,7 @@
  },
  "3104068": {
   "name": "전승소녀",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "다리 붕대"
@@ -2178,7 +2178,7 @@
  },
  "3104085": {
   "name": "명품최강",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -2225,7 +2225,7 @@
  },
  "3104099": {
   "name": "중문전사",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "accessories": [
@@ -2260,7 +2260,7 @@
  },
  "3104115": {
   "name": "양대진품",
-  "grade": "AA",
+  "grade": "S",
   "coatSource": "hash",
   "accessories": [
    "쉐도우롤(흙막이 코밴드)"
@@ -2271,7 +2271,7 @@
  },
  "3104121": {
   "name": "무주여신",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -2282,7 +2282,7 @@
  },
  "3104122": {
   "name": "사랑바람",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "쉐도우롤(흙막이 코밴드)"
@@ -2315,7 +2315,7 @@
  },
  "3104135": {
   "name": "명품최고",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "반차안대"
@@ -2326,7 +2326,7 @@
  },
  "3104139": {
   "name": "대보",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "편자 색 포인트"
@@ -2369,7 +2369,7 @@
  },
  "3104156": {
   "name": "파벽비거",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "반차안대"
@@ -2414,7 +2414,7 @@
  },
  "3104167": {
   "name": "디아즈타임",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -2436,7 +2436,7 @@
  },
  "3104177": {
   "name": "황금대박",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -2469,7 +2469,7 @@
  },
  "3104186": {
   "name": "미소진",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -2491,7 +2491,7 @@
  },
  "3104206": {
   "name": "쌍용백호",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -2608,7 +2608,7 @@
  },
  "3104254": {
   "name": "우화",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -2668,7 +2668,7 @@
  },
  "3104284": {
   "name": "금촌제일",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -2680,7 +2680,7 @@
  },
  "3104287": {
   "name": "소록번개",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -2692,7 +2692,7 @@
  },
  "3104290": {
   "name": "아크",
-  "grade": "AA",
+  "grade": "S",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -2743,7 +2743,7 @@
  },
  "3104301": {
   "name": "녹색왕자",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -2754,7 +2754,7 @@
  },
  "3104302": {
   "name": "장타호령",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "차안대(블링커)"
@@ -2777,7 +2777,7 @@
  },
  "3104309": {
   "name": "장타공주",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "차안대(블링커)",
@@ -2815,7 +2815,7 @@
  },
  "3104321": {
   "name": "별빛찬란",
-  "grade": "A",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "편자 색 포인트"
@@ -2846,7 +2846,7 @@
  },
  "3104581": {
   "name": "지리산",
-  "grade": "S",
+  "grade": "SS",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -2857,7 +2857,7 @@
  },
  "3104589": {
   "name": "거승태자",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -2880,7 +2880,7 @@
  },
  "3104611": {
   "name": "와흘호",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "반차안대"
@@ -2891,7 +2891,7 @@
  },
  "3104615": {
   "name": "금지게",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "accessories": [
@@ -2915,7 +2915,7 @@
  },
  "3104632": {
   "name": "파워액션",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "반차안대"
@@ -2926,7 +2926,7 @@
  },
  "3104635": {
   "name": "윤슬",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "다리 붕대"
@@ -2948,7 +2948,7 @@
  },
  "3104646": {
   "name": "하여가",
-  "grade": "S",
+  "grade": "SS",
   "coatSource": "hash",
   "accessories": [
    "반차안대"
@@ -2959,7 +2959,7 @@
  },
  "3104649": {
   "name": "일품걸",
-  "grade": "A",
+  "grade": "AA",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "accessories": [
@@ -2972,7 +2972,7 @@
  },
  "3104656": {
   "name": "원중원",
-  "grade": "S",
+  "grade": "SS",
   "coatSource": "hash",
   "accessories": [
    "다리 붕대"
@@ -3016,7 +3016,7 @@
  },
  "3104683": {
   "name": "원당불패",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "혀끈"
@@ -3038,7 +3038,7 @@
  },
  "3104697": {
   "name": "으뜸여신",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "혀끈"
@@ -3049,7 +3049,7 @@
  },
  "3104698": {
   "name": "골든보이",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "다리 붕대"
@@ -3085,7 +3085,7 @@
  },
  "3104709": {
   "name": "청룡챔프",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -3110,7 +3110,7 @@
  },
  "3104724": {
   "name": "힐링대륙",
-  "grade": "S",
+  "grade": "SS",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -3123,7 +3123,7 @@
  },
  "3104732": {
   "name": "대륙황후",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -3135,7 +3135,7 @@
  },
  "3104741": {
   "name": "무주영웅",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -3158,7 +3158,7 @@
  },
  "3104747": {
   "name": "전설바람",
-  "grade": "A",
+  "grade": "AA",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -3172,7 +3172,7 @@
  },
  "3104749": {
   "name": "한빛제일",
-  "grade": "A",
+  "grade": "AA",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -3219,7 +3219,7 @@
  },
  "3104789": {
   "name": "천년수",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -3230,7 +3230,7 @@
  },
  "3104790": {
   "name": "천상의별",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "accessories": [
@@ -3287,7 +3287,7 @@
  },
  "3104804": {
   "name": "태극성",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -3297,7 +3297,7 @@
  },
  "3104805": {
   "name": "웅진영웅",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -3307,7 +3307,7 @@
  },
  "3104809": {
   "name": "늘찬",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크",
@@ -3318,7 +3318,7 @@
  },
  "3104811": {
   "name": "뉴저지",
-  "grade": "A",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "편자 색 포인트"
@@ -3328,7 +3328,7 @@
  },
  "3105239": {
   "name": "네온빛",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -3338,7 +3338,7 @@
  },
  "3105244": {
   "name": "일진",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "다리 붕대"
@@ -3409,7 +3409,7 @@
  },
  "3105298": {
   "name": "여포장사",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "쉐도우롤(흙막이 코밴드)"
@@ -3419,7 +3419,7 @@
  },
  "3105309": {
   "name": "무한도전",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "accessories": [
@@ -3452,7 +3452,7 @@
  },
  "3105484": {
   "name": "스트롱캣",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "accessories": [
@@ -3473,7 +3473,7 @@
  },
  "3105495": {
   "name": "무림왕자",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -3483,7 +3483,7 @@
  },
  "3105497": {
   "name": "환희",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -3493,7 +3493,7 @@
  },
  "3105502": {
   "name": "천년의꿈",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "혀끈"
@@ -3537,7 +3537,7 @@
  },
  "3107299": {
   "name": "우대산",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "accessories": [
@@ -3599,7 +3599,7 @@
  },
  "3107334": {
   "name": "색달울림",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "반차안대"
@@ -3609,7 +3609,7 @@
  },
  "3107341": {
   "name": "한판승",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "반차안대"
@@ -3648,7 +3648,7 @@
  },
  "3107367": {
   "name": "킹메이커",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -3658,7 +3658,7 @@
  },
  "3107370": {
   "name": "강철빛",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "쉐도우롤(흙막이 코밴드)"
@@ -3668,7 +3668,7 @@
  },
  "3107371": {
   "name": "오도롱",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "혀끈"
@@ -3739,7 +3739,7 @@
  },
  "3107407": {
   "name": "달의울림",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "다리 붕대"
@@ -3759,7 +3759,7 @@
  },
  "3107410": {
   "name": "천왕봉",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -3789,7 +3789,7 @@
  },
  "3107423": {
   "name": "온누리",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -3799,7 +3799,7 @@
  },
  "3107428": {
   "name": "주마녀",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -3809,7 +3809,7 @@
  },
  "3107434": {
   "name": "블랙비어드",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "혀끈"
@@ -3819,7 +3819,7 @@
  },
  "3107435": {
   "name": "황제대로",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -3859,7 +3859,7 @@
  },
  "3107455": {
   "name": "드림스타",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "혀끈"
@@ -3879,7 +3879,7 @@
  },
  "3107471": {
   "name": "텐언더",
-  "grade": "S",
+  "grade": "SS",
   "coatSource": "hash",
   "accessories": [
    "편자 색 포인트"
@@ -3888,7 +3888,7 @@
  },
  "3107487": {
   "name": "신화왕자",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -3919,7 +3919,7 @@
  },
  "3107505": {
   "name": "멋진선택",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -3942,7 +3942,7 @@
  },
  "3107530": {
   "name": "전천후",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -3954,7 +3954,7 @@
  },
  "3107533": {
   "name": "천하무적",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -3965,7 +3965,7 @@
  },
  "3107541": {
   "name": "새벽전설",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -3976,7 +3976,7 @@
  },
  "3107542": {
   "name": "황해바람",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -3987,7 +3987,7 @@
  },
  "3107543": {
   "name": "대보름",
-  "grade": "AA",
+  "grade": "S",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -4020,7 +4020,7 @@
  },
  "3107553": {
   "name": "별빛천하",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -4031,7 +4031,7 @@
  },
  "3107554": {
   "name": "비상질주",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -4042,7 +4042,7 @@
  },
  "3107556": {
   "name": "불꽃강자",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -4053,7 +4053,7 @@
  },
  "3107565": {
   "name": "레드크라운",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -4127,7 +4127,7 @@
  },
  "3107607": {
   "name": "백록챔프",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "반차안대",
@@ -4138,7 +4138,7 @@
  },
  "3107612": {
   "name": "소록열풍",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -4210,7 +4210,7 @@
  },
  "3107853": {
   "name": "시종일관",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "쉐도우롤(흙막이 코밴드)"
@@ -4233,7 +4233,7 @@
  },
  "3107862": {
   "name": "태자주니어",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -4257,7 +4257,7 @@
  },
  "3107869": {
   "name": "타잔",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -4269,7 +4269,7 @@
  },
  "3107870": {
   "name": "광해천하",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -4293,7 +4293,7 @@
  },
  "3107876": {
   "name": "블루칸",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -4329,7 +4329,7 @@
  },
  "3107884": {
   "name": "마조여신",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -4353,7 +4353,7 @@
  },
  "3107888": {
   "name": "빈체로",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
@@ -4365,7 +4365,7 @@
  },
  "3107910": {
   "name": "청풍위너",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -4387,7 +4387,7 @@
  },
  "3107913": {
   "name": "영웅대정",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -4422,7 +4422,7 @@
  },
  "3107927": {
   "name": "리듬블루",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크",
@@ -4434,7 +4434,7 @@
  },
  "3108041": {
   "name": "천외천",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "반차안대"
@@ -4444,7 +4444,7 @@
  },
  "3108047": {
   "name": "람바다",
-  "grade": "A",
+  "grade": "AA",
   "coatSource": "hash",
   "accessories": [
    "차안대(블링커)"
@@ -4454,7 +4454,7 @@
  },
  "3108061": {
   "name": "맞대결",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크",
@@ -4504,7 +4504,7 @@
  },
  "3108144": {
   "name": "전설마루",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -4545,7 +4545,7 @@
  },
  "3108214": {
   "name": "선봉왕자",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -4555,7 +4555,7 @@
  },
  "3108216": {
   "name": "최고정점",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -4575,7 +4575,7 @@
  },
  "3108232": {
   "name": "행복덩어리",
-  "grade": "AA",
+  "grade": "S",
   "coatSource": "hash",
   "accessories": [
    "혀끈"
@@ -4605,7 +4605,7 @@
  },
  "3108248": {
   "name": "해피초원",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "편자 색 포인트"
@@ -4636,7 +4636,7 @@
  },
  "3108443": {
   "name": "리더형",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -4816,7 +4816,7 @@
  },
  "3109183": {
   "name": "제성백호",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "쉐도우롤(흙막이 코밴드)",
@@ -4895,7 +4895,7 @@
  },
  "3109227": {
   "name": "새벽강자",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -4906,7 +4906,7 @@
  },
  "3109231": {
   "name": "위너포스",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -4972,7 +4972,7 @@
  },
  "3109458": {
   "name": "타노스",
-  "grade": "B",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "다리 붕대"
@@ -5426,7 +5426,7 @@
  },
  "0053523": {
   "name": "스터닝칼리버",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -5453,7 +5453,7 @@
  },
  "0053337": {
   "name": "눈이올까요",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -5467,7 +5467,7 @@
  },
  "0053949": {
   "name": "위너남촌",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -5481,7 +5481,7 @@
  },
  "0052885": {
   "name": "나스카불청객",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -5494,7 +5494,7 @@
  },
  "0053900": {
   "name": "베스트에이원",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -5561,7 +5561,7 @@
  },
  "0053155": {
   "name": "운주클리어",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -5574,7 +5574,7 @@
  },
  "0053872": {
   "name": "세명피크",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -5587,7 +5587,7 @@
  },
  "0053084": {
   "name": "포인트아이",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -5600,7 +5600,7 @@
  },
  "0053641": {
   "name": "금아온포인트",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -5653,7 +5653,7 @@
  },
  "0056214": {
   "name": "라온카리스걸",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -5666,7 +5666,7 @@
  },
  "0055304": {
   "name": "유니콘에이스",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -5694,7 +5694,7 @@
  },
  "0053137": {
   "name": "명브레이싱",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -5708,7 +5708,7 @@
  },
  "0053277": {
   "name": "빅토리시크릿",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -5721,7 +5721,7 @@
  },
  "0051875": {
   "name": "화랑산정기",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -5735,7 +5735,7 @@
  },
  "0053875": {
   "name": "클럽맨",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -5749,7 +5749,7 @@
  },
  "0054040": {
   "name": "클러치월드",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -5762,7 +5762,7 @@
  },
  "0054867": {
   "name": "투어킹",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -5776,7 +5776,7 @@
  },
  "0052115": {
   "name": "내게로와줘",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "없음",
@@ -5790,7 +5790,7 @@
  },
  "0056082": {
   "name": "스톰라이트",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -5830,7 +5830,7 @@
  },
  "0046626": {
   "name": "위드디스쿠로",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -5858,7 +5858,7 @@
  },
  "0053281": {
   "name": "라스트케이",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -5871,7 +5871,7 @@
  },
  "0053227": {
   "name": "팡팡대로",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "없음",
@@ -5951,7 +5951,7 @@
  },
  "0050837": {
   "name": "라온더케이샤",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -6033,7 +6033,7 @@
  },
  "0055586": {
   "name": "골든벤투스",
-  "grade": "S",
+  "grade": "SS",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -6072,7 +6072,7 @@
  },
  "0055781": {
   "name": "메이저퓨리",
-  "grade": "S",
+  "grade": "SS",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "없음",
@@ -6140,7 +6140,7 @@
  },
  "0058005": {
   "name": "글로벌하트",
-  "grade": "B",
+  "grade": "C",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -6153,7 +6153,7 @@
  },
  "0053822": {
   "name": "번개루이스",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -6232,7 +6232,7 @@
  },
  "0051888": {
   "name": "아모스천하",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -6259,7 +6259,7 @@
  },
  "0060719": {
   "name": "이스트라코타",
-  "grade": "B",
+  "grade": "C",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -6300,7 +6300,7 @@
  },
  "0060344": {
   "name": "정상히어로",
-  "grade": "A",
+  "grade": "AA",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -6328,7 +6328,7 @@
  },
  "0051353": {
   "name": "나이스위너",
-  "grade": "A",
+  "grade": "AA",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -6341,7 +6341,7 @@
  },
  "0055890": {
   "name": "메이저크라운",
-  "grade": "A",
+  "grade": "AA",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -6354,7 +6354,7 @@
  },
  "0046874": {
   "name": "블랙시대",
-  "grade": "A",
+  "grade": "AA",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -6408,7 +6408,7 @@
  },
  "0059023": {
   "name": "이스트비치",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -6463,7 +6463,7 @@
  },
  "0044487": {
   "name": "킹아너",
-  "grade": "S",
+  "grade": "SS",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -6557,7 +6557,7 @@
  },
  "0054787": {
   "name": "나이스포스",
-  "grade": "S",
+  "grade": "SS",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -7220,7 +7220,7 @@
  },
  "0053284": {
   "name": "컴플리트퓨처",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -7233,7 +7233,7 @@
  },
  "0050684": {
   "name": "학산태풍",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -7287,7 +7287,7 @@
  },
  "0056227": {
   "name": "툰테자",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -7314,7 +7314,7 @@
  },
  "0053790": {
   "name": "환상의나라",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -7341,7 +7341,7 @@
  },
  "0053978": {
   "name": "라비타",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -7368,7 +7368,7 @@
  },
  "0052960": {
   "name": "하남레이저",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -7381,7 +7381,7 @@
  },
  "0053992": {
   "name": "타이거리벤저",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -7394,7 +7394,7 @@
  },
  "0053278": {
   "name": "천마누비",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -7407,7 +7407,7 @@
  },
  "0055597": {
   "name": "위즈크라운",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -7420,7 +7420,7 @@
  },
  "0053283": {
   "name": "파워매직",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -7434,7 +7434,7 @@
  },
  "0054179": {
   "name": "클레어프리덤",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -7462,7 +7462,7 @@
  },
  "0047127": {
   "name": "손에손잡고",
-  "grade": "B",
+  "grade": "C",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -7502,7 +7502,7 @@
  },
  "0053196": {
   "name": "거센펀치",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -7528,7 +7528,7 @@
  },
  "0051862": {
   "name": "파사퀸",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -7542,7 +7542,7 @@
  },
  "0051606": {
   "name": "마이티아미",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -7583,7 +7583,7 @@
  },
  "0052893": {
   "name": "플래시주드",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -7596,7 +7596,7 @@
  },
  "0045533": {
   "name": "퍼펙트건맨",
-  "grade": "B",
+  "grade": "C",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -7610,7 +7610,7 @@
  },
  "0053762": {
   "name": "청월",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -7623,7 +7623,7 @@
  },
  "0053798": {
   "name": "닌자타이거",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -7637,7 +7637,7 @@
  },
  "0053486": {
   "name": "파이브스타",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -7650,7 +7650,7 @@
  },
  "0053559": {
   "name": "라이언비트",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "없음",
@@ -7692,7 +7692,7 @@
  },
  "0052999": {
   "name": "무적함대",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -7706,7 +7706,7 @@
  },
  "0050687": {
   "name": "학산프린스",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -7748,7 +7748,7 @@
  },
  "0054608": {
   "name": "엘도라도해남",
-  "grade": "A",
+  "grade": "AA",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -7775,7 +7775,7 @@
  },
  "0052080": {
   "name": "천마호령",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -7882,7 +7882,7 @@
  },
  "0055106": {
   "name": "스마일링프린스",
-  "grade": "AA",
+  "grade": "S",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -7910,7 +7910,7 @@
  },
  "0053663": {
   "name": "콩코드블루",
-  "grade": "AA",
+  "grade": "S",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -7923,7 +7923,7 @@
  },
  "0056589": {
   "name": "마이티에버",
-  "grade": "AA",
+  "grade": "S",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -8339,7 +8339,7 @@
  },
  "0051778": {
   "name": "와달비",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -8353,7 +8353,7 @@
  },
  "0053369": {
   "name": "슈퍼땅콩",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -8367,7 +8367,7 @@
  },
  "0054465": {
   "name": "비케이데블",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -8394,7 +8394,7 @@
  },
  "0055758": {
   "name": "명성파티",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -8408,7 +8408,7 @@
  },
  "0053908": {
   "name": "월드오브드림",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -8422,7 +8422,7 @@
  },
  "0053776": {
   "name": "세븐카이저",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -8436,7 +8436,7 @@
  },
  "0053514": {
   "name": "크레이지챔프",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -8477,7 +8477,7 @@
  },
  "0053981": {
   "name": "카론에지",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -8491,7 +8491,7 @@
  },
  "0052934": {
   "name": "삼정여제",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "없음",
@@ -8505,7 +8505,7 @@
  },
  "0050292": {
   "name": "송당망치",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -8519,7 +8519,7 @@
  },
  "0054520": {
   "name": "더클래식",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -8545,7 +8545,7 @@
  },
  "0053085": {
   "name": "만금크라운",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -8559,7 +8559,7 @@
  },
  "0054543": {
   "name": "인스파이어",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -8586,7 +8586,7 @@
  },
  "0051381": {
   "name": "그레이팬텀",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -8625,7 +8625,7 @@
  },
  "0053110": {
   "name": "대동용마",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -8665,7 +8665,7 @@
  },
  "0054522": {
   "name": "비트코드",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -8678,7 +8678,7 @@
  },
  "0053761": {
   "name": "세이버스",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -8717,7 +8717,7 @@
  },
  "0054054": {
   "name": "골드아이디",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -8744,7 +8744,7 @@
  },
  "0053229": {
   "name": "바람개비",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "없음",
@@ -8758,7 +8758,7 @@
  },
  "0051530": {
   "name": "추풍령",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -8771,7 +8771,7 @@
  },
  "0057009": {
   "name": "로드투챔피언",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -8785,7 +8785,7 @@
  },
  "0053912": {
   "name": "유니카",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -8799,7 +8799,7 @@
  },
  "0053698": {
   "name": "수부타이",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -8813,7 +8813,7 @@
  },
  "0053103": {
   "name": "이십년세월",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -8826,7 +8826,7 @@
  },
  "0053198": {
   "name": "해피투게더",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -8880,7 +8880,7 @@
  },
  "0053288": {
   "name": "블리스스타",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -8893,7 +8893,7 @@
  },
  "0054312": {
   "name": "호라이즌스타",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "없음",
@@ -8947,7 +8947,7 @@
  },
  "0055525": {
   "name": "급행열차",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -8988,7 +8988,7 @@
  },
  "0053802": {
   "name": "그레이스데이",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -9044,7 +9044,7 @@
  },
  "0053394": {
   "name": "[영남]퍼니와일드",
-  "grade": "S",
+  "grade": "SS",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -9058,7 +9058,7 @@
  },
  "0054460": {
   "name": "[영남]판타스틱포스",
-  "grade": "S",
+  "grade": "SS",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -9153,7 +9153,7 @@
  },
  "0051756": {
   "name": "대성스타",
-  "grade": "S",
+  "grade": "SS",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -9181,7 +9181,7 @@
  },
  "0053271": {
   "name": "타이거망치",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -9194,7 +9194,7 @@
  },
  "0051259": {
   "name": "금아포모스트",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -9208,7 +9208,7 @@
  },
  "0051314": {
   "name": "벌교데스티노",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -9235,7 +9235,7 @@
  },
  "0044526": {
   "name": "원평코드",
-  "grade": "B",
+  "grade": "C",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "없음",
@@ -9249,7 +9249,7 @@
  },
  "0053629": {
   "name": "프리메로",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -9290,7 +9290,7 @@
  },
  "0053276": {
   "name": "고주일척",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -9303,7 +9303,7 @@
  },
  "0053409": {
   "name": "따뜻한위로",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -9316,7 +9316,7 @@
  },
  "0051740": {
   "name": "문학벨",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -9329,7 +9329,7 @@
  },
  "0045382": {
   "name": "킹다이아",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -9398,7 +9398,7 @@
  },
  "0053348": {
   "name": "플라잉아너",
-  "grade": "A",
+  "grade": "AA",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -9412,7 +9412,7 @@
  },
  "0053888": {
   "name": "콩코드코디",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -9426,7 +9426,7 @@
  },
  "0047268": {
   "name": "당대초월",
-  "grade": "A",
+  "grade": "AA",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -9440,7 +9440,7 @@
  },
  "0046387": {
   "name": "은빛돌풍",
-  "grade": "A",
+  "grade": "AA",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -9480,7 +9480,7 @@
  },
  "0050967": {
   "name": "스마트테이크",
-  "grade": "A",
+  "grade": "AA",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -9493,7 +9493,7 @@
  },
  "0055430": {
   "name": "프리더원",
-  "grade": "A",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -9506,7 +9506,7 @@
  },
  "0051106": {
   "name": "천궁스톰",
-  "grade": "A",
+  "grade": "AA",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -9520,7 +9520,7 @@
  },
  "0057340": {
   "name": "마이티코드",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -9533,7 +9533,7 @@
  },
  "0050952": {
   "name": "이스트강적",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -9547,7 +9547,7 @@
  },
  "0060638": {
   "name": "짜릿한행복",
-  "grade": "A",
+  "grade": "AA",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -9561,7 +9561,7 @@
  },
  "0051020": {
   "name": "안양기쁨",
-  "grade": "A",
+  "grade": "AA",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -9615,7 +9615,7 @@
  },
  "0046900": {
   "name": "바로다나은",
-  "grade": "AA",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -10277,7 +10277,7 @@
  },
  "0053768": {
   "name": "포마드",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -10412,7 +10412,7 @@
  },
  "0053644": {
   "name": "라온더클라라",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -10426,7 +10426,7 @@
  },
  "0057583": {
   "name": "제주프린세스",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -10439,7 +10439,7 @@
  },
  "0053267": {
   "name": "레이스디바",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -10505,7 +10505,7 @@
  },
  "0052083": {
   "name": "라이징모",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -10518,7 +10518,7 @@
  },
  "0055563": {
   "name": "글로리영광",
-  "grade": "A",
+  "grade": "AA",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -10544,7 +10544,7 @@
  },
  "0051749": {
   "name": "문학축제",
-  "grade": "A",
+  "grade": "AA",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -10571,7 +10571,7 @@
  },
  "0053436": {
   "name": "관악산스카이",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -10585,7 +10585,7 @@
  },
  "0052975": {
   "name": "안양빛의속도",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -10613,7 +10613,7 @@
  },
  "0051442": {
   "name": "임로",
-  "grade": "A",
+  "grade": "AA",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -10626,7 +10626,7 @@
  },
  "0051562": {
   "name": "퀸다이아",
-  "grade": "A",
+  "grade": "AA",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -10652,7 +10652,7 @@
  },
  "0051794": {
   "name": "아쿠아라인",
-  "grade": "B",
+  "grade": "C",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -10692,7 +10692,7 @@
  },
  "0054001": {
   "name": "지산레이블",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -10705,7 +10705,7 @@
  },
  "0051296": {
   "name": "미스터카라",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -10719,7 +10719,7 @@
  },
  "0047547": {
   "name": "붉은태양",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -10760,7 +10760,7 @@
  },
  "0050685": {
   "name": "학산다크호스",
-  "grade": "AA",
+  "grade": "S",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -10774,7 +10774,7 @@
  },
  "0054604": {
   "name": "케이드래곤",
-  "grade": "AA",
+  "grade": "S",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -10843,7 +10843,7 @@
  },
  "0047557": {
   "name": "우마포이",
-  "grade": "AA",
+  "grade": "S",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -10870,7 +10870,7 @@
  },
  "0054029": {
   "name": "새파랑",
-  "grade": "AA",
+  "grade": "S",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -10898,7 +10898,7 @@
  },
  "0046783": {
   "name": "드래곤스퀘어",
-  "grade": "AA",
+  "grade": "S",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -10938,7 +10938,7 @@
  },
  "0054173": {
   "name": "지플렉스",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -10964,7 +10964,7 @@
  },
  "0054056": {
   "name": "은빛유혹",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -10977,7 +10977,7 @@
  },
  "0053240": {
   "name": "청산돌풍",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "없음",
@@ -10990,7 +10990,7 @@
  },
  "0045289": {
   "name": "퍼플신화",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -11004,7 +11004,7 @@
  },
  "0052140": {
   "name": "벽송",
-  "grade": "B",
+  "grade": "C",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -11018,7 +11018,7 @@
  },
  "0053010": {
   "name": "거센대로",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -11355,7 +11355,7 @@
  },
  "0052844": {
   "name": "글로벌카드",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -11396,7 +11396,7 @@
  },
  "0053238": {
   "name": "서프라이즈",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "없음",
@@ -11410,7 +11410,7 @@
  },
  "0053645": {
   "name": "라온킹스맨",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -11424,7 +11424,7 @@
  },
  "0053073": {
   "name": "스테핑스톤",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -11437,7 +11437,7 @@
  },
  "0051316": {
   "name": "비바참",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -11478,7 +11478,7 @@
  },
  "0053853": {
   "name": "블루하와이",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -11492,7 +11492,7 @@
  },
  "0059321": {
   "name": "카우보이퀸",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "없음",
@@ -11531,7 +11531,7 @@
  },
  "0055685": {
   "name": "새로운비술",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -11585,7 +11585,7 @@
  },
  "0053967": {
   "name": "학산헤니",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -11599,7 +11599,7 @@
  },
  "0053708": {
   "name": "블랙마마",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -11613,7 +11613,7 @@
  },
  "0053693": {
   "name": "파워풀나이트",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -11626,7 +11626,7 @@
  },
  "0054201": {
   "name": "벌교엠퍼러",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -11653,7 +11653,7 @@
  },
  "0053083": {
   "name": "만금다온",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -11693,7 +11693,7 @@
  },
  "0053023": {
   "name": "블랙선",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -11706,7 +11706,7 @@
  },
  "0051308": {
   "name": "원더풀치프",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -11720,7 +11720,7 @@
  },
  "0051866": {
   "name": "오피에스탑",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -11734,7 +11734,7 @@
  },
  "0060709": {
   "name": "파사스파크",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -11789,7 +11789,7 @@
  },
  "0053020": {
   "name": "송당스카이",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -11802,7 +11802,7 @@
  },
  "0052832": {
   "name": "빅토리퀸",
-  "grade": "B",
+  "grade": "C",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -11857,7 +11857,7 @@
  },
  "0053551": {
   "name": "라이트윙",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "없음",
@@ -11870,7 +11870,7 @@
  },
  "0054199": {
   "name": "벌교알라딘",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "없음",
@@ -11883,7 +11883,7 @@
  },
  "0051305": {
   "name": "태기산킹",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -11924,7 +11924,7 @@
  },
  "0051211": {
   "name": "겨울장미",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -11938,7 +11938,7 @@
  },
  "0047099": {
   "name": "고스트크리솔",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -12006,7 +12006,7 @@
  },
  "0052425": {
   "name": "나노마신",
-  "grade": "AA",
+  "grade": "S",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -12019,7 +12019,7 @@
  },
  "0056406": {
   "name": "탑티어",
-  "grade": "AA",
+  "grade": "S",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -12047,7 +12047,7 @@
  },
  "0045240": {
   "name": "슈어윈",
-  "grade": "AA",
+  "grade": "S",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -12086,7 +12086,7 @@
  },
  "0051771": {
   "name": "자이언트보스",
-  "grade": "AA",
+  "grade": "S",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -12139,7 +12139,7 @@
  },
  "0053707": {
   "name": "뱅크라인",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -12153,7 +12153,7 @@
  },
  "0053241": {
   "name": "카오스",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "없음",
@@ -12181,7 +12181,7 @@
  },
  "0053231": {
   "name": "에코스타",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -12194,7 +12194,7 @@
  },
  "0053849": {
   "name": "금적산",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -12221,7 +12221,7 @@
  },
  "0052990": {
   "name": "마이티샤인",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -12234,7 +12234,7 @@
  },
  "0051240": {
   "name": "라온니진스키",
-  "grade": "A",
+  "grade": "AA",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -12274,7 +12274,7 @@
  },
  "0050784": {
   "name": "웨스턴건",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -12288,7 +12288,7 @@
  },
  "0051788": {
   "name": "레전드와우",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -12302,7 +12302,7 @@
  },
  "0046779": {
   "name": "화산귀환",
-  "grade": "A",
+  "grade": "AA",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -12316,7 +12316,7 @@
  },
  "0051825": {
   "name": "용비태양",
-  "grade": "A",
+  "grade": "AA",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "없음",
@@ -12342,7 +12342,7 @@
  },
  "0047440": {
   "name": "원더풀로드",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -12369,7 +12369,7 @@
  },
  "0051929": {
   "name": "혁무상",
-  "grade": "A",
+  "grade": "AA",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -12529,7 +12529,7 @@
  },
  "0053335": {
   "name": "골든디바",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -12583,7 +12583,7 @@
  },
  "0055622": {
   "name": "마이슈퍼맨",
-  "grade": "B",
+  "grade": "C",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -12610,7 +12610,7 @@
  },
  "0053785": {
   "name": "스톰트루퍼",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -12636,7 +12636,7 @@
  },
  "0051549": {
   "name": "운주타임",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -12664,7 +12664,7 @@
  },
  "0051112": {
   "name": "이클립스탱고",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -12948,7 +12948,7 @@
  },
  "0055757": {
   "name": "하이라이트",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -12976,7 +12976,7 @@
  },
  "0053524": {
   "name": "스터닝볼트",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -12990,7 +12990,7 @@
  },
  "0053592": {
   "name": "영원한스타",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -13003,7 +13003,7 @@
  },
  "0052938": {
   "name": "마이러너",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "없음",
@@ -13017,7 +13017,7 @@
  },
  "0050761": {
   "name": "타이거케이",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "없음",
@@ -13058,7 +13058,7 @@
  },
  "0053863": {
   "name": "피어나리",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -13086,7 +13086,7 @@
  },
  "0054301": {
   "name": "이안퍼스트",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "없음",
@@ -13113,7 +13113,7 @@
  },
  "0053228": {
   "name": "머니무브",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "없음",
@@ -13127,7 +13127,7 @@
  },
  "0055497": {
   "name": "통쾌한승자",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -13153,7 +13153,7 @@
  },
  "0054222": {
   "name": "베스트프리덤",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -13166,7 +13166,7 @@
  },
  "0053367": {
   "name": "킹스파이시",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -13179,7 +13179,7 @@
  },
  "0052978": {
   "name": "대비마마",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -13192,7 +13192,7 @@
  },
  "0053856": {
   "name": "제축산지로",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -13220,7 +13220,7 @@
  },
  "0053194": {
   "name": "화이트잭팟",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -13247,7 +13247,7 @@
  },
  "0045302": {
   "name": "원평타운",
-  "grade": "B",
+  "grade": "C",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -13260,7 +13260,7 @@
  },
  "0054462": {
   "name": "퍼플코리아",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -13313,7 +13313,7 @@
  },
  "0062429": {
   "name": "싱싱내쉬",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -13340,7 +13340,7 @@
  },
  "0055897": {
   "name": "춤추는장미",
-  "grade": "B",
+  "grade": "C",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -13381,7 +13381,7 @@
  },
  "0051573": {
   "name": "노프라블럼",
-  "grade": "S",
+  "grade": "SS",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -13394,7 +13394,7 @@
  },
  "0047262": {
   "name": "태평히어로",
-  "grade": "S",
+  "grade": "SS",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -13407,7 +13407,7 @@
  },
  "0051568": {
   "name": "이클립스더킹",
-  "grade": "S",
+  "grade": "SS",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -13421,7 +13421,7 @@
  },
  "0045183": {
   "name": "지모션",
-  "grade": "S",
+  "grade": "SS",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "없음",
@@ -13435,7 +13435,7 @@
  },
  "0051793": {
   "name": "슬링스타",
-  "grade": "S",
+  "grade": "SS",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -13475,7 +13475,7 @@
  },
  "0051286": {
   "name": "강나루",
-  "grade": "S",
+  "grade": "SS",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -13488,7 +13488,7 @@
  },
  "0053493": {
   "name": "클러치매직",
-  "grade": "S",
+  "grade": "SS",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -13515,7 +13515,7 @@
  },
  "0047184": {
   "name": "서니로드",
-  "grade": "S",
+  "grade": "SS",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -13542,7 +13542,7 @@
  },
  "0051083": {
   "name": "머스킷데이",
-  "grade": "S",
+  "grade": "SS",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -13568,7 +13568,7 @@
  },
  "0060345": {
   "name": "지비볼트",
-  "grade": "S",
+  "grade": "SS",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -13624,7 +13624,7 @@
  },
  "0052503": {
   "name": "신의이름",
-  "grade": "S",
+  "grade": "AA",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -13665,7 +13665,7 @@
  },
  "0052472": {
   "name": "히어로파이터",
-  "grade": "S",
+  "grade": "SS",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -13705,7 +13705,7 @@
  },
  "0052971": {
   "name": "영파이터",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -13718,7 +13718,7 @@
  },
  "0053215": {
   "name": "러버맨",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -13732,7 +13732,7 @@
  },
  "0047029": {
   "name": "원평강자",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -13758,7 +13758,7 @@
  },
  "0054545": {
   "name": "에버글로리",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -13772,7 +13772,7 @@
  },
  "0053699": {
   "name": "마스터플랜",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -13814,7 +13814,7 @@
  },
  "0046733": {
   "name": "남산미남",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -13841,7 +13841,7 @@
  },
  "0047064": {
   "name": "트리스탄왕자",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -13854,7 +13854,7 @@
  },
  "0056397": {
   "name": "코리안드림",
-  "grade": "A",
+  "grade": "AA",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -13908,7 +13908,7 @@
  },
  "0050934": {
   "name": "라온스필레타",
-  "grade": "A",
+  "grade": "AA",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -13922,7 +13922,7 @@
  },
  "0051855": {
   "name": "글로벌서브",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "없음",
@@ -13936,7 +13936,7 @@
  },
  "0051435": {
   "name": "크레이지망고",
-  "grade": "A",
+  "grade": "AA",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -13950,7 +13950,7 @@
  },
  "0055905": {
   "name": "스톰크라운",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -13964,7 +13964,7 @@
  },
  "0059224": {
   "name": "무빙볼케이노",
-  "grade": "A",
+  "grade": "AA",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -14419,7 +14419,7 @@
  },
  "0051387": {
   "name": "이클립스마블",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -14432,7 +14432,7 @@
  },
  "0053969": {
   "name": "학산새미",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -14446,7 +14446,7 @@
  },
  "0053637": {
   "name": "빛나리즈",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -14459,7 +14459,7 @@
  },
  "0053349": {
   "name": "스틸모어",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -14487,7 +14487,7 @@
  },
  "0053970": {
   "name": "학산위너",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -14500,7 +14500,7 @@
  },
  "0052968": {
   "name": "나올오로라",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -14527,7 +14527,7 @@
  },
  "0054466": {
   "name": "팔팔날아",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -14566,7 +14566,7 @@
  },
  "0053955": {
   "name": "정문킹덤",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -14620,7 +14620,7 @@
  },
  "0050785": {
   "name": "어플리트런",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -14634,7 +14634,7 @@
  },
  "0054323": {
   "name": "특급기상",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -14660,7 +14660,7 @@
  },
  "0055760": {
   "name": "지비에이스",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "없음",
@@ -14726,7 +14726,7 @@
  },
  "0053191": {
   "name": "파워베스트",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -14806,7 +14806,7 @@
  },
  "0054584": {
   "name": "럭키조이",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -14833,7 +14833,7 @@
  },
  "0054098": {
   "name": "킹마스터",
-  "grade": "A",
+  "grade": "AA",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -14859,7 +14859,7 @@
  },
  "0038599": {
   "name": "허쉬대보",
-  "grade": "A",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -14872,7 +14872,7 @@
  },
  "0051758": {
   "name": "차밍퀸",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -14886,7 +14886,7 @@
  },
  "0057360": {
   "name": "마이머닝스",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -14913,7 +14913,7 @@
  },
  "0046897": {
   "name": "베스트토르",
-  "grade": "A",
+  "grade": "AA",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -14926,7 +14926,7 @@
  },
  "0052478": {
   "name": "흥행돌풍",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "없음",
@@ -14966,7 +14966,7 @@
  },
  "0053811": {
   "name": "플라잉스마트",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -15020,7 +15020,7 @@
  },
  "0052817": {
   "name": "카우보이삭스",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -15034,7 +15034,7 @@
  },
  "0054310": {
   "name": "눈꽃",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "없음",
@@ -15075,7 +15075,7 @@
  },
  "0051627": {
   "name": "청해스타",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -15101,7 +15101,7 @@
  },
  "0053480": {
   "name": "블루레인",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -15127,7 +15127,7 @@
  },
  "0045900": {
   "name": "나올대왕",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -15166,7 +15166,7 @@
  },
  "0053918": {
   "name": "아리온퀸카",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -15194,7 +15194,7 @@
  },
  "0057364": {
   "name": "선돌풍",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -15207,7 +15207,7 @@
  },
  "0061376": {
   "name": "마이뮤직",
-  "grade": "B",
+  "grade": "C",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -15261,7 +15261,7 @@
  },
  "0046832": {
   "name": "미라클한강",
-  "grade": "AA",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -15694,7 +15694,7 @@
  },
  "0052910": {
   "name": "위너삭스",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "없음",
@@ -15736,7 +15736,7 @@
  },
  "0053526": {
   "name": "금빛영웅",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -15750,7 +15750,7 @@
  },
  "0053646": {
   "name": "라온더플루마",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -15777,7 +15777,7 @@
  },
  "0053449": {
   "name": "강한감마",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -15817,7 +15817,7 @@
  },
  "0053350": {
   "name": "케렌시아",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -15844,7 +15844,7 @@
  },
  "0052905": {
   "name": "클로버원",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "없음",
@@ -15858,7 +15858,7 @@
  },
  "0050809": {
   "name": "대한코코즈",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -15872,7 +15872,7 @@
  },
  "0053712": {
   "name": "파카샤인",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -15899,7 +15899,7 @@
  },
  "0053370": {
   "name": "천지탱크",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -15925,7 +15925,7 @@
  },
  "0051679": {
   "name": "골든세이브",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -15938,7 +15938,7 @@
  },
  "0054221": {
   "name": "[영남]선라이즈",
-  "grade": "S",
+  "grade": "SS",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -15964,7 +15964,7 @@
  },
  "0052979": {
   "name": "캐치레이스",
-  "grade": "S",
+  "grade": "SS",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -15978,7 +15978,7 @@
  },
  "0053534": {
   "name": "[영남]클리어리위너",
-  "grade": "S",
+  "grade": "SS",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "없음",
@@ -15992,7 +15992,7 @@
  },
  "0051560": {
   "name": "라온사일런스",
-  "grade": "S",
+  "grade": "SS",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -16005,7 +16005,7 @@
  },
  "0054880": {
   "name": "타이거로어",
-  "grade": "S",
+  "grade": "SS",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -16018,7 +16018,7 @@
  },
  "0050992": {
   "name": "[영남]여수슈퍼스타",
-  "grade": "S",
+  "grade": "SS",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -16032,7 +16032,7 @@
  },
  "0052141": {
   "name": "클럽큐",
-  "grade": "S",
+  "grade": "SS",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -16045,7 +16045,7 @@
  },
  "0051207": {
   "name": "오늘도스마일",
-  "grade": "S",
+  "grade": "SS",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -16099,7 +16099,7 @@
  },
  "0054764": {
   "name": "[영남]에이스하이",
-  "grade": "S",
+  "grade": "SS",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -16112,7 +16112,7 @@
  },
  "0052877": {
   "name": "[영남]판타스틱밸류",
-  "grade": "S",
+  "grade": "SS",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -16126,7 +16126,7 @@
  },
  "0050902": {
   "name": "플라잉데이",
-  "grade": "S",
+  "grade": "SS",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -16140,7 +16140,7 @@
  },
  "0052872": {
   "name": "에어포스원",
-  "grade": "A",
+  "grade": "AA",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -16153,7 +16153,7 @@
  },
  "0051303": {
   "name": "블랙사탕",
-  "grade": "A",
+  "grade": "AA",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -16167,7 +16167,7 @@
  },
  "0045498": {
   "name": "에펠탑",
-  "grade": "A",
+  "grade": "AA",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "없음",
@@ -16180,7 +16180,7 @@
  },
  "0053365": {
   "name": "제이디강자",
-  "grade": "A",
+  "grade": "AA",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -16193,7 +16193,7 @@
  },
  "0053737": {
   "name": "대한파워",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -16207,7 +16207,7 @@
  },
  "0054132": {
   "name": "마음하나",
-  "grade": "A",
+  "grade": "AA",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -16220,7 +16220,7 @@
  },
  "0046127": {
   "name": "달맞이",
-  "grade": "A",
+  "grade": "AA",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -16233,7 +16233,7 @@
  },
  "0050938": {
   "name": "퍼지스텝",
-  "grade": "A",
+  "grade": "AA",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -16247,7 +16247,7 @@
  },
  "0054308": {
   "name": "용비교",
-  "grade": "A",
+  "grade": "AA",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -16260,7 +16260,7 @@
  },
  "0046675": {
   "name": "메가스텝",
-  "grade": "A",
+  "grade": "AA",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -16342,7 +16342,7 @@
  },
  "0053501": {
   "name": "이끌림",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -16355,7 +16355,7 @@
  },
  "0054726": {
   "name": "위너선",
-  "grade": "B",
+  "grade": "C",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -16408,7 +16408,7 @@
  },
  "0051200": {
   "name": "컴플리트디바",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -16742,7 +16742,7 @@
  },
  "0052090": {
   "name": "에너지파워",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -16782,7 +16782,7 @@
  },
  "0055380": {
   "name": "미스터카이",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -16795,7 +16795,7 @@
  },
  "0053690": {
   "name": "스터닝스킷",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -16808,7 +16808,7 @@
  },
  "0054476": {
   "name": "더선몬스터",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -16821,7 +16821,7 @@
  },
  "0054085": {
   "name": "블레이징엔진",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -16834,7 +16834,7 @@
  },
  "0055285": {
   "name": "화이트선더",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "없음",
@@ -16847,7 +16847,7 @@
  },
  "0052818": {
   "name": "걸작티아라",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -16861,7 +16861,7 @@
  },
  "0050836": {
   "name": "럭키에이원",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -16875,7 +16875,7 @@
  },
  "0053398": {
   "name": "비카델라",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -16888,7 +16888,7 @@
  },
  "0052911": {
   "name": "글로벌랜드",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "없음",
@@ -16902,7 +16902,7 @@
  },
  "0052913": {
   "name": "델타대천",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "없음",
@@ -16942,7 +16942,7 @@
  },
  "0056784": {
   "name": "더선커밍",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -16955,7 +16955,7 @@
  },
  "0051153": {
   "name": "베스트조이",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -16968,7 +16968,7 @@
  },
  "0051605": {
   "name": "글로리조이",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -16994,7 +16994,7 @@
  },
  "0047314": {
   "name": "인피니트아너",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "없음",
@@ -17020,7 +17020,7 @@
  },
  "0052483": {
   "name": "한우리",
-  "grade": "B",
+  "grade": "C",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "없음",
@@ -17046,7 +17046,7 @@
  },
  "0051618": {
   "name": "브리도트로피",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -17086,7 +17086,7 @@
  },
  "0060722": {
   "name": "빅토리삭스",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -17113,7 +17113,7 @@
  },
  "0046781": {
   "name": "슬램드래곤",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -17126,7 +17126,7 @@
  },
  "0052811": {
   "name": "레베랑스",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -17140,7 +17140,7 @@
  },
  "0053507": {
   "name": "브라운맘마",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -17154,7 +17154,7 @@
  },
  "0054600": {
   "name": "운주프린스",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -17168,7 +17168,7 @@
  },
  "0054601": {
   "name": "포에버길",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -17804,7 +17804,7 @@
  },
  "0054208": {
   "name": "리버런",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -17818,7 +17818,7 @@
  },
  "0050835": {
   "name": "영광의그린",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -17873,7 +17873,7 @@
  },
  "0054360": {
   "name": "스트롱위너",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -17899,7 +17899,7 @@
  },
  "0054922": {
   "name": "가온퍼펙트",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -17913,7 +17913,7 @@
  },
  "0057800": {
   "name": "판타스틱보스",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -17927,7 +17927,7 @@
  },
  "0056634": {
   "name": "닥터케세라",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -17941,7 +17941,7 @@
  },
  "0055460": {
   "name": "라벤더크라운",
-  "grade": "S",
+  "grade": "SS",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -17954,7 +17954,7 @@
  },
  "0056547": {
   "name": "로열프라이드",
-  "grade": "S",
+  "grade": "SS",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -17968,7 +17968,7 @@
  },
  "0055181": {
   "name": "선더웨이브",
-  "grade": "S",
+  "grade": "SS",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -17981,7 +17981,7 @@
  },
  "0055124": {
   "name": "파워풀워리어",
-  "grade": "S",
+  "grade": "SS",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -17995,7 +17995,7 @@
  },
  "0055733": {
   "name": "대길환호",
-  "grade": "S",
+  "grade": "SS",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "없음",
@@ -18022,7 +18022,7 @@
  },
  "0055526": {
   "name": "두바이하트",
-  "grade": "S",
+  "grade": "SS",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -18036,7 +18036,7 @@
  },
  "0055952": {
   "name": "서니와일드",
-  "grade": "S",
+  "grade": "SS",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -18049,7 +18049,7 @@
  },
  "0055870": {
   "name": "이클립스비전",
-  "grade": "S",
+  "grade": "SS",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -18062,7 +18062,7 @@
  },
  "0057801": {
   "name": "게임메이커",
-  "grade": "S",
+  "grade": "SS",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -18076,7 +18076,7 @@
  },
  "0055469": {
   "name": "빅토리타임",
-  "grade": "S",
+  "grade": "SS",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -18090,7 +18090,7 @@
  },
  "0055342": {
   "name": "와일드도로",
-  "grade": "S",
+  "grade": "SS",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -18104,7 +18104,7 @@
  },
  "0055473": {
   "name": "닥터애틀랜틱",
-  "grade": "S",
+  "grade": "SS",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -18117,7 +18117,7 @@
  },
  "0056823": {
   "name": "빅토리챔프",
-  "grade": "S",
+  "grade": "SS",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "없음",
@@ -18145,7 +18145,7 @@
  },
  "0051840": {
   "name": "바벨모모",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "없음",
@@ -18159,7 +18159,7 @@
  },
  "0054088": {
   "name": "보령울트라맨",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -18186,7 +18186,7 @@
  },
  "0053826": {
   "name": "퀸퍼펙트",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -18199,7 +18199,7 @@
  },
  "0051800": {
   "name": "유림스카이",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -18213,7 +18213,7 @@
  },
  "0060821": {
   "name": "원라스트마가리타",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -18282,7 +18282,7 @@
  },
  "0046831": {
   "name": "네버기브업",
-  "grade": "A",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -18295,7 +18295,7 @@
  },
  "0051115": {
   "name": "에어시티",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -18323,7 +18323,7 @@
  },
  "0053895": {
   "name": "글로벌프린스",
-  "grade": "A",
+  "grade": "AA",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -18350,7 +18350,7 @@
  },
  "0044578": {
   "name": "위대한선택",
-  "grade": "A",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -18405,7 +18405,7 @@
  },
  "0053053": {
   "name": "퀸메이커",
-  "grade": "A",
+  "grade": "AA",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -18419,7 +18419,7 @@
  },
  "0052903": {
   "name": "금아어뎁트",
-  "grade": "AA",
+  "grade": "S",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "없음",
@@ -18433,7 +18433,7 @@
  },
  "0051604": {
   "name": "월드리스트캣",
-  "grade": "AA",
+  "grade": "S",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -18447,7 +18447,7 @@
  },
  "0051795": {
   "name": "로드투에이스",
-  "grade": "AA",
+  "grade": "S",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -18461,7 +18461,7 @@
  },
  "0051138": {
   "name": "파차마마",
-  "grade": "AA",
+  "grade": "S",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -18475,7 +18475,7 @@
  },
  "0057334": {
   "name": "클러치위너",
-  "grade": "AA",
+  "grade": "S",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -18489,7 +18489,7 @@
  },
  "0051488": {
   "name": "새내헌터",
-  "grade": "AA",
+  "grade": "S",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -18531,7 +18531,7 @@
  },
  "0046728": {
   "name": "로드스타",
-  "grade": "AA",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -18545,7 +18545,7 @@
  },
  "0050988": {
   "name": "용비패왕",
-  "grade": "AA",
+  "grade": "S",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -18825,7 +18825,7 @@
  },
  "0053840": {
   "name": "러시와일드",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -18839,7 +18839,7 @@
  },
  "0052918": {
   "name": "램프요정지니",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "없음",
@@ -18880,7 +18880,7 @@
  },
  "0052969": {
   "name": "피디스페셜",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -18921,7 +18921,7 @@
  },
  "0053403": {
   "name": "파초의꿈",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -19398,7 +19398,7 @@
  },
  "0053662": {
   "name": "오아시스스타",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -19412,7 +19412,7 @@
  },
  "0053190": {
   "name": "스카일러지유",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -19425,7 +19425,7 @@
  },
  "0051328": {
   "name": "소드윙",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -19467,7 +19467,7 @@
  },
  "0051547": {
   "name": "레이스마린",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -19507,7 +19507,7 @@
  },
  "0054188": {
   "name": "헤이브로",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -19521,7 +19521,7 @@
  },
  "0053886": {
   "name": "소망의길",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -19535,7 +19535,7 @@
  },
  "0053491": {
   "name": "골드로저",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -19563,7 +19563,7 @@
  },
  "0053542": {
   "name": "닥터펀치",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "없음",
@@ -19603,7 +19603,7 @@
  },
  "0053571": {
   "name": "보령더퀸",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "없음",
@@ -19631,7 +19631,7 @@
  },
  "0053374": {
   "name": "도끼타이거",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -19670,7 +19670,7 @@
  },
  "0045262": {
   "name": "벌교의꿈",
-  "grade": "S",
+  "grade": "AA",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -19724,7 +19724,7 @@
  },
  "0042163": {
   "name": "최강쏜살",
-  "grade": "S",
+  "grade": "AA",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -19763,7 +19763,7 @@
  },
  "0052475": {
   "name": "최고의꿈",
-  "grade": "S",
+  "grade": "AA",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -20481,7 +20481,7 @@
  },
  "0053210": {
   "name": "모어퀴클리",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "없음",
@@ -20494,7 +20494,7 @@
  },
  "0055735": {
   "name": "에이스크로우",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "없음",
@@ -20508,7 +20508,7 @@
  },
  "0052896": {
   "name": "위대한하트",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -20561,7 +20561,7 @@
  },
  "0052837": {
   "name": "테미스",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -20574,7 +20574,7 @@
  },
  "0054219": {
   "name": "포트모어",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -20588,7 +20588,7 @@
  },
  "0050973": {
   "name": "플라이투더문",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -20602,7 +20602,7 @@
  },
  "0051717": {
   "name": "석세스카우",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -20616,7 +20616,7 @@
  },
  "0053285": {
   "name": "용비샤크",
-  "grade": "B",
+  "grade": "A",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -20642,7 +20642,7 @@
  },
  "0053701": {
   "name": "레전드히트",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -20656,7 +20656,7 @@
  },
  "0050920": {
   "name": "부경트리플",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -20669,7 +20669,7 @@
  },
  "0051363": {
   "name": "위닝트리",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "없음",
@@ -20682,7 +20682,7 @@
  },
  "0053363": {
   "name": "오케이베이비",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -20695,7 +20695,7 @@
  },
  "0053141": {
   "name": "킹블랙",
-  "grade": "B",
+  "grade": "A",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -20708,7 +20708,7 @@
  },
  "0054866": {
   "name": "월드트리",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -20722,7 +20722,7 @@
  },
  "0051764": {
   "name": "모스트원티드",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -20764,7 +20764,7 @@
  },
  "0053805": {
   "name": "원플러스원",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -20818,7 +20818,7 @@
  },
  "0053734": {
   "name": "벌마의거인",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -20832,7 +20832,7 @@
  },
  "0052974": {
   "name": "비트보이",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -20846,7 +20846,7 @@
  },
  "0050984": {
   "name": "마통령",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -20860,7 +20860,7 @@
  },
  "0053844": {
   "name": "파워풀배틀",
-  "grade": "A",
+  "grade": "AA",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -20888,7 +20888,7 @@
  },
  "0050659": {
   "name": "챔프소니",
-  "grade": "A",
+  "grade": "AA",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -20914,7 +20914,7 @@
  },
  "0054798": {
   "name": "장고맨",
-  "grade": "A",
+  "grade": "AA",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -20928,7 +20928,7 @@
  },
  "0051082": {
   "name": "탄탄대로",
-  "grade": "A",
+  "grade": "AA",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -20954,7 +20954,7 @@
  },
  "0055844": {
   "name": "플라잉크라운",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -20967,7 +20967,7 @@
  },
  "0060357": {
   "name": "센세이셔널윈",
-  "grade": "A",
+  "grade": "AA",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -21344,7 +21344,7 @@
  },
  "0054865": {
   "name": "낙안추억",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -21412,7 +21412,7 @@
  },
  "0053429": {
   "name": "스마트유림",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -21426,7 +21426,7 @@
  },
  "0053180": {
   "name": "나인틴나인원",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -21452,7 +21452,7 @@
  },
  "0053636": {
   "name": "스위트맨",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -21466,7 +21466,7 @@
  },
  "0053554": {
   "name": "챔프의희망",
-  "grade": "C",
+  "grade": "B",
   "coat": "적다색(chestnut)",
   "coatSource": "hash",
   "face": "없음",
@@ -21479,7 +21479,7 @@
  },
  "0054204": {
   "name": "두바이드림",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -21493,7 +21493,7 @@
  },
  "0051700": {
   "name": "매직쇼",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -21507,7 +21507,7 @@
  },
  "0051796": {
   "name": "제이드팰리스",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -21521,7 +21521,7 @@
  },
  "0053135": {
   "name": "브라운초코",
-  "grade": "C",
+  "grade": "B",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -21534,7 +21534,7 @@
  },
  "0055923": {
   "name": "레이스나인",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -21548,7 +21548,7 @@
  },
  "0052836": {
   "name": "화려한순간",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -21630,7 +21630,7 @@
  },
  "0053625": {
   "name": "파워히트",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -21644,7 +21644,7 @@
  },
  "0052997": {
   "name": "여운",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -21658,7 +21658,7 @@
  },
  "0053401": {
   "name": "노던퀸",
-  "grade": "C",
+  "grade": "B",
   "coat": "흑갈색(brown)",
   "coatSource": "hash",
   "face": "별(star)",
@@ -21713,7 +21713,7 @@
  },
  "0054168": {
   "name": "백투더드림",
-  "grade": "C",
+  "grade": "B",
   "coat": "회색(grey)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -21726,7 +21726,7 @@
  },
  "0053876": {
   "name": "필승위너",
-  "grade": "C",
+  "grade": "B",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
@@ -21794,7 +21794,7 @@
  },
  "0051702": {
   "name": "아리온의빛",
-  "grade": "B",
+  "grade": "A",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "작은 줄(snip)",
@@ -21835,7 +21835,7 @@
  },
  "0050821": {
   "name": "디러블리킹",
-  "grade": "B",
+  "grade": "A",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
@@ -21889,7 +21889,7 @@
  },
  "0051409": {
   "name": "영스카이워커",
-  "grade": "S",
+  "grade": "SS",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -21903,7 +21903,7 @@
  },
  "0051773": {
   "name": "미스터키맨",
-  "grade": "S",
+  "grade": "SS",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -21917,7 +21917,7 @@
  },
  "0054736": {
   "name": "카디널포스",
-  "grade": "S",
+  "grade": "SS",
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
@@ -21944,7 +21944,7 @@
  },
  "0054678": {
   "name": "프라임시크릿",
-  "grade": "S",
+  "grade": "SS",
   "coat": "흑색(black)",
   "coatSource": "hash",
   "face": "없음",
