@@ -1,0 +1,170 @@
+{
+ "checkedAt": "2026-10-21T00:48:24.051Z",
+ "apis": [
+  {
+   "key": "entries",
+   "name": "출전표 상세정보",
+   "dataId": "15058677",
+   "endpoint": "https://apis.data.go.kr/B551015/API26_2/entrySheet_2",
+   "endpointSource": "govapiatlas(2차)",
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 2007,
+   "ok": true
+  },
+  {
+   "key": "results",
+   "name": "경주성적정보",
+   "dataId": "15063979",
+   "endpoint": "https://apis.data.go.kr/B551015/API214_1/RaceDetailResult_1",
+   "endpointSource": "govapiatlas(2차)",
+   "resultCode": "",
+   "resultMsg": "",
+   "items": 0,
+   "ok": false
+  },
+  {
+   "key": "detail",
+   "name": "경주별상세성적표",
+   "dataId": "15089492",
+   "endpoint": "https://apis.data.go.kr/B551015/racedetailresult/getracedetailresult",
+   "endpointSource": "data.go.kr",
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 109,
+   "ok": true
+  },
+  {
+   "key": "raceInfo",
+   "name": "경주개요 정보",
+   "dataId": "15059144",
+   "endpoint": "https://apis.data.go.kr/B551015/API3_1/raceInfo_1",
+   "endpointSource": "govapiatlas(2차)",
+   "resultCode": "",
+   "resultMsg": "",
+   "items": 0,
+   "ok": false
+  },
+  {
+   "key": "track",
+   "name": "경주로정보",
+   "dataId": "15063953",
+   "endpoint": "https://apis.data.go.kr/B551015/API189_1/Track_1",
+   "endpointSource": "govapiatlas(2차)",
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 4507,
+   "ok": true
+  },
+  {
+   "key": "parkTrack",
+   "name": "레츠런파크 트랙정보",
+   "dataId": "15063969",
+   "endpoint": "https://apis.data.go.kr/B551015/API204/RaceTrack",
+   "endpointSource": "govapiatlas(2차)",
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 0,
+   "ok": true
+  },
+  {
+   "key": "topRecord",
+   "name": "경주조건별 최고기록",
+   "dataId": "15057344",
+   "endpoint": "https://apis.data.go.kr/B551015/API32_1/topRecordByCondition_1",
+   "endpointSource": "govapiatlas(2차)",
+   "resultCode": "",
+   "resultMsg": "",
+   "items": 0,
+   "ok": false
+  },
+  {
+   "key": "jockeys",
+   "name": "현직기수정보",
+   "dataId": "15086329",
+   "endpoint": "https://apis.data.go.kr/B551015/currentjockeyInfo/getcurrentjockeyinfo",
+   "endpointSource": "data.go.kr",
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 103,
+   "ok": true
+  },
+  {
+   "key": "jockeyPeriod",
+   "name": "기수기간별성적비교(최근60일)",
+   "dataId": "15089669",
+   "endpoint": "https://apis.data.go.kr/B551015/jkpresult/getjkpresult",
+   "endpointSource": "data.go.kr",
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 84,
+   "ok": true
+  },
+  {
+   "key": "jockeyResult",
+   "name": "기수 성적 정보",
+   "dataId": "15056591",
+   "endpoint": "https://apis.data.go.kr/B551015/API11_1/jockeyResult_1",
+   "endpointSource": "추정(미확인)",
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 638,
+   "ok": true
+  },
+  {
+   "key": "weight",
+   "name": "출전마 체중 정보",
+   "dataId": "(govapiatlas)",
+   "endpoint": "https://apis.data.go.kr/B551015/API25_1/entryHorseWeightInfo_1",
+   "endpointSource": "govapiatlas(2차)",
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 2007,
+   "ok": true
+  },
+  {
+   "key": "horses",
+   "name": "경주마 상세정보",
+   "dataId": "15058115",
+   "endpoint": "https://apis.data.go.kr/B551015/API8_2/raceHorseInfo_2",
+   "endpointSource": "govapiatlas(2차)",
+   "resultCode": "",
+   "resultMsg": "",
+   "items": 0,
+   "ok": false
+  },
+  {
+   "key": "horseTotal",
+   "name": "마필종합 상세정보",
+   "dataId": "15057985",
+   "endpoint": "https://apis.data.go.kr/B551015/API42_1/totalHorseInfo_1",
+   "endpointSource": "govapiatlas(2차)",
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 1,
+   "ok": true
+  },
+  {
+   "key": "jockeyChange",
+   "name": "기수변경 정보",
+   "dataId": "15057181",
+   "endpoint": "https://apis.data.go.kr/B551015/API10_1/jockeyChangeInfo_1",
+   "endpointSource": "추정(미확인)",
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 57,
+   "ok": true
+  },
+  {
+   "key": "cancel",
+   "name": "경주마 출전취소 정보",
+   "dataId": "(govapiatlas)",
+   "endpoint": "https://apis.data.go.kr/B551015/API9_1/raceHorseCancelInfo_1",
+   "endpointSource": "govapiatlas(2차)",
+   "resultCode": "",
+   "resultMsg": "",
+   "items": 0,
+   "ok": false
+  }
+ ]
+}
