@@ -311,17 +311,7 @@ ${fam.length?`<h3>명마 <span class="muted">최근 대상·특별 경주 우승
 <p class="muted">${L.length}두${L.length>120?' · 상위 120두만 표시':''}</p><div class="gal">${L.slice(0,120).map(([n,g])=>hcard(n,N[n],g)).join('')}</div>`}
 function heroHtml(){const R=races();const ks=Object.keys(R).sort();const today=new Date(Date.now()+9*36e5).toISOString().slice(0,10).replaceAll('-','');
 const next=ks.filter(k=>k.split('|')[0]>=today);const last=ks[ks.length-1];const nd=next.length?next[0].split('|')[0]:null;
-return topCarousel()+`<section class="hero"><h1>오늘도 천천히,<br>경주를 읽어볼까요? 🌿</h1><p>출마표 · RN 분석 · 말 지식을 한곳에.<br>베팅 기능 없는 경마 기록·정보 노트예요.</p>
-<div class="cta"><a class="pill" href="#/races">🏇 경주 보기</a><a class="pill" href="#/know">🐴 말 지식</a></div>
-<svg viewBox="0 0 360 130" aria-hidden="true"><g class="cloud"><ellipse cx="70" cy="28" rx="26" ry="10" fill="#fff" opacity=".8"/><ellipse cx="290" cy="20" rx="20" ry="8" fill="#fff" opacity=".7"/></g>
-<circle cx="300" cy="40" r="16" fill="#ffd59e"/><path d="M0 110 Q90 80 180 100 T360 92 V130 H0Z" fill="#cfe8d6"/><path d="M0 118 Q120 100 240 114 T360 110 V130 H0Z" fill="#b5dbc2"/>
-<g class="gallop"><path d="M130 92 q10-26 44-24 l22-14 q8-2 10 6 l-6 4 6 8 q-6 6-14 2 l-6 10 q4 14-8 22 l4 14 h-6 l-6-14 q-18 4-30-2 l-8 16 h-6 l4-18 q-8-4-6-10z" fill="#c98b5b"/>
-<path d="M176 68 q-6-6-2-14 l8 4" fill="#8a5a36"/><circle cx="203" cy="60" r="1.8" fill="#3a3128"/><path d="M128 92 q-14 2-18 14 q10-4 18-6" fill="#8a5a36"/>
-<path d="M160 70 q6-16 20-12 l-4 12z" fill="#f28c8c"/><circle cx="170" cy="52" r="7" fill="#ffe1c4"/><path d="M163 50 q7-10 14 0z" fill="#f28c8c"/></g></svg></section>
-<div class="tiles"><a class="tile" href="#/races"><span>📋</span><b>출마표</b><span class="muted" style="font-size:12px">${nd?fd(nd)+' 예정':'최근 '+fd(last.split('|')[0])}</span></a>
-<a class="tile" href="#/acc"><span>📊</span><b>지난 분석 적중률</b><span class="muted" style="font-size:12px">솔직하게 공개해요</span></a>
-<a class="tile" href="#/know"><span>🐴</span><b>말 지식</b><span class="muted" style="font-size:12px">입문부터 차근차근</span></a>
-<a class="tile" href="#/fav"><span>⭐</span><b>관심마</b><span class="muted" style="font-size:12px">${fav().length}두 저장됨</span></a></div>
+return topCarousel()+`<a class="card" href="#/races" style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;margin:8px 0;text-decoration:none"><b>🏇 경주 보기</b><span class="muted" style="font-size:12px">${nd?fd(nd)+' 예정':'최근 '+fd(last.split('|')[0])} ›</span></a>
 ${anCarousel()}${jkCarousel()}<p class="note">모든 분석은 참고용이며 결과를 보장하지 않아요.</p>`}
 // ---- 플레이스홀더 아바타: 실존 인물·말을 묘사하지 않는 범용 일러스트 ----
 const PAL=['#f28c8c','#7cc3a5','#f6b26b','#8fb3e8','#c9a0e0','#e8c46a'];
