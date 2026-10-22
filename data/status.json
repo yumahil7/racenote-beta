@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-10-21T21:28:51.691Z",
+ "checkedAt": "2026-10-22T21:28:54.973Z",
  "apis": [
   {
    "key": "entries",
@@ -29,10 +29,10 @@
    "dataId": "15089492",
    "endpoint": "https://apis.data.go.kr/B551015/racedetailresult/getracedetailresult",
    "endpointSource": "data.go.kr",
-   "resultCode": "HTTP200",
-   "resultMsg": "{ \"OpenAPI_ServiceResponse\": { \"cmmMsgHeader\": { \"errMsg\": \"HTTP_ERROR\", \"returnAuthMsg\": \"HTTP 에러\", \"returnReasonCode\": \"04\" } } ",
-   "items": 0,
-   "ok": false
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 1261,
+   "ok": true
   },
   {
    "key": "raceInfo",
@@ -97,7 +97,7 @@
    "endpointSource": "data.go.kr",
    "resultCode": "00",
    "resultMsg": "NORMAL SERVICE.",
-   "items": 83,
+   "items": 82,
    "ok": true
   },
   {
