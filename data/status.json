@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-10-23T06:19:58.192Z",
+ "checkedAt": "2026-10-23T08:23:12.132Z",
  "apis": [
   {
    "key": "entries",
@@ -97,7 +97,7 @@
    "endpointSource": "data.go.kr",
    "resultCode": "00",
    "resultMsg": "NORMAL SERVICE.",
-   "items": 83,
+   "items": 84,
    "ok": true
   },
   {
