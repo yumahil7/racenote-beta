@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-10-23T00:14:57.245Z",
+ "checkedAt": "2026-10-23T02:18:09.256Z",
  "apis": [
   {
    "key": "entries",
@@ -7,10 +7,10 @@
    "dataId": "15058677",
    "endpoint": "https://apis.data.go.kr/B551015/API26_2/entrySheet_2",
    "endpointSource": "govapiatlas(2차)",
-   "resultCode": "NETWORK",
-   "resultMsg": "This operation was aborted",
-   "items": 0,
-   "ok": false
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 2004,
+   "ok": true
   },
   {
    "key": "results",
@@ -29,10 +29,10 @@
    "dataId": "15089492",
    "endpoint": "https://apis.data.go.kr/B551015/racedetailresult/getracedetailresult",
    "endpointSource": "data.go.kr",
-   "resultCode": "NETWORK",
-   "resultMsg": "This operation was aborted",
-   "items": 0,
-   "ok": false
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 1261,
+   "ok": true
   },
   {
    "key": "raceInfo",
@@ -51,10 +51,10 @@
    "dataId": "15063953",
    "endpoint": "https://apis.data.go.kr/B551015/API189_1/Track_1",
    "endpointSource": "govapiatlas(2차)",
-   "resultCode": "HTTP200",
-   "resultMsg": "{ \"OpenAPI_ServiceResponse\": { \"cmmMsgHeader\": { \"errMsg\": \"HTTP_ERROR\", \"returnAuthMsg\": \"HTTP 에러\", \"returnReasonCode\": \"04\" } } ",
-   "items": 0,
-   "ok": false
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 4557,
+   "ok": true
   },
   {
    "key": "parkTrack",
@@ -62,10 +62,10 @@
    "dataId": "15063969",
    "endpoint": "https://apis.data.go.kr/B551015/API204/RaceTrack",
    "endpointSource": "govapiatlas(2차)",
-   "resultCode": "HTTP200",
-   "resultMsg": "{ \"OpenAPI_ServiceResponse\": { \"cmmMsgHeader\": { \"errMsg\": \"HTTP_ERROR\", \"returnAuthMsg\": \"HTTP 에러\", \"returnReasonCode\": \"04\" } } ",
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
    "items": 0,
-   "ok": false
+   "ok": true
   },
   {
    "key": "topRecord",
@@ -84,10 +84,10 @@
    "dataId": "15086329",
    "endpoint": "https://apis.data.go.kr/B551015/currentjockeyInfo/getcurrentjockeyinfo",
    "endpointSource": "data.go.kr",
-   "resultCode": "HTTP200",
-   "resultMsg": "{ \"OpenAPI_ServiceResponse\": { \"cmmMsgHeader\": { \"errMsg\": \"HTTP_ERROR\", \"returnAuthMsg\": \"HTTP 에러\", \"returnReasonCode\": \"04\" } } ",
-   "items": 0,
-   "ok": false
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 103,
+   "ok": true
   },
   {
    "key": "jockeyPeriod",
@@ -95,10 +95,10 @@
    "dataId": "15089669",
    "endpoint": "https://apis.data.go.kr/B551015/jkpresult/getjkpresult",
    "endpointSource": "data.go.kr",
-   "resultCode": "HTTP200",
-   "resultMsg": "{ \"OpenAPI_ServiceResponse\": { \"cmmMsgHeader\": { \"errMsg\": \"HTTP_ERROR\", \"returnAuthMsg\": \"HTTP 에러\", \"returnReasonCode\": \"04\" } } ",
-   "items": 0,
-   "ok": false
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 82,
+   "ok": true
   },
   {
    "key": "jockeyResult",
@@ -106,10 +106,10 @@
    "dataId": "15056591",
    "endpoint": "https://apis.data.go.kr/B551015/API11_1/jockeyResult_1",
    "endpointSource": "추정(미확인)",
-   "resultCode": "HTTP200",
-   "resultMsg": "{ \"OpenAPI_ServiceResponse\": { \"cmmMsgHeader\": { \"errMsg\": \"HTTP_ERROR\", \"returnAuthMsg\": \"HTTP 에러\", \"returnReasonCode\": \"04\" } } ",
-   "items": 0,
-   "ok": false
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 638,
+   "ok": true
   },
   {
    "key": "weight",
@@ -117,10 +117,10 @@
    "dataId": "(govapiatlas)",
    "endpoint": "https://apis.data.go.kr/B551015/API25_1/entryHorseWeightInfo_1",
    "endpointSource": "govapiatlas(2차)",
-   "resultCode": "HTTP200",
-   "resultMsg": "{ \"OpenAPI_ServiceResponse\": { \"cmmMsgHeader\": { \"errMsg\": \"HTTP_ERROR\", \"returnAuthMsg\": \"HTTP 에러\", \"returnReasonCode\": \"04\" } } ",
-   "items": 0,
-   "ok": false
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 2004,
+   "ok": true
   },
   {
    "key": "horses",
@@ -139,10 +139,10 @@
    "dataId": "15057985",
    "endpoint": "https://apis.data.go.kr/B551015/API42_1/totalHorseInfo_1",
    "endpointSource": "govapiatlas(2차)",
-   "resultCode": "HTTP200",
-   "resultMsg": "{ \"OpenAPI_ServiceResponse\": { \"cmmMsgHeader\": { \"errMsg\": \"HTTP_ERROR\", \"returnAuthMsg\": \"HTTP 에러\", \"returnReasonCode\": \"04\" } } ",
-   "items": 0,
-   "ok": false
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 1,
+   "ok": true
   },
   {
    "key": "jockeyChange",
@@ -150,10 +150,10 @@
    "dataId": "15057181",
    "endpoint": "https://apis.data.go.kr/B551015/API10_1/jockeyChangeInfo_1",
    "endpointSource": "추정(미확인)",
-   "resultCode": "HTTP200",
-   "resultMsg": "{ \"OpenAPI_ServiceResponse\": { \"cmmMsgHeader\": { \"errMsg\": \"HTTP_ERROR\", \"returnAuthMsg\": \"HTTP 에러\", \"returnReasonCode\": \"04\" } } ",
-   "items": 0,
-   "ok": false
+   "resultCode": "00",
+   "resultMsg": "NORMAL SERVICE.",
+   "items": 57,
+   "ok": true
   },
   {
    "key": "cancel",
