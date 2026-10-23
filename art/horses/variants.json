@@ -64,7 +64,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "1412051": {
@@ -87,11 +87,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
-   "반차안대"
+   "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈,반가지큰,혀끈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "1412179": {
@@ -129,10 +128,10 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
-   "다리 붕대"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "정면 3/4"
  },
  "1412238": {
@@ -222,10 +221,10 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "다리 붕대"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "정면 3/4"
  },
  "1412303": {
@@ -342,17 +341,17 @@
    "다리 붕대"
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "계란형큰고리재갈"
  },
  "3014773": {
   "name": "새벽바람",
   "grade": "S",
   "coatSource": "hash",
   "accessories": [
-   "반차안대"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "눈가면"
  },
  "3014980": {
   "name": "태흥산성",
@@ -370,11 +369,11 @@
   "grade": "S",
   "coatSource": "hash",
   "accessories": [
-   "다리 붕대",
+   "메시 귀덮개/플라이마스크",
    null
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "눈가면",
   "pose": "측면 질주"
  },
  "3016259": {
@@ -385,7 +384,7 @@
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "혀보정끈",
   "pose": "측면 질주"
  },
  "3016573": {
@@ -483,7 +482,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "계란형큰고리재갈"
  },
  "3017983": {
   "name": "삼다장군",
@@ -501,10 +500,10 @@
   "grade": "B",
   "coatSource": "hash",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "다리 붕대"
   ],
   "shoe": "은색",
-  "toolFromData": "눈가면"
+  "toolFromData": null
  },
  "3018067": {
   "name": "웅진대성",
@@ -561,10 +560,10 @@
   "grade": "S",
   "coatSource": "hash",
   "accessories": [
-   "차안대(블링커)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "눈가면"
  },
  "3018408": {
   "name": "별빛누리",
@@ -575,7 +574,7 @@
    null
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "혀보정끈+,혀보정재갈-"
  },
  "3018460": {
   "name": "선덕공주",
@@ -604,10 +603,10 @@
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "accessories": [
-   "편자 색 포인트"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "눈가면,혀보정끈"
  },
  "3018571": {
   "name": "전설무적",
@@ -741,11 +740,11 @@
   "grade": "S",
   "coatSource": "hash",
   "accessories": [
-   "차안대(블링커)",
+   "메시 귀덮개/플라이마스크",
    null
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "눈가면"
  },
  "3018933": {
   "name": "오라태양",
@@ -880,7 +879,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "눈가면,계란형큰고리재갈-"
+  "toolFromData": "눈가면"
  },
  "3101705": {
   "name": "멘탈",
@@ -1031,7 +1030,7 @@
    "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "Triabit러깅재갈-"
  },
  "3102296": {
   "name": "기탄",
@@ -1048,11 +1047,11 @@
   "grade": "C",
   "coatSource": "hash",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "쉐도우롤(흙막이 코밴드)",
    null
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈가면"
+  "toolFromData": null
  },
  "3102338": {
   "name": "명문대부",
@@ -1294,17 +1293,17 @@
   "accessories": [
    "편자 색 포인트"
   ],
-  "toolFromData": "계란형큰고리재갈"
+  "toolFromData": null
  },
  "3103294": {
   "name": "드림매직",
   "grade": "S",
   "coatSource": "hash",
   "accessories": [
-   "차안대(블링커)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "계란형큰고리재갈,눈가면"
  },
  "3103305": {
   "name": "영웅퀸",
@@ -1322,10 +1321,10 @@
   "grade": "B",
   "coatSource": "hash",
   "accessories": [
-   "차안대(블링커)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "망사눈가면"
  },
  "3103323": {
   "name": "황룡강",
@@ -1386,17 +1385,17 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "눈가면"
+  "toolFromData": "눈가면-"
  },
  "3103413": {
   "name": "신수",
   "grade": "A",
   "coatSource": "hash",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": "눈가면"
+  "toolFromData": null
  },
  "3103420": {
   "name": "제주보이",
@@ -1433,10 +1432,10 @@
   "grade": "S",
   "coatSource": "hash",
   "accessories": [
-   "다리 붕대"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "눈가면"
  },
  "3103457": {
   "name": "백호여걸",
@@ -1466,7 +1465,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰고리재갈"
+  "toolFromData": null
  },
  "3103482": {
   "name": "백룡의힘",
@@ -1476,7 +1475,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "눈가면"
+  "toolFromData": null
  },
  "3103495": {
   "name": "돈마맨",
@@ -1610,7 +1609,7 @@
    null
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "혀보정끈+",
   "pose": "측면 질주"
  },
  "3103618": {
@@ -1645,11 +1644,11 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
-   "반차안대"
+   "혀끈",
+   null
   ],
   "shoe": "은색",
-  "toolFromData": "반가지큰고리재갈+,눈가면-",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "3103643": {
@@ -1909,7 +1908,7 @@
  },
  "3103864": {
   "name": "용담천하",
-  "grade": "AA",
+  "grade": "A",
   "coatSource": "hash",
   "accessories": [
    "혀끈"
@@ -1945,10 +1944,11 @@
   "grade": "A",
   "coatSource": "hash",
   "accessories": [
+   "다리 붕대",
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰고리재갈,눈가면",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "3103899": {
@@ -1972,7 +1972,7 @@
    null
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰고리재갈",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "3103902": {
@@ -1984,7 +1984,7 @@
    null
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "눈가면",
   "pose": "측면 질주"
  },
  "3103920": {
@@ -2079,10 +2079,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": "눈가면",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "3103964": {
@@ -2101,10 +2101,10 @@
   "grade": "C",
   "coatSource": "hash",
   "accessories": [
-   "혀끈"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "구각자극판,망사눈가면",
   "pose": "측면 질주"
  },
  "3104068": {
@@ -2134,10 +2134,10 @@
   "grade": "C",
   "coatSource": "hash",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "편자 색 포인트"
   ],
   "shoe": "은색",
-  "toolFromData": "눈가면",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "3104084": {
@@ -2168,10 +2168,10 @@
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "accessories": [
-   "반차안대"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "눈가면",
   "pose": "측면 질주"
  },
  "3104094": {
@@ -2391,10 +2391,9 @@
   "grade": "A",
   "coatSource": "hash",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "편자 색 포인트"
   ],
-  "shoe": "은색",
-  "toolFromData": "혀보정끈,눈가면-",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "3104170": {
@@ -2825,10 +2824,11 @@
   "grade": "C",
   "coatSource": "hash",
   "accessories": [
-   "혀끈"
+   "반차안대",
+   "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "반가지큰고리재갈,혀보정끈",
   "pose": "측면 질주"
  },
  "3104565": {
@@ -2879,10 +2879,10 @@
   "grade": "C",
   "coatSource": "hash",
   "accessories": [
-   "혀끈"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "눈가면",
   "pose": "측면 질주"
  },
  "3104589": {
@@ -2925,11 +2925,10 @@
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "편자 색 포인트",
    null
   ],
-  "shoe": "은색",
-  "toolFromData": "눈가면",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "3104630": {
@@ -2981,10 +2980,10 @@
   "grade": "S",
   "coatSource": "hash",
   "accessories": [
-   "반차안대"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "눈가면",
   "pose": "측면 질주"
  },
  "3104649": {
@@ -3442,10 +3441,11 @@
   "coat": "밤색(bay)",
   "coatSource": "hash",
   "accessories": [
-   "편자 색 포인트"
+   "반차안대",
+   "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "양털코굴레+,반가지큰고리재갈-"
  },
  "3105298": {
   "name": "여포장사",
@@ -3474,10 +3474,10 @@
   "grade": "C",
   "coatSource": "hash",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": "망사가면+"
+  "toolFromData": null
  },
  "3105327": {
   "name": "윈드파이터",
@@ -3551,18 +3551,16 @@
    null
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰고리재갈"
+  "toolFromData": null
  },
  "3105511": {
   "name": "해뜨고",
   "grade": "C",
   "coatSource": "hash",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
-   "반차안대"
+   "편자 색 포인트"
   ],
-  "shoe": "은색",
-  "toolFromData": "망사눈가면,반가지큰고리재갈"
+  "toolFromData": null
  },
  "3107299": {
   "name": "우대산",
@@ -3628,7 +3626,7 @@
  },
  "3107341": {
   "name": "한판승",
-  "grade": "C",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "반차안대"
@@ -3968,10 +3966,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "쉐도우롤(흙막이 코밴드)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "눈가면-"
  },
  "3107530": {
   "name": "전천후",
@@ -3980,10 +3978,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "반차안대"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "눈가면"
  },
  "3107533": {
   "name": "천하무적",
@@ -4016,7 +4014,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "눈가면"
  },
  "3107543": {
   "name": "대보름",
@@ -4082,7 +4080,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "눈가면,혀보정끈"
+  "toolFromData": null
  },
  "3107565": {
   "name": "레드크라운",
@@ -4112,10 +4110,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "혀끈"
+   "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "가지재갈"
  },
  "3107568": {
   "name": "초월비",
@@ -4258,11 +4256,11 @@
   "grade": "B",
   "coatSource": "hash",
   "accessories": [
-   "쉐도우롤(흙막이 코밴드)",
+   "메시 귀덮개/플라이마스크",
    null
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "계란형큰고리재갈,눈가면"
  },
  "3107840": {
   "name": "걸싸게",
@@ -4596,7 +4594,7 @@
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "혀보정끈"
  },
  "3108142": {
   "name": "비상호",
@@ -4670,7 +4668,7 @@
  },
  "3108216": {
   "name": "최고정점",
-  "grade": "B",
+  "grade": "C",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -4723,10 +4721,10 @@
   "grade": "C",
   "coatSource": "hash",
   "accessories": [
-   "차안대(블링커)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null
+  "toolFromData": "계란형큰고리재갈,눈가면+"
  },
  "3108253": {
   "name": "행복나루",
@@ -4826,7 +4824,7 @@
    "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "혀보정끈",
   "pose": "측면 질주"
  },
  "3108674": {
@@ -4845,9 +4843,10 @@
   "grade": "C",
   "coatSource": "hash",
   "accessories": [
-   "편자 색 포인트"
+   "메시 귀덮개/플라이마스크"
   ],
-  "toolFromData": null,
+  "shoe": "은색",
+  "toolFromData": "눈가면",
   "pose": "측면 질주"
  },
  "3109004": {
@@ -4878,10 +4877,10 @@
   "grade": "C",
   "coatSource": "hash",
   "accessories": [
-   "차안대(블링커)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "눈가면",
   "pose": "측면 질주"
  },
  "3109077": {
@@ -5008,7 +5007,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "눈가면+",
+  "toolFromData": "눈가면",
   "pose": "측면 질주"
  },
  "3109217": {
@@ -5024,7 +5023,7 @@
  },
  "3109220": {
   "name": "비상천하",
-  "grade": "B",
+  "grade": "C",
   "coatSource": "hash",
   "accessories": [
    "메시 귀덮개/플라이마스크"
@@ -5100,7 +5099,7 @@
  },
  "3109237": {
   "name": "끝판왕",
-  "grade": "A",
+  "grade": "B",
   "coatSource": "hash",
   "accessories": [
    "차안대(블링커)"
@@ -5159,10 +5158,10 @@
   "grade": "A",
   "coatSource": "hash",
   "accessories": [
-   "반차안대"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "눈가면",
   "pose": "측면 질주"
  },
  "0057280": {
@@ -5335,11 +5334,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
    "편자 색 포인트"
   ],
   "shoe": "금색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0052833": {
@@ -5524,11 +5522,11 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "차안대(블링커)",
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈,혀끈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0056840": {
@@ -5619,10 +5617,10 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0052505": {
@@ -5685,11 +5683,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "차안대(블링커)",
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0045498": {
@@ -5819,11 +5817,11 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "다리 붕대",
    "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0051381": {
@@ -5847,10 +5845,10 @@
   "face": "긴 줄(stripe)",
   "accessories": [
    "메시 귀덮개/플라이마스크",
-   "편자 색 포인트"
+   "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈,승인편자+,승인편자-",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0050292": {
@@ -5983,10 +5981,10 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0053828": {
@@ -6010,11 +6008,11 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "다리 붕대",
    "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,눈가면",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0054601": {
@@ -6142,10 +6140,10 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0042869": {
@@ -6182,11 +6180,11 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "편자 색 포인트",
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": "Triabit ,망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0053291": {
@@ -6196,10 +6194,10 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0057330": {
@@ -6236,10 +6234,10 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,눈가면",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0051386": {
@@ -6633,10 +6631,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "반차안대"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈+,눈가면-",
   "pose": "정면 3/4"
  },
  "0055941": {
@@ -6649,7 +6647,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "정면 3/4"
  },
  "0057407": {
@@ -6659,11 +6657,11 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "쉐도우롤(흙막이 코밴드)",
+   "메시 귀덮개/플라이마스크",
    "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사+,망사눈-",
   "pose": "정면 3/4"
  },
  "0055521": {
@@ -6676,7 +6674,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈+,망사-",
   "pose": "측면 질주"
  },
  "0055364": {
@@ -6686,10 +6684,10 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
-   "혀끈"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사",
   "pose": "측면 질주"
  },
  "0055475": {
@@ -6699,10 +6697,10 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "쉐도우롤(흙막이 코밴드)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "측면 질주"
  },
  "0057120": {
@@ -6712,10 +6710,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "쉐도우롤(흙막이 코밴드)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰+,망사눈+",
   "pose": "정면 3/4"
  },
  "0056681": {
@@ -6725,10 +6723,11 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "다리 붕대"
+   "메시 귀덮개/플라이마스크",
+   "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈,반가지큰",
   "pose": "정면 3/4"
  },
  "0056274": {
@@ -6738,10 +6737,10 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "혀끈"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "정면 3/4"
  },
  "0056200": {
@@ -6754,7 +6753,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사+",
   "pose": "측면 질주"
  },
  "0056184": {
@@ -6764,10 +6763,11 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "다리 붕대"
+   "메시 귀덮개/플라이마스크",
+   "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈+,반가지큰+,계란형큰-,망사-",
   "pose": "측면 질주"
  },
  "0059223": {
@@ -6777,10 +6777,10 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "편자 색 포인트"
+   "메시 귀덮개/플라이마스크"
   ],
-  "shoe": "청색",
-  "toolFromData": null,
+  "shoe": "은색",
+  "toolFromData": "계란형큰,눈가면",
   "pose": "측면 정지"
  },
  "0061570": {
@@ -6790,10 +6790,10 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
-   "차안대(블링커)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사+",
   "pose": "측면 정지"
  },
  "0058062": {
@@ -6806,7 +6806,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "측면 정지"
  },
  "0062626": {
@@ -6830,11 +6830,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "혀끈",
+   "메시 귀덮개/플라이마스크",
    "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "측면 질주"
  },
  "0061534": {
@@ -6848,7 +6848,7 @@
    "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "측면 정지"
  },
  "0061539": {
@@ -6858,11 +6858,11 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "다리 붕대",
+   "혀끈",
    "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,혀끈",
   "pose": "측면 정지"
  },
  "0061379": {
@@ -6872,11 +6872,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "편자 색 포인트",
+   "메시 귀덮개/플라이마스크",
    "차안대(블링커)"
   ],
-  "shoe": "흑색",
-  "toolFromData": null,
+  "shoe": "은색",
+  "toolFromData": "계란형큰+,눈가면+",
   "pose": "측면 정지"
  },
  "0062614": {
@@ -6900,11 +6900,11 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "차안대(블링커)",
+   "메시 귀덮개/플라이마스크",
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "측면 질주"
  },
  "0061533": {
@@ -6914,11 +6914,11 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "편자 색 포인트",
+   "메시 귀덮개/플라이마스크",
    "차안대(블링커)"
   ],
-  "shoe": "청색",
-  "toolFromData": null,
+  "shoe": "은색",
+  "toolFromData": "계란형큰,망사",
   "pose": "측면 정지"
  },
  "0053653": {
@@ -6928,10 +6928,11 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "차안대(블링커)"
+   "메시 귀덮개/플라이마스크",
+   "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰+,망사눈+,혀끈+",
   "pose": "측면 정지"
  },
  "0053516": {
@@ -6941,10 +6942,11 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "혀끈"
+   "메시 귀덮개/플라이마스크",
+   "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈,반가지큰",
   "pose": "측면 정지"
  },
  "0054474": {
@@ -6954,10 +6956,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "쉐도우롤(흙막이 코밴드)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "Triabit ,망사",
   "pose": "측면 정지"
  },
  "0053373": {
@@ -6967,10 +6969,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "차안대(블링커)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "측면 정지"
  },
  "0055552": {
@@ -6980,10 +6982,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "쉐도우롤(흙막이 코밴드)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "측면 질주"
  },
  "0055540": {
@@ -6993,10 +6995,10 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "다리 붕대"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사",
   "pose": "측면 질주"
  },
  "0053890": {
@@ -7009,7 +7011,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "Triabit ,망사눈",
   "pose": "측면 정지"
  },
  "0055203": {
@@ -7019,10 +7021,11 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
+   "메시 귀덮개/플라이마스크",
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,눈가면,혀끈",
   "pose": "측면 질주"
  },
  "0056029": {
@@ -7032,10 +7035,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "혀끈"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "측면 질주"
  },
  "0053695": {
@@ -7045,10 +7048,10 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "차안대(블링커)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "측면 정지"
  },
  "0053446": {
@@ -7058,10 +7061,11 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
+   "메시 귀덮개/플라이마스크",
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "측면 정지"
  },
  "0053646": {
@@ -7071,11 +7075,11 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
-   "차안대(블링커)",
+   "메시 귀덮개/플라이마스크",
    "편자 색 포인트"
   ],
   "shoe": "흑색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "측면 정지"
  },
  "0053514": {
@@ -7103,7 +7107,7 @@
    "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사",
   "pose": "측면 질주"
  },
  "0047535": {
@@ -7113,10 +7117,10 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "차안대(블링커)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "측면 질주"
  },
  "0054384": {
@@ -7126,10 +7130,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
+   "메시 귀덮개/플라이마스크",
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사,혀끈",
   "pose": "측면 정지"
  },
  "0052950": {
@@ -7139,11 +7144,11 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "다리 붕대",
+   "메시 귀덮개/플라이마스크",
    "편자 색 포인트"
   ],
   "shoe": "금색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "측면 정지"
  },
  "0053712": {
@@ -7153,11 +7158,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "혀끈",
+   "메시 귀덮개/플라이마스크",
    "편자 색 포인트"
   ],
   "shoe": "흑색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "측면 정지"
  },
  "0056332": {
@@ -7167,10 +7172,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "편자 색 포인트"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "정면 3/4"
  },
  "0055565": {
@@ -7180,10 +7185,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "반차안대"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈+",
   "pose": "측면 질주"
  },
  "0051913": {
@@ -7193,11 +7198,11 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "혀끈",
-   "차안대(블링커)"
+   "메시 귀덮개/플라이마스크",
+   "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈,혀끈",
   "pose": "정면 3/4"
  },
  "0050852": {
@@ -7211,7 +7216,7 @@
    "다리 붕대"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사",
   "pose": "측면 질주"
  },
  "0055557": {
@@ -7221,11 +7226,11 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "차안대(블링커)",
+   "메시 귀덮개/플라이마스크",
    "편자 색 포인트"
   ],
   "shoe": "흑색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사",
   "pose": "측면 질주"
  },
  "0050739": {
@@ -7235,11 +7240,11 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "편자 색 포인트",
+   "메시 귀덮개/플라이마스크",
    "쉐도우롤(흙막이 코밴드)"
   ],
-  "shoe": "청색",
-  "toolFromData": null,
+  "shoe": "은색",
+  "toolFromData": "계란형큰,망사눈",
   "pose": "측면 질주"
  },
  "0051396": {
@@ -7249,10 +7254,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "다리 붕대"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사",
   "pose": "측면 질주"
  },
  "0053191": {
@@ -7262,10 +7267,10 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
-   "차안대(블링커)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사",
   "pose": "정면 3/4"
  },
  "0053592": {
@@ -7275,10 +7280,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "쉐도우롤(흙막이 코밴드)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "측면 정지"
  },
  "0054466": {
@@ -7288,10 +7293,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "반차안대"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "측면 정지"
  },
  "0046204": {
@@ -7301,10 +7306,11 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "메시 귀덮개/플라이마스크",
+   "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "눈가면,반가지큰",
   "pose": "측면 정지"
  },
  "0051941": {
@@ -7314,11 +7320,11 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "혀끈",
+   "메시 귀덮개/플라이마스크",
    "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "정면 3/4"
  },
  "0051110": {
@@ -7328,10 +7334,10 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "편자 색 포인트"
+   "메시 귀덮개/플라이마스크"
   ],
-  "shoe": "흑색",
-  "toolFromData": null,
+  "shoe": "은색",
+  "toolFromData": "계란형큰,망사눈",
   "pose": "측면 질주"
  },
  "0052910": {
@@ -7345,7 +7351,7 @@
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "측면 정지"
  },
  "0046999": {
@@ -7370,10 +7376,10 @@
   "face": "별(star)",
   "accessories": [
    "메시 귀덮개/플라이마스크",
-   "반차안대"
+   "편자 색 포인트"
   ],
-  "shoe": "은색",
-  "toolFromData": "계란형큰+,망사눈+,승인편자+,반가지큰-",
+  "shoe": "금색",
+  "toolFromData": "계란형큰,망사눈,승인편자+,승인편자-",
   "pose": "측면 정지"
  },
  "0051675": {
@@ -7383,11 +7389,11 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "혀끈",
+   "메시 귀덮개/플라이마스크",
    "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈+,망사-",
   "pose": "정면 3/4"
  },
  "0047435": {
@@ -7397,10 +7403,10 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "편자 색 포인트"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "측면 질주"
  },
  "0058008": {
@@ -7410,10 +7416,10 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "반차안대"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "측면 정지"
  },
  "0060717": {
@@ -7440,7 +7446,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": "망사눈,계란형큰-",
   "pose": "정면 3/4"
  },
  "0052483": {
@@ -7453,7 +7459,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "정면 3/4"
  },
  "0056399": {
@@ -7476,11 +7482,11 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "혀끈",
+   "메시 귀덮개/플라이마스크",
    "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사",
   "pose": "정면 3/4"
  },
  "0055623": {
@@ -7490,11 +7496,11 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "혀끈",
-   "다리 붕대"
+   "메시 귀덮개/플라이마스크",
+   "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사,양털코",
   "pose": "측면 질주"
  },
  "0060725": {
@@ -7518,11 +7524,11 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "편자 색 포인트",
+   "메시 귀덮개/플라이마스크",
    "반차안대"
   ],
-  "shoe": "흑색",
-  "toolFromData": null,
+  "shoe": "은색",
+  "toolFromData": "계란형큰,망사눈",
   "pose": "정면 3/4"
  },
  "0052118": {
@@ -7532,11 +7538,11 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "편자 색 포인트",
+   "메시 귀덮개/플라이마스크",
    "쉐도우롤(흙막이 코밴드)"
   ],
-  "shoe": "금색",
-  "toolFromData": null,
+  "shoe": "은색",
+  "toolFromData": "계란형큰,망사눈",
   "pose": "정면 3/4"
  },
  "0055887": {
@@ -7546,11 +7552,11 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "반차안대",
+   "메시 귀덮개/플라이마스크",
    "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "정면 3/4"
  },
  "0060828": {
@@ -7560,11 +7566,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "차안대(블링커)",
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "측면 정지"
  },
  "0051112": {
@@ -7574,10 +7579,10 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "차안대(블링커)"
+   "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "양털코",
   "pose": "측면 질주"
  },
  "0050864": {
@@ -7587,11 +7592,11 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "다리 붕대",
+   "메시 귀덮개/플라이마스크",
    "편자 색 포인트"
   ],
   "shoe": "청색",
-  "toolFromData": null,
+  "toolFromData": "망사",
   "pose": "측면 질주"
  },
  "0051649": {
@@ -7601,10 +7606,11 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
+   "메시 귀덮개/플라이마스크",
    "편자 색 포인트"
   ],
   "shoe": "금색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "정면 3/4"
  },
  "0053350": {
@@ -7614,10 +7620,11 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "편자 색 포인트"
+   "메시 귀덮개/플라이마스크",
+   "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈,혀끈",
   "pose": "측면 정지"
  },
  "0053272": {
@@ -7627,10 +7634,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "다리 붕대"
+   "메시 귀덮개/플라이마스크",
+   "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈+,혀끈",
   "pose": "측면 정지"
  },
  "0050665": {
@@ -7644,7 +7652,7 @@
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰+",
   "pose": "측면 질주"
  },
  "0053335": {
@@ -7654,11 +7662,11 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "다리 붕대",
-   "쉐도우롤(흙막이 코밴드)"
+   "메시 귀덮개/플라이마스크",
+   "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈,혀끈",
   "pose": "측면 정지"
  },
  "0053212": {
@@ -7668,10 +7676,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "차안대(블링커)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "측면 정지"
  },
  "0052811": {
@@ -7681,11 +7689,11 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "편자 색 포인트",
+   "메시 귀덮개/플라이마스크",
    "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사",
   "pose": "측면 정지"
  },
  "0042046": {
@@ -7698,7 +7706,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "측면 정지"
  },
  "0051529": {
@@ -7708,11 +7716,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "다리 붕대",
+   "메시 귀덮개/플라이마스크",
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사",
   "pose": "정면 3/4"
  },
  "0050005": {
@@ -7726,7 +7734,7 @@
    "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈,반가지큰",
   "pose": "측면 정지"
  },
  "0052817": {
@@ -7736,11 +7744,11 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "다리 붕대",
-   "쉐도우롤(흙막이 코밴드)"
+   "메시 귀덮개/플라이마스크",
+   "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사,혀끈",
   "pose": "측면 정지"
  },
  "0047427": {
@@ -7750,10 +7758,10 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "다리 붕대"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "측면 질주"
  },
  "0054310": {
@@ -7766,7 +7774,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "측면 정지"
  },
  "0050104": {
@@ -7776,11 +7784,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "차안대(블링커)",
-   "쉐도우롤(흙막이 코밴드)"
+   "메시 귀덮개/플라이마스크",
+   "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "눈가면,반가지큰",
   "pose": "측면 질주"
  },
  "0051692": {
@@ -7790,10 +7798,11 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "메시 귀덮개/플라이마스크",
+   "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사,혀끈",
   "pose": "정면 3/4"
  },
  "0046672": {
@@ -7803,10 +7812,11 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
-   "편자 색 포인트"
+   "반차안대",
+   "차안대(블링커)"
   ],
-  "shoe": "흑색",
-  "toolFromData": null,
+  "shoe": "은색",
+  "toolFromData": "반가지큰,혀끈",
   "pose": "측면 정지"
  },
  "0054009": {
@@ -7820,7 +7830,7 @@
    "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈,반가지큰",
   "pose": "측면 정지"
  },
  "0046674": {
@@ -7830,10 +7840,10 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
-   "차안대(블링커)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "측면 정지"
  },
  "0050902": {
@@ -7843,11 +7853,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "차안대(블링커)",
+   "메시 귀덮개/플라이마스크",
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈+,망사-",
   "pose": "측면 질주"
  },
  "0057339": {
@@ -7857,11 +7867,11 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "다리 붕대",
-   "쉐도우롤(흙막이 코밴드)"
+   "메시 귀덮개/플라이마스크",
+   "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈,승인편자,혀끈",
   "pose": "정면 3/4"
  },
  "0051560": {
@@ -7871,10 +7881,10 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "차안대(블링커)"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈",
   "pose": "정면 3/4"
  },
  "0055885": {
@@ -7884,10 +7894,11 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "메시 귀덮개/플라이마스크",
+   "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈,승인편자+,혀끈",
   "pose": "정면 3/4"
  },
  "0046832": {
@@ -7897,10 +7908,10 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "다리 붕대"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "망사눈,자극판",
   "pose": "측면 정지"
  },
  "0054036": {
@@ -7910,10 +7921,10 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "편자 색 포인트"
+   "메시 귀덮개/플라이마스크"
   ],
-  "shoe": "금색",
-  "toolFromData": null,
+  "shoe": "은색",
+  "toolFromData": "계란형큰,눈가면",
   "pose": "측면 정지"
  },
  "0046839": {
@@ -7923,11 +7934,11 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "다리 붕대",
+   "메시 귀덮개/플라이마스크",
    "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": null,
+  "toolFromData": "계란형큰,망사눈",
   "pose": "측면 정지"
  },
  "0055953": {
@@ -9141,7 +9152,7 @@
  },
  "0051350": {
   "name": "패션스타",
-  "grade": "B",
+  "grade": "A",
   "coat": "갈색(dark bay)",
   "coatSource": "hash",
   "face": "없음",
@@ -13795,10 +13806,11 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
+   "다리 붕대",
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0055615": {
@@ -13808,11 +13820,11 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
-   "편자 색 포인트"
+   "쉐도우롤(흙막이 코밴드)",
+   "다리 붕대"
   ],
-  "shoe": "청색",
-  "toolFromData": "계란형큰,망사눈,승인편자",
+  "shoe": "은색",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0055359": {
@@ -13822,11 +13834,11 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
-   "쉐도우롤(흙막이 코밴드)"
+   "편자 색 포인트",
+   "혀끈"
   ],
-  "shoe": "은색",
-  "toolFromData": "망사,승인편자,양털코",
+  "shoe": "금색",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0056048": {
@@ -13836,10 +13848,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0056210": {
@@ -13849,10 +13861,10 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0056452": {
@@ -13865,7 +13877,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0056309": {
@@ -13889,10 +13901,11 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
+   "쉐도우롤(흙막이 코밴드)",
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0055524": {
@@ -13902,11 +13915,11 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "쉐도우롤(흙막이 코밴드)",
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰+,망사눈+",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0055487": {
@@ -13916,10 +13929,10 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": "망사+",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0054060": {
@@ -13929,10 +13942,10 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0053817": {
@@ -13942,11 +13955,11 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
-   "혀끈"
+   "혀끈",
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "JR러깅,망사,혀끈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0052873": {
@@ -13956,11 +13969,11 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "다리 붕대",
    "편자 색 포인트"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0054191": {
@@ -13973,7 +13986,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0053917": {
@@ -13983,11 +13996,11 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "편자 색 포인트",
    "차안대(블링커)"
   ],
-  "shoe": "은색",
-  "toolFromData": "망사눈+",
+  "shoe": "청색",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0054542": {
@@ -13997,11 +14010,10 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
-   "반차안대"
+   "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": "망사,반가지큰",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0053345": {
@@ -14011,10 +14023,10 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0051075": {
@@ -14037,10 +14049,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": "망사,계란형큰-",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0054864": {
@@ -14050,11 +14062,11 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "차안대(블링커)",
    "편자 색 포인트"
   ],
   "shoe": "금색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0053086": {
@@ -14064,10 +14076,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0052844": {
@@ -14077,11 +14089,11 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "혀끈",
    "다리 붕대"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0053238": {
@@ -14095,7 +14107,7 @@
    "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0053645": {
@@ -14109,7 +14121,7 @@
    "편자 색 포인트"
   ],
   "shoe": "흑색",
-  "toolFromData": "망사+",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0053073": {
@@ -14119,10 +14131,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0051316": {
@@ -14132,11 +14144,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
    "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0053723": {
@@ -14160,10 +14171,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
+   "쉐도우롤(흙막이 코밴드)",
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0053853": {
@@ -14173,11 +14185,11 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "다리 붕대",
    "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0059321": {
@@ -14187,10 +14199,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "편자 색 포인트"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0051829": {
@@ -14200,10 +14212,11 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
+   "혀끈",
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0052513": {
@@ -14213,10 +14226,11 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
+   "반차안대",
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0055685": {
@@ -14226,10 +14240,10 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0053223": {
@@ -14239,11 +14253,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
-   "혀끈"
+   "다리 붕대"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사,승인편자,혀끈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0051528": {
@@ -14256,7 +14269,7 @@
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,혀끈+",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0053967": {
@@ -14270,7 +14283,7 @@
    "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0053708": {
@@ -14284,7 +14297,7 @@
    "다리 붕대"
   ],
   "shoe": "은색",
-  "toolFromData": "망사",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0053693": {
@@ -14294,10 +14307,10 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "편자 색 포인트"
   ],
-  "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "shoe": "흑색",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0054201": {
@@ -14307,10 +14320,10 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0051337": {
@@ -14321,10 +14334,10 @@
   "face": "별+줄(star & stripe)",
   "accessories": [
    "반차안대",
-   "차안대(블링커)"
+   "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "은색",
-  "toolFromData": "반가지큰,양털코",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0053083": {
@@ -14334,10 +14347,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "편자 색 포인트"
+   "다리 붕대"
   ],
-  "shoe": "청색",
-  "toolFromData": "승인편자",
+  "shoe": "은색",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0052135": {
@@ -14347,10 +14360,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0060715": {
@@ -14360,11 +14373,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "혀끈",
+   "메시 귀덮개/플라이마스크",
    "다리 붕대"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,혀끈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0053023": {
@@ -14374,10 +14387,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0051308": {
@@ -14387,11 +14400,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
    "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": "눈가면",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0051866": {
@@ -14401,11 +14413,11 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "편자 색 포인트",
    "반차안대"
   ],
-  "shoe": "은색",
-  "toolFromData": "망사눈,반가지큰",
+  "shoe": "흑색",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0060709": {
@@ -14415,11 +14427,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "차안대(블링커)",
    "다리 붕대"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0051334": {
@@ -14433,7 +14445,7 @@
    "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "청색",
-  "toolFromData": "계란형큰",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0053020": {
@@ -14443,10 +14455,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "다리 붕대"
   ],
   "shoe": "은색",
-  "toolFromData": "망사",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0052832": {
@@ -14456,11 +14468,11 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "편자 색 포인트",
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0060702": {
@@ -14470,11 +14482,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "차안대(블링커)",
    "다리 붕대"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈+",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0056388": {
@@ -14484,11 +14496,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
-   "반차안대"
+   "편자 색 포인트"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈,반가지큰",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0053551": {
@@ -14498,10 +14509,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0054199": {
@@ -14511,10 +14522,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": "망사",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0051211": {
@@ -14524,11 +14535,10 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
    "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈,반가지큰",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0047099": {
@@ -14541,7 +14551,7 @@
    "편자 색 포인트"
   ],
   "shoe": "흑색",
-  "toolFromData": "계란형큰",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0051630": {
@@ -14551,11 +14561,11 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "차안대(블링커)",
    "편자 색 포인트"
   ],
   "shoe": "금색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0046943": {
@@ -14565,11 +14575,10 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈,혀끈",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0053941": {
@@ -14579,11 +14588,10 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
-   "혀끈"
+   "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈,혀끈,계란형큰-",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0050741": {
@@ -14593,10 +14601,11 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
+   "차안대(블링커)",
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": "혀끈",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0052425": {
@@ -14606,10 +14615,11 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
+   "다리 붕대",
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0056406": {
@@ -14619,11 +14629,11 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
-   "반차안대"
+   "쉐도우롤(흙막이 코밴드)",
+   "편자 색 포인트"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈,반가지큰",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0057362": {
@@ -14633,11 +14643,10 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
-   "혀끈"
+   "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈,혀끈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0045240": {
@@ -14647,10 +14656,10 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0053197": {
@@ -14663,7 +14672,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "망사,혀보정",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0056398": {
@@ -14673,10 +14682,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "편자 색 포인트"
+   "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,승인편자",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0051771": {
@@ -14699,10 +14708,10 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0046717": {
@@ -14712,11 +14721,11 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
-   "반차안대"
+   "반차안대",
+   "편자 색 포인트"
   ],
-  "shoe": "은색",
-  "toolFromData": "눈가면,반가지큰",
+  "shoe": "청색",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0054761": {
@@ -14726,10 +14735,10 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0053707": {
@@ -14739,11 +14748,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
-   "반차안대"
+   "편자 색 포인트",
+   "다리 붕대"
   ],
-  "shoe": "은색",
-  "toolFromData": "망사,반가지큰",
+  "shoe": "흑색",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0053241": {
@@ -14753,11 +14762,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "쉐도우롤(흙막이 코밴드)",
-   "혀끈"
+   "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "양털코,혀끈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0062616": {
@@ -14767,11 +14775,10 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈,혀끈",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0053231": {
@@ -14781,10 +14788,10 @@
   "coatSource": "hash",
   "face": "없음",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "편자 색 포인트"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0053849": {
@@ -14794,11 +14801,10 @@
   "coatSource": "hash",
   "face": "별+줄(star & stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
    "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": "망사",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0052882": {
@@ -14811,7 +14817,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0052990": {
@@ -14821,10 +14827,10 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "쉐도우롤(흙막이 코밴드)"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰+,망사",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0044287": {
@@ -14834,10 +14840,10 @@
   "coatSource": "hash",
   "face": "작은 줄(snip)",
   "accessories": [
-   "메시 귀덮개/플라이마스크"
+   "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": "Triabit ,망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0050784": {
@@ -14847,11 +14853,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "반차안대",
    "편자 색 포인트"
   ],
   "shoe": "청색",
-  "toolFromData": "계란형큰,망사",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0051788": {
@@ -14861,11 +14867,11 @@
   "coatSource": "hash",
   "face": "긴 줄(stripe)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "다리 붕대",
    "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0046779": {
@@ -14875,11 +14881,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "차안대(블링커)",
    "반차안대"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "측면 정지"
  },
  "0051825": {
@@ -14892,7 +14898,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0051657": {
@@ -14905,7 +14911,7 @@
    "메시 귀덮개/플라이마스크"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0047440": {
@@ -14918,7 +14924,7 @@
    "혀끈"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0051218": {
@@ -14928,11 +14934,11 @@
   "coatSource": "hash",
   "face": "별(star)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
+   "반차안대",
    "차안대(블링커)"
   ],
   "shoe": "은색",
-  "toolFromData": "계란형큰,망사눈",
+  "toolFromData": null,
   "pose": "측면 질주"
  },
  "0051929": {
@@ -14942,11 +14948,11 @@
   "coatSource": "hash",
   "face": "넓은 흰 얼굴(blaze)",
   "accessories": [
-   "메시 귀덮개/플라이마스크",
-   "편자 색 포인트"
+   "편자 색 포인트",
+   "차안대(블링커)"
   ],
   "shoe": "흑색",
-  "toolFromData": "계란형큰,망사눈,승인편자",
+  "toolFromData": null,
   "pose": "정면 3/4"
  },
  "0055793": {
